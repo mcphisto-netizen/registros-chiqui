@@ -1,5 +1,5 @@
 fecha_inicio,fecha_fin,evento,detalle,fuente
-2026-04-24,2026-04-26,cirugía vesícula biliar por mucocele,"colecistectomía; fecha exacta a confirmar; explica días sin registro 23-26/4 (orig06)",usuario
+2026-04-24,2026-04-26,cirugía vesícula biliar por mucocele,"colecistectomía con internación; explica días sin registro 23-26/4 (orig06); sin corticoides en postoperatorio por cushing",usuario
 2026-04-27,2026-05-10,postoperatorio complicado,"recuperación difícil; coincide con pico de hiperglucemias 400-548 y escalada de insulina",usuario+registro
 2026-08-08,2026-08-10,crisis hipoglucemia,"mínimos 52 y 41 con rescate miel + pollo 40g; rebote 341",registro orig30
 2026-08-17,2026-08-23,gastroenteritis,"diarrea y vómito anotados; entra silimarina diurna y metronidazol",registro orig34
