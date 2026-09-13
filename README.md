@@ -4,6 +4,7 @@ Registros manuscritos escaneados de perra Chiqui: glucemia, medicación, comidas
 Período: 2026-03-20 a 2026-09-13. Total: 40 hojas.
 
 - `panel-chiqui.html` — panel dinámico autocontenido: gráficos de glucosa y laboratorio + informe resumido para veterinaria (imprimible). Abrir en cualquier navegador, funciona sin internet.
+- `informe-veterinaria-chiqui.pdf` — informe clínico para la veterinaria (4 páginas): esquema actual, glucemias mensuales, laboratorio destacado, observaciones derivadas de datos y roadmap de estudios. Regenerable con `informe.py` (requiere weasyprint).
 
 ## Estructura
 
