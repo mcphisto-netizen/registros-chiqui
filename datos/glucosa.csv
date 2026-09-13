@@ -114,7 +114,7 @@ fecha,momento,valor,origen
 2026-05-15,medianoche,361,orig09
 2026-05-16,medianoche,208,orig09
 2026-05-17,medianoche,266,orig09
-2026-05-18,mediodia,283,orig10
+2026-05-18,mediodia,203,orig10
 2026-05-19,mediodia,188,orig10
 2026-05-20,mediodia,160,orig10
 2026-05-21,mediodia,283,orig10
@@ -352,3 +352,8 @@ fecha,momento,valor,origen
 2026-09-11,medianoche,273,orig40
 2026-09-12,medianoche,368,orig40
 2026-07-19,medianoche,53,orig19
+2026-05-01,medianoche,263,orig07
+2026-05-24,mediodia,126,orig10
+2026-05-15,16:40,139,orig09
+2026-07-17,20:15,360,orig23
+2026-09-08,22:26,189,orig40
