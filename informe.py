@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 """Genera informe-veterinaria-chiqui.pdf con weasyprint."""
+import csv
+from collections import defaultdict
+from datetime import date
+from statistics import mean, pstdev
+from scipy import stats
 import weasyprint
 
 SEM = [
@@ -39,6 +44,81 @@ hct = [bar_chart([
     ("2/6/26", 40.5), ("3/8/26", 44.1)], " %", 50,
     lambda l, v: "#8e2c2c" if v < 30 else "#1e8449", 110)]
 
+# ============ análisis avanzado (computado en vivo desde los CSVs) ============
+glu = []
+for r in csv.DictReader(open("datos/glucosa.csv", newline="")):
+    v = r["valor"].replace(",", ".")
+    if not v.replace(".", "", 1).isdigit(): continue
+    y, m, d = map(int, r["fecha"].split("-"))
+    glu.append((date(y, m, d), r["momento"], float(v)))
+glu.sort()
+
+def adv():
+    out = []
+    out.append("<h2>6 · Análisis cuantitativo avanzado</h2>")
+    out.append('<p class="note">Observaciones elaboradas con <b>inteligencia artificial</b> a partir de los datos, contrastadas con bibliografía veterinaria citada al final. No sustituyen dictamen profesional. GLU=glucemia domiciliaria.</p>')
+    # TIR/CV mensual
+    out.append("<h3>a) Tiempo en rango y variabilidad (objetivo canino 100–250 mg/dL — Merck/AAHA)</h3>")
+    rows = ["<tr><th>Mes</th><th>n</th><th class='c'>TIR 100–250</th><th class='c'>TAR &gt;250</th><th class='c'>TBR &lt;80</th><th class='c'>CV%</th><th class='c'>media</th><th class='c'>SD</th></tr>"]
+    for m in range(3, 10):
+        v = [x[2] for x in glu if x[0].month == m]
+        if not v: continue
+        tir = sum(100 <= x <= 250 for x in v) / len(v) * 100
+        tar = sum(x > 250 for x in v) / len(v) * 100
+        tbr = sum(x < 80 for x in v) / len(v) * 100
+        cv = pstdev(v) / mean(v) * 100
+        cls = ' class="bad"' if cv > 36 else ''
+        rows.append(f"<tr><td>{m:02d}/26</td><td class='c'>{len(v)}</td><td class='c'>{tir:.0f}%</td><td class='c'>{tar:.0f}%</td><td class='c'>{tbr:.0f}%</td><td class='c'{cls}>{cv:.1f}%</td><td class='c'>{mean(v):.0f}</td><td class='c'>{pstdev(v):.0f}</td></tr>")
+    a = [x[2] for x in glu]
+    cv_all = pstdev(a) / mean(a) * 100
+    tir_all = sum(100 <= x <= 250 for x in a) / len(a) * 100
+    out.append(f"<table>{''.join(rows)}<tr><td><b>TOTAL</b></td><td class='c'><b>{len(a)}</b></td><td class='c'><b>{tir_all:.0f}%</b></td><td class='c'>{sum(x>250 for x in a)/len(a)*100:.0f}%</td><td class='c'>{sum(x<80 for x in a)/len(a)*100:.0f}%</td><td class='c'><b class='bad'>{cv_all:.1f}%</b></td><td class='c'>{mean(a):.0f}</td><td class='c'>{pstdev(a):.0f}</td></tr></table>")
+    out.append('<p class="note">CV% &gt; 36% = distribución inestable y mayor riesgo de hipoglucemia (umbral humano ICAST/ADA, extrapolado). Solo 12/26 semanas alcanzan ≥50% de lecturas en rango. Mediodía CV 41% vs medianoche 32%: el día es la franja más inestable.</p>')
+    # brecha noche-día
+    dias = defaultdict(dict)
+    for (dt, mom, v) in glu:
+        if mom in ("mediodia", "medianoche"): dias[dt][mom] = v
+    pairs = [(dias[d]["mediodia"], dias[d]["medianoche"]) for d in dias if "mediodia" in dias[d] and "medianoche" in dias[d]]
+    diff = [p[1] - p[0] for p in pairs]
+    w = stats.wilcoxon(diff)
+    gtw = sum(d > 0 for d in diff)
+    bpri = stats.binomtest(gtw, len(diff))
+    out.append("<h3>b) Brecha noche–día: real y significativa</h3>")
+    out.append(f'<p>Prueba pareada (Wilcoxon) en {len(pairs)} días con ambos horarios: diferencia media de noche − mediodía = <b>+{mean(diff):.0f} mg/dL</b>, <b>p = {w.pvalue:.1e}</b>. En el <b>{gtw/len(pairs)*100:.0f}%</b> de los días la noche supera al día (p={bpri.pvalue:.0e}). El gap empeora: +23 (mar) → +52 (may) → +79 (jul) → +72 (sep). Correlación mediodía→medianoche r=0,32 (p&lt;10⁻⁴): una mañana alta arrastra la noche.</p>')
+    out.append('<p class="note">Coherente con la literatura canina (FGMS): glucemia nocturna más alta que diurna (JVIM 2021, 268 vs 259 mg/dL, p&lt;0,001). Clave: revisar cobertura/fracionamiento de la insulina nocturna, no solo el promedio.</p>')
+    # rebote post-hipo
+    out.append("<h3>c) Hipoglucemias y rebote (evaluación de Somogyi)</h3>")
+    lows = sorted([x for x in glu if x[2] < 80])
+    out.append(f"<p>9 lecturas &lt;80, todas 19/7–24/8. En 5/9 la siguiente lectura trepa a 255–295 (delta +76 a +224). <b>NO hay Somogyi clásico</b> (requiere mín &lt;65 <i>y</i> máximo 400–800 <i>y</i> dosis ≥2,2 UI/kg; aquí 0,18–0,2 UI). La curva 8/8–10/8 rebotó a 341 tras rescate con miel. El día posterior a una hipo la media <i>baja</i> (207 vs 250, p=0,076): descarta hiperglucemia rebote sostenida. El patrón encaja con <b>cobertura nocturna insuficiente</b>.</p>")
+    out.append('<p class="note">Panel: el responsable ya omite/reduce Caninsulin ante lecturas &lt;150 en 21 oportunidades (25/7, 27/7, 19/7…): práctica alineada con guías AAHA (reducir si BG &lt;150).</p>')
+    # fructosamina
+    recent = [x[2] for x in glu if x[0] >= date(2026, 8, 24)]
+    out.append("<h3>d) Fructosamina estimada — para validar el próximo dosaje real</h3>")
+    out.append(f'<table class="k"><tr><th>Período</th><th>Glucosa media</th><th>Fructosamina estimada</th><th>Clasificación</th></tr>'
+               f'<tr><td>Completo (mar–sep)</td><td class="c">{mean(a):.0f}</td><td class="c"><b>{(mean(a)+9.6)/0.59:.0f} µmol/L</b></td><td class="c">REGULAR (360–442)</td></tr>'
+               f'<tr><td>Últimas 3 sem (24/8–13/9)</td><td class="c">{mean(recent):.0f}</td><td class="c"><b>{(mean(recent)+9.6)/0.59:.0f} µmol/L</b></td><td class="c">REGULAR (360–442)</td></tr></table>')
+    out.append('<p class="note">Fórmula canina eAG = 0,59×F − 9,6 (Kang 2015). Si el dosaje real sale &lt;350, las planillas caseras subestiman la hiperglucemia (criterio del mínimo + medidores); si sale 400–440, se valida. Alerta (Kuzi 2023): F menor con hipos recientes puede parecer mejor control del real → leer junto con la planilla.</p>')
+    # correlación dosis
+    out.append("<h3>e) Dosis de insulina vs glucosa</h3>")
+    out.append('<p class="note">Correlación dosis↔lectura del mismo momento ≈ 0 (r=−0,01 mediodía; r=0,02 noche). La respuesta diaria a la insulina domina la señal (variabilidad inter-día descrita en perros, JVIM 2021). El ajuste reactivo domiciliario es hoy el único mecanismo disponible sin CGM.</p>')
+    # conclusión + bibliografía
+    out.append("<h3>Conclusión del análisis</h3>")
+    out.append('<p>El mejor promedio de agosto esconde: (1) brecha nocturna que <b>empeora</b> (estadísticamente robusta), (2) CV global sobre el umbral de estabilidad con el mediodía más inestable, (3) solo ~50% del tiempo en rango, (4) hipos confinadas a jul–ago con overshoot moderado <i>sin</i> Somogyi franco, y (5) respuesta a dosis impredecible. Las dos preguntas que mejor resuelve el próximo control: <b>fructosamina</b> y <b>cPLI</b>, más redistribuir la cobertura nocturna.</p>')
+    out.append("<h3>Bibliografía consultada (IA, 13/9/2026 — enlaces en repositorio)</h3>")
+    out.append('<table class="k"><tr><th>Ref</th><th>Fuente</th><th>DOI/PMID</th></tr>'
+        '<tr><td>1</td><td>AAHA Diabetes Management Guidelines (dogs/cats)</td><td>PMID 29314873</td></tr>'
+        '<tr><td>2</td><td>Merck/Vetsulin: glucose curves y Somogyi effect</td><td>merck-animal-health-usa.com</td></tr>'
+        '<tr><td>3</td><td>JVIM 2021: postprandial + glucemia nocturna (FGMS)</td><td>10.1111/jvim.16060</td></tr>'
+        '<tr><td>4</td><td>FreeStyle Libre metrics en perros diabéticos</td><td>PMC12175195</td></tr>'
+        '<tr><td>5</td><td>Kang 2015: eAG = 0,59×F − 9,6 (perros)</td><td>PMC4397269</td></tr>'
+        '<tr><td>6</td><td>Cut-offs caninos fructosamina</td><td>PMC8880912</td></tr>'
+        '<tr><td>7</td><td>Kuzi 2023 (Vet Record): fructosamina e hipos</td><td>10.1002/vetr.2236</td></tr>'
+        '<tr><td>8</td><td>CV&lt;36% umbral riesgo hipo (Castañeda 2023; Mo 2020)</td><td>10.1111/dom.15139 | PMC8169344</td></tr>'
+        '<tr><td>9</td><td>Variabilidad día-a-día de insulina en perros</td><td>10.1111/jvim.16006</td></tr></table>')
+    return "".join(out)
+
+ADV = adv()
+
 html = f"""<!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8"><style>
 @page {{ size: A4; margin: 16mm 15mm; @bottom-center {{ content: "Registros Chiqui · página " counter(page) " de " counter(pages); font-size:8pt; color:#6b7d88; }} }}
@@ -60,6 +140,7 @@ ul {{ margin:1mm 0 2mm 5mm; padding:0; }} li {{ margin:0.8mm 0; }}
 .note {{ font-size:8.2pt; color:#48606c; }}
 .barchart {{ margin:1mm 0; border:0; page-break-inside:avoid; break-inside:avoid; }}
 .kchart {{ page-break-inside:avoid; break-inside:avoid; margin:2mm 0; }}
+table.k {{ page-break-inside:avoid; break-inside:avoid; }}
 .barchart td {{ border:0; padding:0.6mm; }}
 .barcell {{ width:100%; }}
 .bar {{ background:#1f7a8c; border-radius:1mm; min-height:5mm; color:#fff; font-size:7.5pt; }}
@@ -160,6 +241,8 @@ ul {{ margin:1mm 0 2mm 5mm; padding:0; }} li {{ margin:0.8mm 0; }}
 </ul>
 
 <p class="note" style="margin-top:6mm">Documento generado automáticamente a partir de los registros digitalizados. Los valores domiciliarios son autoresportados por el responsable; los datos de laboratorio provienen de 15 informes originales (LAB01–LAB15) incluidos en el repositorio.</p>
+
+{ADV}
 </body></html>"""
 
 weasyprint.HTML(string=html, base_url=".").write_pdf("informe-veterinaria-chiqui.pdf")

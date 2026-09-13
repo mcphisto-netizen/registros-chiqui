@@ -30,7 +30,7 @@ ul.tight{margin:6px 0;padding-left:20px}ul.tight li{margin:3px 0;font-size:14px}
 <body>
 <header>
 <h1>Chiqui — Panel clínico <span class="noprint" style="font-weight:400;font-size:14px">mar 2026 – sep 2026 · 359 glucemias · 15 laboratorios</span></h1>
-<p class="noprint">Archivo único autocontenido (sin internet). Pase el cursor sobre los puntos para ver valores.</p>
+<p class="noprint">Archivo único autocontenido (sin internet). Pase el cursor sobre los puntos para ver valores. <b>Las observaciones de la sección 5 y el informe son elaboradas con IA a partir de la bibliografía citada; no sustituyen criterio veterinario.</b></p>
 </header>
 <main>
 <div class="noprint" style="margin-bottom:12px">
@@ -62,13 +62,56 @@ ul.tight{margin:6px 0;padding-left:20px}ul.tight li{margin:3px 0;font-size:14px}
 <div style="overflow-x:auto"><table id="labtab"></table></div>
 <p class="sub">LAB02 duplica a LAB03 (mismo protocolo del 3/8). LAB04/05 con rangos humanos: solo orientativo. Unidades originales en datos/laboratorio.csv.</p>
 </div>
+<div class="card">
+<h2>5 · Análisis cuantitativo avanzado <span class="tag" style="background:#8e2c2c">IA</span></h2>
+<p class="sub"><b>Aviso:</b> estas observaciones fueron elaboradas con <b>inteligencia artificial</b> a partir de los datos, contrastadas con la bibliografía veterinaria citada al final. Son un apoyo de lectura, <b>no</b> constituyen diagnóstico ni sustituyen el criterio profesional.</p>
+<h3 style="font-size:14px;margin:8px 0 4px">Tiempo en rango y variabilidad — objetivo canino 100–250 mg/dL (Merck/AAHA)</h3>
+<div style="overflow-x:auto"><table id="tirtab"></table></div>
+<p class="sub">CV% &gt; 36% = distribución inestable y mayor riesgo de hipoglucemia (umbral humano ICAST/ADA extrapolado). Solo 12/26 semanas logran ≥50% de lecturas en rango. Mediodía CV 41% vs medianoche 32%.</p>
+<h3 style="font-size:14px;margin:8px 0 4px">Brecha noche–día (test pareado, 171 días)</h3>
+<ul class="tight">
+<li>Diferencia media noche − mediodía <b>+50 mg/dL</b> · Wilcoxon <b>p = 7,6×10⁻¹⁰</b> · 70% de los días la noche supera al día (p = 3,2×10⁻⁷).</li>
+<li>El gap <b>empeora</b>: +23 (mar) → +52 (may) → +79 (jul) → +72 (sep).</li>
+<li>Mediodía predice la noche del mismo día (r = 0,32; p &lt; 10⁻⁴): mañana alta arrastra la noche.</li>
+<li>Coherente con literatura canina: glucemia nocturna &gt; diurna (JVIM 2021, FGM).</li>
+</ul>
+<h3 style="font-size:14px;margin:8px 0 4px">Hipoglucemias y rebote (evaluación de Somogyi)</h3>
+<ul class="tight">
+<li>9 lecturas &lt;80, todas 19/7–24/8; 5/9 con overshoot a 255–295 (delta +76 a +224).</li>
+<li><b>NO hay Somogyi clásico</b> (requiere máx 400–800 y dosis ≥2,2 UI/kg; aquí 0,18–0,2 UI). Curva 8/8–10/8 rebotó a 341 tras rescate con miel.</li>
+<li>Día posterior a hipo: media 207 vs 250 normal (p = 0,076) → sin hiperglucemia rebote sostenida → patrón de <b>cobertura nocturna insuficiente</b>.</li>
+<li>21 omisiones de Caninsulin, la mayoría con lecturas &lt;150 (25/7, 27/7, 19/7…): organismo alineado con guías AAHA.</li>
+</ul>
+<h3 style="font-size:14px;margin:8px 0 4px">Fructosamina estimada — para validar el próximo dosaje</h3>
+<div style="overflow-x:auto"><table>
+<tr><th>Período</th><th>Glucosa media</th><th>F estimada</th><th>Clasificación</th></tr>
+<tr><td>Completo (mar–sep)</td><td>246</td><td><b>≈433 µmol/L</b></td><td>REGULAR (360–442)</td></tr>
+<tr><td>Últimas 3 sem (24/8–13/9)</td><td>230</td><td><b>≈405 µmol/L</b></td><td>REGULAR (360–442)</td></tr>
+</table></div>
+<p class="sub">Fórmula canina eAG = 0,59×F − 9,6 (Kang 2015). Si el dosaje real da &lt;350, las planillas (regla del mínimo) subestiman; si da 400–440, se valida el registro. Ojo (Kuzi 2023): F baja con hipos recientes puede parecer mejor control del real.</p>
+<h3 style="font-size:14px;margin:8px 0 4px">Dosis de insulina vs glucosa</h3>
+<p class="sub">Correlación dosis↔lectura ≈ 0 (r = −0,01 mediodía; r = 0,02 noche). La respuesta diaria a la insulina domina la señal (variabilidad inter-día canina, JVIM 2021).</p>
+<h3 style="font-size:14px;margin:8px 0 4px">Bibliografía consultada (IA, 13/9/2026)</h3>
+<ol class="tight" style="font-size:12.5px">
+<li>AAHA 2018 Diabetes Management Guidelines (dogs/cats) · <a href="https://pubmed.ncbi.nlm.nih.gov/29314873/">PMID 29314873</a></li>
+<li>Merck/Vetsulin: glucose curves y Somogyi effect · <a href="https://www.merck-animal-health-usa.com/hub/vetsulin/dogs/glucose-curves-in-canines">merck-animal-health-usa.com</a></li>
+<li>JVIM 2021, postprandial y fluctuación circadiana (FGMS): glucemia nocturna &gt; diurna · <a href="https://academic.oup.com/jvim/article/35/2/843/8447055">10.1111/jvim.16060</a></li>
+<li>FreeStyle Libre metrics en perros diabéticos (TIR/TAR/CV) · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12175195/">PMC12175195</a></li>
+<li>Kang 2015: eAG = 0,59×F − 9,6 · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4397269/">PMC4397269</a></li>
+<li>Cut-offs caninos de fructosamina · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8880912/">PMC8880912</a></li>
+<li>Kuzi 2023 (Vet Record): fructosamina e hipoglucenias · <a href="https://bvajournals.onlinelibrary.wiley.com/doi/10.1002/vetr.2236">10.1002/vetr.2236</a></li>
+<li>CV&lt;36% umbral riesgo hipo: Castañeda 2023 · <a href="https://dom-pubs.onlinelibrary.wiley.com/doi/full/10.1111/dom.15139">10.1111/dom.15139</a> ; Mo 2020 · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8169344/">PMC8169344</a></li>
+<li>Variabilidad día-a-día de insulina en perros · <a href="https://academic.oup.com/jvim/article/35/5/2131/8448650">10.1111/jvim.16006</a></li>
+</ol>
+<p class="sub">Datos brutos completos en <b>excel/</b>: 01_glucosa.xlsx · 02_medicacion.xlsx · 03_comidas.xlsx · 04_analisis.xlsx (métricas + brecha + rebote + fructosamina + bibliografía).</p>
+</div>
 </section>
 
 <!-- ============ INFORME VET ============ -->
 <section id="vetsec" class="view">
 <div class="card">
-<h2>Informe clínico resumido — Canina “Chiqui”</h2>
-<p class="sub">Generado 13/9/2026 desde 40 planillas caseras + 15 laboratorios. Fuente: github.com/mcphisto-netizen/registros-chiqui</p>
+<h2>Informe clínico resumido — Canina "Chiqui"</h2>
+<p class="sub">Generado 13/9/2026 desde 40 planillas caseras + 15 laboratorios. Fuente: github.com/mcphisto-netizen/registros-chiqui · <b>Observaciones de análisis elaboradas con IA y bibliografía citada en el panel; no sustituyen criterio veterinario.</b></p>
 <table>
 <tr><th style="width:220px">Diagnósticos</th><td>Diabetes mellitus insulinodependiente · Hiperadrenocorticismo (Cushing) · Hipotiroidismo · Hepatopatía (lipidosis + colangiohepatitis linfoplasmocítica, biopsia 26/5/26) · Colecistectomía por mucocele 24–26/4/26 · Gastroenteritis 17–23/8/26</td></tr>
 <tr><th>Esquema actual (7–13/9)</th><td>Ayuno: T4 ¼ + Dipirona ¼. Mediodía y noche: Trilostano ½, Silimarina ¼, Fenofibrato ¼, Caninsulin 0,18–0,2 (ajuste por lectura; omitido 12/9 mediodía). Desde 12/9: Biletan enzimático ½ + Psyllium. Dieta antiinflamatoria desde 10/9: cerdo 125 + manzana 20 + boniato 25 + sopa de moro (3 cucharadas).</td></tr>
@@ -212,6 +255,16 @@ function draw2(){
 document.getElementById("evlist").innerHTML=EV.map(e=>"<li><b>"+e[0]+"</b> — "+e[1]+"</li>").join("");
 document.getElementById("labtab").innerHTML="<tr><th>Fecha</th><th>Hallazgo</th><th>Lectura</th></tr>"+
   LABTAB.map(r=>"<tr><td>"+r[0]+"</td><td>"+r[1]+"</td><td class='"+r[3]+"'>"+r[2]+"</td></tr>").join("");
+document.getElementById("tirtab").innerHTML="<tr><th>Mes</th><th>n</th><th>TIR 100–250</th><th>TAR &gt;250</th><th>TBR &lt;80</th><th>CV%</th><th>media</th><th>SD</th></tr>"+[
+["03/26",23,"82,6%","17,4%","0%","24,9","226","56"],
+["04/26",59,"61,0%","39,0%","0%","37,4","252","94"],
+["05/26",64,"32,8%","67,2%","0%","36,0","299","107"],
+["06/26",60,"30,0%","70,0%","0%","24,8","267","66"],
+["07/26",64,"51,6%","39,1%","6,2%","43,2","226","98"],
+["08/26",63,"63,5%","23,8%","7,9%","37,4","193","72"],
+["09/26",26,"46,2%","50,0%","0%","28,7","250","72"],
+["TOTAL",359,"49,9%","46,0%","2,5%","37,7","246","93"]].map(r=>{
+  const cv=parseFloat(r[5]);return "<tr><td>"+(r[0]==="TOTAL"?"<b>"+r[0]+"</b>":r[0])+"</td><td>"+r[1]+"</td><td>"+r[2]+"</td><td>"+r[3]+"</td><td>"+r[4]+"</td><td"+(cv>36?" class='bad'":"")+">"+r[5]+"</td><td>"+r[6]+"</td><td>"+r[7]+"</td></tr>";}).join("");
 function show(id,btn){document.querySelectorAll(".view").forEach(v=>v.classList.remove("on"));
   document.getElementById(id).classList.add("on");
   document.querySelectorAll("main .btn").forEach(b=>b.classList.add("ghost"));btn.classList.remove("ghost");

@@ -3,8 +3,10 @@
 Registros manuscritos escaneados de perra Chiqui: glucemia, medicación, comidas.
 Período: 2026-03-20 a 2026-09-13. Total: 40 hojas.
 
-- `panel-chiqui.html` — panel dinámico autocontenido: gráficos de glucosa y laboratorio + informe resumido para veterinaria (imprimible). Abrir en cualquier navegador, funciona sin internet.
-- `informe-veterinaria-chiqui.pdf` — informe clínico para la veterinaria (4 páginas): esquema actual, glucemias mensuales, laboratorio destacado, observaciones derivadas de datos y roadmap de estudios. Regenerable con `informe.py` (requiere weasyprint).
+- `panel-chiqui.html` — panel dinámico autocontenido: gráficos de glucosa y laboratorio + sección 5 de análisis cuantitativo avanzado (TIR/CV, brecha noche-día, Somogyi, fructosamina) + informe resumido para veterinaria imprimible. Todo con bibliografía citada y aviso de observaciones elaboradas con IA. Abrir en cualquier navegador, funciona sin internet.
+- `informe-veterinaria-chiqui.pdf` — informe clínico para la veterinaria (6 páginas): esquema actual, glucemias mensuales, laboratorio destacado, observaciones derivadas de datos, roadmap de estudios y sección 6 de análisis cuantitativo avanzado con bibliografía. Regenerable con `informe.py` (requiere weasyprint + scipy).
+- `excel/` — datos crudos y análisis en planillas para acceso directo sin depender de resúmenes IA: `01_glucosa.xlsx` (359 lecturas), `02_medicacion.xlsx` (1666 registros), `03_comidas.xlsx` (1260 registros), `04_analisis.xlsx` (métricas mensuales, brecha noche-día, rebote post-hipo, fructosamina estimada, laboratorio completo, bibliografía y nota IA).
+- `NOTAS.md` — análisis clínico integrado + análisis avanzado cuantitativo con bibliografía.
 
 ## Estructura
 
