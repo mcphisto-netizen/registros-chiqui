@@ -3,6 +3,8 @@
 Registros manuscritos escaneados de perra Chiqui: glucemia, medicación, comidas.
 Período: 2026-03-20 a 2026-09-13. Total: 40 hojas.
 
+- `panel-chiqui.html` — panel dinámico autocontenido: gráficos de glucosa y laboratorio + informe resumido para veterinaria (imprimible). Abrir en cualquier navegador, funciona sin internet.
+
 ## Estructura
 
 - `scans/medicacion-glucosa/` — 26 hojas. Planilla semanal 3 bloques: Ayuno / Mediodía / Medianoche. Filas: Medición glucosa + medicamento/dosis. Marca X / ✓ / — / dosis. Esquema cambia en tiempo:

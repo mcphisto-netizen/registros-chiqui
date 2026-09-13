@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chiqui — Panel clínico 2026</title>
+<style>
+:root{--ink:#1e2a32;--mut:#5c6f7a;--line:#dfe7ec;--dia:#1f7a8c;--noc:#7b2d8b;--bad:#c0392b;--low:#2471a3;--liver:#b9770e;--ok:#1e8449}
+*{box-sizing:border-box}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);margin:0;background:#f6f9fb}
+header{background:#16323c;color:#fff;padding:18px 22px}header h1{margin:0;font-size:22px}header p{margin:4px 0 0;color:#bcd}
+main{max-width:1080px;margin:0 auto;padding:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:16px}
+.card h2{margin:0 0 6px;font-size:17px}.sub{color:var(--mut);font-size:13px;margin:0 0 10px}
+.controls{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:14px;margin:6px 0 4px}
+.controls label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.dot{display:inline-block;width:11px;height:11px;border-radius:50%}
+svg.chart{width:100%;height:340px;background:#fff;border:1px solid var(--line);border-radius:8px}
+.axis{font-size:11px;fill:#6b7d88}.grid{stroke:#edf1f4;stroke-width:1}
+.thr{stroke-dasharray:5 4;stroke-width:1.2}
+.tip{position:absolute;pointer-events:none;background:#16323c;color:#fff;font-size:12px;padding:6px 9px;border-radius:6px;display:none;white-space:nowrap;z-index:5}
+table{border-collapse:collapse;width:100%;font-size:13.5px}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left}th{background:#eef4f7}
+.bad{color:var(--bad);font-weight:600}.good{color:var(--ok);font-weight:600}.warn{color:var(--liver);font-weight:600}
+ul.tight{margin:6px 0;padding-left:20px}ul.tight li{margin:3px 0;font-size:14px}
+.btn{background:var(--dia);color:#fff;border:0;border-radius:8px;padding:9px 16px;font-size:14px;cursor:pointer;margin-right:8px}
+.btn.ghost{background:#fff;color:var(--dia);border:1px solid var(--dia)}
+.view{display:none}.view.on{display:block}
+@media print{header .noprint,.controls,.btn{display:none}body{background:#fff}main{max-width:100%;padding:0}.card{border:0;border-bottom:1px solid #ccc;border-radius:0}#vetsec{display:block!important}#dashsec{display:none!important}}
+</style>
+</head>
+<body>
+<header>
+<h1>Chiqui — Panel clínico <span class="noprint" style="font-weight:400;font-size:14px">mar 2026 – sep 2026 · 359 glucemias · 15 laboratorios</span></h1>
+<p class="noprint">Archivo único autocontenido (sin internet). Pase el cursor sobre los puntos para ver valores.</p>
+</header>
+<main>
+<div class="noprint" style="margin-bottom:12px">
+<button class="btn" onclick="show('dashsec',this)">Panel dinámico</button>
+<button class="btn ghost" onclick="show('vetsec',this)">Informe veterinaria (imprimible)</button>
+<button class="btn ghost" onclick="window.print()">Imprimir / PDF</button>
+</div>
+
+<!-- ============ DASHBOARD ============ -->
+<section id="dashsec" class="view on">
+<div class="card">
+<h2>1 · Glucosa semanal (medias mediodía / medianoche)</h2>
+<p class="sub">Puntos rojos &gt;400 · azules &lt;70 · bandas grises = eventos clínicos. Destildar series para aislar.</p>
+<div class="controls" id="ctl1"></div>
+<div style="position:relative"><svg class="chart" id="ch1"></svg><div class="tip" id="tip1"></div></div>
+</div>
+<div class="card">
+<h2>2 · Hígado y serie roja (laboratorio)</h2>
+<p class="sub">ALT y FAL eje izquierdo (UI/l) · Hematocrito eje derecho (%) · líneas punteadas = límites de referencia caninos.</p>
+<div class="controls" id="ctl2"></div>
+<div style="position:relative"><svg class="chart" id="ch2"></svg><div class="tip" id="tip2"></div></div>
+</div>
+<div class="card">
+<h2>3 · Línea de tiempo de eventos</h2>
+<ul class="tight" id="evlist"></ul>
+</div>
+<div class="card">
+<h2>4 · Laboratorio clave (valores fuera de rango en rojo)</h2>
+<div style="overflow-x:auto"><table id="labtab"></table></div>
+<p class="sub">LAB02 duplica a LAB03 (mismo protocolo del 3/8). LAB04/05 con rangos humanos: solo orientativo. Unidades originales en datos/laboratorio.csv.</p>
+</div>
+</section>
+
+<!-- ============ INFORME VET ============ -->
+<section id="vetsec" class="view">
+<div class="card">
+<h2>Informe clínico resumido — Canina “Chiqui”</h2>
+<p class="sub">Generado 13/9/2026 desde 40 planillas caseras + 15 laboratorios. Fuente: github.com/mcphisto-netizen/registros-chiqui</p>
+<table>
+<tr><th style="width:220px">Diagnósticos</th><td>Diabetes mellitus insulinodependiente · Hiperadrenocorticismo (Cushing) · Hipotiroidismo · Hepatopatía (lipidosis + colangiohepatitis linfoplasmocítica, biopsia 26/5/26) · Colecistectomía por mucocele 24–26/4/26 · Gastroenteritis 17–23/8/26</td></tr>
+<tr><th>Esquema actual (7–13/9)</th><td>Ayuno: T4 ¼ + Dipirona ¼. Mediodía y noche: Trilostano ½, Silimarina ¼, Fenofibrato ¼, Caninsulin 0,18–0,2 (ajuste por lectura; omitido 12/9 mediodía). Desde 12/9: Biletan enzimático ½ + Psyllium. Dieta antiinflamatoria desde 10/9: cerdo 125 + manzana 20 + boniato 25 + sopa de moro (3 cucharadas).</td></tr>
+<tr><th>Glucosa reciente</th><td>Semana 7–13/9: mediodía media 222 (80–293), medianoche media 291 (209–368). Peor que agosto (165/225), mejor que mayo (281/331). Brecha noche/día persistente todo el año (+20 a +70).</td></tr>
+<tr><th>Laboratorio 3/8</th><td>UCCR 22,8 normal (Cushing controlado con Trilostano). ALT 344 y FAL 283 elevadas (rebrote hepático). UPC 0,05 (proteinuria de junio resuelta). T4 libre 0,70 aún baja (se subió T4 a ½). TG 277 (bajó de 819), colesterol ~281 persistente. Glucosuria 232. Urea 95 con creatinina normal.</td></tr>
+<tr><th>Alertas</th><td>7 hipoglucemias &lt;70 desde julio (mín. 40), una con rescate (miel, 8–10/8). Anemia severa postoperatoria revertida (Hto 12,9 → 44,1). Amilasa 1652 (dic-2025) sin estudio pancreático posterior.</td></tr>
+<tr><th>Estudios sugeridos</th><td><b>Fructosamina</b> (sin ninguna en 2 años) · Lipasa pancreática específica (cPLI) · Control T4/TSH bajo dosis de ½ · UCCR de seguimiento · Urea/renal (urea 95 con creat normal) · Bioquímica hepática de control post-Biletan</td></tr>
+</table>
+</div>
+</section>
+</main>
+<script>
+"use strict";
+/* ===== Datos embebidos (de datos/*.csv) ===== */
+const SEM=[
+["2026-03-16",242,313],["2026-03-23",209,214],["2026-03-30",193,198],
+["2026-04-06",183,207],["2026-04-13",234,307],["2026-04-20",214,226],
+["2026-04-27",441,424],["2026-05-04",377,411],["2026-05-11",260,317],
+["2026-05-18",191,296],["2026-05-25",219,253],["2026-06-01",230,292],
+["2026-06-08",249,316],["2026-06-15",273,274],["2026-06-22",245,258],
+["2026-06-29",214,223],["2026-07-06",244,301],["2026-07-13",161,237],
+["2026-07-20",158,282],["2026-07-27",170,245],["2026-08-03",176,239],
+["2026-08-10",141,241],["2026-08-17",161,212],["2026-08-24",173,226],
+["2026-08-31",215,265],["2026-09-07",222,291]];
+const EXT=[["2026-03-21","medianoche",441],["2026-04-26","medianoche",402],
+["2026-04-27","mediodia",488],["2026-04-28","mediodia",514],["2026-04-30","mediodia",445],
+["2026-05-01","mediodia",498],["2026-04-27","medianoche",495],["2026-04-30","medianoche",469],
+["2026-05-02","medianoche",523],["2026-05-03","medianoche",548],["2026-05-04","mediodia",432],
+["2026-05-07","mediodia",492],["2026-05-04","medianoche",421],["2026-05-06","medianoche",467],
+["2026-05-07","medianoche",454],["2026-05-08","medianoche",473],["2026-05-10","medianoche",451],
+["2026-05-12","medianoche",401],["2026-07-09","mediodia",428],["2026-07-09","medianoche",433],
+["2026-07-13","medianoche",423],["2026-07-19","medianoche",50],["2026-07-25","mediodia",55],
+["2026-08-13","mediodia",63],["2026-08-21","mediodia",51],["2026-08-17","medianoche",62],
+["2026-08-24","mediodia",40],["2026-07-19","medianoche",53]];
+const LAB_ALT=[["2024-01-31",361],["2025-12-11",316],["2026-02-19",533],["2026-05-04",160],["2026-06-02",149],["2026-08-03",344]];
+const LAB_FAL=[["2025-12-11",97],["2026-02-19",1626],["2026-05-04",386],["2026-06-02",136],["2026-08-03",283]];
+const LAB_HCT=[["2025-12-11",36],["2026-02-18",37],["2026-05-04",12.9],["2026-05-07",23.5],["2026-06-02",40.5],["2026-08-03",44.1]];
+const EV=[
+["2026-02-18/20","Triple diagnóstico: glucosa ~500, FAL 1626, Cushing, hipotiroidismo"],
+["2026-04-24/26","Colecistectomía por mucocele (internación)"],
+["2026-04-27/05-10","Postoperatorio complicado + pico hiperglucémico"],
+["2026-05-04","Anemia severa Hto 12,9"],
+["2026-05-26","Histopatología: lipidosis + colangiohepatitis"],
+["2026-06-17","Inicia dieta pesada registrada"],
+["2026-08-03","UCCR normal; ALT 344; UPC resuelta"],
+["2026-08-08/10","Hipo 52/41 con rescate (miel)"],
+["2026-08-17/23","Gastroenteritis: dieta + Silimarina/Metronidazol"],
+["2026-09-10","Dieta antiinflamatoria + Biletan/Psyllium"]];
+const LABTAB=[
+["18–20/2/26","Glucosa 487–508 · FAL 1626 · UCCR alta · T4l 0,17 / TSH alta","Debut: diabetes + Cushing + hipotiroidismo + colestasis","bad"],
+["4/5/26","Hto 12,9 / Hb 4,9 / monocitosis","Anemia severa postquirúrgica","bad"],
+["7/5/26","Hto 23,5 / leucocitos 14400 / retic 5%","Recuperación con regeneración","warn"],
+["2/6/26","ALT 149 · FAL 136 · TG 819 · UPC 1,7 · cetonuria","Mejoría hepática, proteinuria, lipemia","warn"],
+["3/8/26","UCCR 22,8 (N) · ALT 344 · UPC 0,05 · T4l 0,70 (baja) · urea 95","Cushing controlado; rebrote hepático; T4 aún baja","warn"],
+["3/8/26","Hto 44,1 · leucocitos normales","Anemia revertida","good"]];
+
+/* ===== Utilidades SVG ===== */
+const NS="http://www.w3.org/2000/svg";
+function el(n,at,parent){const e=document.createElementNS(NS,n);for(const k in at)e.setAttribute(k,at[k]);if(parent)parent.appendChild(e);return e;}
+function t2x(t,a,b,W){return a+(t-T0)/(T1-T0)*(W-a-b);}
+function yOf(v,mn,mx,c,d,H){return H-d-(v-mn)/(mx-mn)*(H-c-d);}
+const D=d=>new Date(d+"T12:00:00").getTime();
+let T0=D("2026-03-10"),T1=D("2026-09-20");
+function axes(svg,W,H,pad,ymin,ymax,ylab){
+  const g=el("g",{},svg);
+  for(let i=0;i<=5;i++){const v=ymin+(ymax-ymin)*i/5,y=yOf(v,ymin,ymax,34,26,H);
+    el("line",{x1:pad,x2:W-14,y1:y,y2:y,class:"grid"},g);
+    const t=el("text",{x:pad-6,y:y+4,class:"axis","text-anchor":"end"},g);t.textContent=Math.round(v);}
+  const months=[["2026-03-16","16/3"],["2026-05-01","1/5"],["2026-06-15","15/6"],["2026-08-01","1/8"],["2026-09-07","7/9"]];
+  months.forEach(m=>{const x=t2x(D(m[0]),pad,14,W);el("line",{x1:x,x2:x,y1:34,y2:H-26,class:"grid"},g);
+    const t=el("text",{x:x,y:H-8,class:"axis","text-anchor":"middle"},g);t.textContent=m[1];});
+  const yl=el("text",{x:12,y:20,class:"axis"},g);yl.textContent=ylab;
+}
+function tip(svg,tipid){const tip=document.getElementById(tipid),r=svg.getBoundingClientRect();
+  return{show:(x,y,html)=>{tip.style.display="block";tip.innerHTML=html;
+    tip.style.left=Math.min(x+14,r.width-180)+"px";tip.style.top=(y-10)+"px";},
+    hide:()=>tip.style.display="none"};}
+
+/* ===== Gráfico 1: glucosa ===== */
+const S1={dia:true,noc:true,hi:true,lo:true,ev:true};
+function draw1(){
+  const svg=document.getElementById("ch1");svg.innerHTML="";
+  const W=svg.clientWidth||1000,H=340,pad=52;
+  const evG=el("g",{},svg);
+  if(S1.ev){[["2026-04-24","2026-05-10","Cirugía+postop"],["2026-08-08","2026-08-10","Hipo+rescate"],["2026-08-17","2026-08-23","Gastroenteritis"]].forEach(e=>{
+    el("rect",{x:t2x(D(e[0]),pad,14,W),width:t2x(D(e[1]),pad,14,W)-t2x(D(e[0]),pad,14,W),y:34,height:H-60,fill:"#5d6d7e",opacity:.10},evG);
+    const t=el("text",{x:t2x(D(e[0]),pad,14,W)+4,y:48,class:"axis"},evG);t.textContent=e[2];});}
+  axes(svg,W,H,pad,0,560,"mg/dL");
+  const T=tip(svg,"tip1");
+  function line(idx,col,on,lbl){if(!on)return;let d="";
+    SEM.forEach(s=>{const x=t2x(D(s[0]),pad,14,W),y=yOf(s[idx],0,560,34,26,H);d+=(d?"L":"M")+x.toFixed(1)+" "+y.toFixed(1);});
+    el("path",{d:d,fill:"none",stroke:col,"stroke-width":2.4},svg);
+    SEM.forEach(s=>{const x=t2x(D(s[0]),pad,14,W),y=yOf(s[idx],0,560,34,26,H);
+      const c=el("circle",{cx:x,cy:y,r:4,fill:col,style:"cursor:pointer"},svg);
+      c.addEventListener("mousemove",e=>{const r=svg.getBoundingClientRect();T.show(e.clientX-r.left,e.clientY-r.top,lbl+" sem "+s[0].slice(5)+" · <b>"+s[idx]+"</b> mg/dL");});
+      c.addEventListener("mouseleave",T.hide);});}
+  line(1,"#1f7a8c",S1.dia,"Mediodía");line(2,"#7b2d8b",S1.noc,"Medianoche");
+  [[400,"#c0392b",S1.hi,"Hiper >400"],[70,"#2471a3",S1.lo,"Hipo <70"]].forEach(th=>{
+    if(!th[2])return;const y=yOf(th[0],0,560,34,26,H);
+    el("line",{x1:pad,x2:W-14,y1:y,y2:y,stroke:th[1],class:"thr"},svg);});
+  EXT.forEach(p=>{const isHi=p[2]>400;if(isHi&&!S1.hi)return;if(!isHi&&!S1.lo)return;
+    const x=t2x(D(p[0]),pad,14,W),y=yOf(Math.min(p[2],560),0,560,34,26,H);
+    const c=el("circle",{cx:x,cy:y,r:5,fill:isHi?"#c0392b":"#2471a3",stroke:"#fff","stroke-width":1.5,style:"cursor:pointer"},svg);
+    c.addEventListener("mousemove",e=>{const r=svg.getBoundingClientRect();T.show(e.clientX-r.left,e.clientY-r.top,p[0].slice(5)+" "+p[1]+" · <b>"+p[2]+"</b>");});
+    c.addEventListener("mouseleave",T.hide);});
+  const lg=document.getElementById("ctl1");lg.innerHTML="";
+  [["dia","Mediodía","#1f7a8c"],["noc","Medianoche","#7b2d8b"],["hi","Umbral/extremos >400","#c0392b"],["lo","Umbral/extremos <70","#2471a3"],["ev","Bandas eventos","#5d6d7e"]].forEach(o=>{
+    const l=document.createElement("label");l.innerHTML='<input type="checkbox" '+(S1[o[0]]?"checked":"")+'><span class="dot" style="background:'+o[2]+'"></span>'+o[1];
+    l.querySelector("input").onchange=e=>{S1[o[0]]=e.target.checked;draw1();};lg.appendChild(l);});
+}
+/* ===== Gráfico 2: hígado/Hto ===== */
+const S2={alt:true,fal:true,hct:true};
+function draw2(){
+  const svg=document.getElementById("ch2");svg.innerHTML="";
+  const W=svg.clientWidth||1000,H=340,pad=52;
+  axes(svg,W,H,pad,0,1700,"UI/l · Hto % (eje der.)");
+  [60,300].forEach(v=>{const y=yOf(v,0,1700,34,26,H);el("line",{x1:pad,x2:W-14,y1:y,y2:y,stroke:"#b9770e",class:"thr",opacity:.6},svg);});
+  const T=tip(svg,"tip2");
+  function pts(data,col,on,lbl,unit){if(!on)return;
+    data.forEach((p,i)=>{const x=t2x(D(p[0]),pad,14,W),y=yOf(p[1],0,1700,34,26,H);
+      if(i>0){const q=data[i-1];el("line",{x1:t2x(D(q[0]),pad,14,W),y1:yOf(q[1],0,1700,34,26,H),x2:x,y2:y,stroke:col,"stroke-width":2.2},svg);}
+      const c=el("circle",{cx:x,cy:y,r:5,fill:col,stroke:"#fff","stroke-width":1.5,style:"cursor:pointer"},svg);
+      c.addEventListener("mousemove",e=>{const r=svg.getBoundingClientRect();T.show(e.clientX-r.left,e.clientY-r.top,lbl+" "+p[0].slice(2)+" · <b>"+p[1]+"</b> "+unit);});
+      c.addEventListener("mouseleave",T.hide);});}
+  // Hto en escala propia (0-60%) mapeada a 0-1700
+  const hctS=LAB_HCT.map(p=>[p[0],p[1]/60*1700]);
+  pts(LAB_ALT,"#b9770e",S2.alt,"ALT","UI/l");
+  pts(LAB_FAL,"#c0392b",S2.fal,"FAL","UI/l");
+  if(S2.hct){hctS.forEach((p,i)=>{const x=t2x(D(p[0]),pad,14,W),y=yOf(p[1],0,1700,34,26,H);
+      if(i>0){const q=hctS[i-1];el("line",{x1:t2x(D(q[0]),pad,14,W),y1:yOf(q[1],0,1700,34,26,H),x2:x,y2:y,stroke:"#1e8449","stroke-width":2.2},svg);}
+      const c=el("circle",{cx:x,cy:y,r:5,fill:"#1e8449",stroke:"#fff","stroke-width":1.5,style:"cursor:pointer"},svg);
+      const v=LAB_HCT[i][1];
+      c.addEventListener("mousemove",e=>{const r=svg.getBoundingClientRect();T.show(e.clientX-r.left,e.clientY-r.top,"Hto "+p[0].slice(2)+" · <b>"+v+"%</b>");});
+      c.addEventListener("mouseleave",T.hide);});}
+  const lg=document.getElementById("ctl2");lg.innerHTML="";
+  [["alt","ALT","#b9770e"],["fal","FAL","#c0392b"],["hct","Hematocrito %","#1e8449"]].forEach(o=>{
+    const l=document.createElement("label");l.innerHTML='<input type="checkbox" '+(S2[o[0]]?"checked":"")+'><span class="dot" style="background:'+o[2]+'"></span>'+o[1];
+    l.querySelector("input").onchange=e=>{S2[o[0]]=e.target.checked;draw2();};lg.appendChild(l);});
+}
+/* ===== Listas ===== */
+document.getElementById("evlist").innerHTML=EV.map(e=>"<li><b>"+e[0]+"</b> — "+e[1]+"</li>").join("");
+document.getElementById("labtab").innerHTML="<tr><th>Fecha</th><th>Hallazgo</th><th>Lectura</th></tr>"+
+  LABTAB.map(r=>"<tr><td>"+r[0]+"</td><td>"+r[1]+"</td><td class='"+r[3]+"'>"+r[2]+"</td></tr>").join("");
+function show(id,btn){document.querySelectorAll(".view").forEach(v=>v.classList.remove("on"));
+  document.getElementById(id).classList.add("on");
+  document.querySelectorAll("main .btn").forEach(b=>b.classList.add("ghost"));btn.classList.remove("ghost");
+  if(id==="dashsec"){draw1();draw2();}}
+window.addEventListener("resize",()=>{if(document.getElementById("dashsec").classList.contains("on")){draw1();draw2();}});
+draw1();draw2();
+</script>
+</body>
+</html>
