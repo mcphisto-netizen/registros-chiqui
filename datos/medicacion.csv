@@ -1,0 +1,1665 @@
+fecha,momento,farmaco,dosis,estado,origen
+2026-03-20,ayuno,T4,1/4,vacio,orig01
+2026-03-21,ayuno,T4,1/4,dado,orig01
+2026-03-22,ayuno,T4,1/4,dado,orig01
+2026-03-20,mediodia,URSOMARINA,10kg,vacio,orig01
+2026-03-20,mediodia,TRILOSTANO,1/2,vacio,orig01
+2026-03-20,mediodia,DIPIRONA,1/4,vacio,orig01
+2026-03-20,mediodia,GABAPENTINA,1/4,vacio,orig01
+2026-03-20,mediodia,PROTELIV,10gotas,vacio,orig01
+2026-03-20,mediodia,INSULINA,0.1ml,vacio,orig01
+2026-03-21,mediodia,URSOMARINA,10kg,dado,orig01
+2026-03-21,mediodia,TRILOSTANO,1/2,dado,orig01
+2026-03-21,mediodia,DIPIRONA,1/4,dado,orig01
+2026-03-21,mediodia,GABAPENTINA,1/4,dado,orig01
+2026-03-21,mediodia,PROTELIV,10gotas,dado,orig01
+2026-03-21,mediodia,INSULINA,0.1ml,dado,orig01
+2026-03-22,mediodia,URSOMARINA,10kg,dado,orig01
+2026-03-22,mediodia,TRILOSTANO,1/2,dado,orig01
+2026-03-22,mediodia,DIPIRONA,1/4,dado,orig01
+2026-03-22,mediodia,GABAPENTINA,1/4,dado,orig01
+2026-03-22,mediodia,PROTELIV,10gotas,dado,orig01
+2026-03-22,mediodia,INSULINA,0.1ml,dado,orig01
+2026-03-20,medianoche,URSOMARINA,1/2,dado,orig01
+2026-03-20,medianoche,TRILOSTANO,1/2,dado,orig01
+2026-03-20,medianoche,DIPIRONA,1/4,dado,orig01
+2026-03-20,medianoche,GABAPENTINA,1/4,dado,orig01
+2026-03-20,medianoche,PROTELIV,10gotas,dado,orig01
+2026-03-20,medianoche,INSULINA,0.1ml,dado,orig01
+2026-03-21,medianoche,URSOMARINA,1/2,dado,orig01
+2026-03-21,medianoche,TRILOSTANO,1/2,dado,orig01
+2026-03-21,medianoche,DIPIRONA,1/4,dado,orig01
+2026-03-21,medianoche,GABAPENTINA,1/4,dado,orig01
+2026-03-21,medianoche,PROTELIV,10gotas,dado,orig01
+2026-03-21,medianoche,INSULINA,0.1ml,dado,orig01
+2026-03-22,medianoche,URSOMARINA,1/2,dado,orig01
+2026-03-22,medianoche,TRILOSTANO,1/2,dado,orig01
+2026-03-22,medianoche,DIPIRONA,1/4,dado,orig01
+2026-03-22,medianoche,GABAPENTINA,1/4,dado,orig01
+2026-03-22,medianoche,PROTELIV,10gotas,dado,orig01
+2026-03-22,medianoche,INSULINA,0.1ml,dado,orig01
+2026-03-23,ayuno,T4,1/4,dado,orig02
+2026-03-24,ayuno,T4,1/4,dado,orig02
+2026-03-25,ayuno,T4,1/4,dado,orig02
+2026-03-26,ayuno,T4,1/4,dado,orig02
+2026-03-27,ayuno,T4,1/4,dado,orig02
+2026-03-28,ayuno,T4,1/4,dado,orig02
+2026-03-29,ayuno,T4,1/4,dado,orig02
+2026-03-23,mediodia,URSOMARINA,1/2,dado,orig02
+2026-03-23,mediodia,TRILOSTANO,1/2,dado,orig02
+2026-03-23,mediodia,DIPIRONA,1/4,dado,orig02
+2026-03-23,mediodia,GABAPENTINA,1/4,dado,orig02
+2026-03-23,mediodia,PROTELIV,10gotas,dado,orig02
+2026-03-23,mediodia,INSULINA,0.1ml,dado,orig02
+2026-03-24,mediodia,URSOMARINA,1/2,dado,orig02
+2026-03-24,mediodia,TRILOSTANO,1/2,dado,orig02
+2026-03-24,mediodia,DIPIRONA,1/4,dado,orig02
+2026-03-24,mediodia,GABAPENTINA,1/4,dado,orig02
+2026-03-24,mediodia,PROTELIV,10gotas,dado,orig02
+2026-03-24,mediodia,INSULINA,0.1ml,dado,orig02
+2026-03-25,mediodia,URSOMARINA,1/2,dado,orig02
+2026-03-25,mediodia,TRILOSTANO,1/2,dado,orig02
+2026-03-25,mediodia,DIPIRONA,1/4,dado,orig02
+2026-03-25,mediodia,GABAPENTINA,1/4,dado,orig02
+2026-03-25,mediodia,PROTELIV,10gotas,dado,orig02
+2026-03-25,mediodia,INSULINA,0.1ml,dado,orig02
+2026-03-26,mediodia,URSOMARINA,1/2,dado,orig02
+2026-03-26,mediodia,TRILOSTANO,1/2,dado,orig02
+2026-03-26,mediodia,DIPIRONA,1/4,dado,orig02
+2026-03-26,mediodia,GABAPENTINA,1/4,dado,orig02
+2026-03-26,mediodia,PROTELIV,10gotas,dado,orig02
+2026-03-26,mediodia,INSULINA,0.1ml,dado,orig02
+2026-03-27,mediodia,URSOMARINA,1/2,dado,orig02
+2026-03-27,mediodia,TRILOSTANO,1/2,dado,orig02
+2026-03-27,mediodia,DIPIRONA,1/4,dado,orig02
+2026-03-27,mediodia,GABAPENTINA,1/4,dado,orig02
+2026-03-27,mediodia,PROTELIV,10gotas,dado,orig02
+2026-03-27,mediodia,INSULINA,0.1ml,dado,orig02
+2026-03-28,mediodia,URSOMARINA,1/2,dado,orig02
+2026-03-28,mediodia,TRILOSTANO,1/2,dado,orig02
+2026-03-28,mediodia,DIPIRONA,1/4,dado,orig02
+2026-03-28,mediodia,GABAPENTINA,1/4,dado,orig02
+2026-03-28,mediodia,PROTELIV,10gotas,dado,orig02
+2026-03-28,mediodia,INSULINA,0.1ml,dado,orig02
+2026-03-29,mediodia,URSOMARINA,1/2,dado,orig02
+2026-03-29,mediodia,TRILOSTANO,1/2,dado,orig02
+2026-03-29,mediodia,DIPIRONA,1/4,dado,orig02
+2026-03-29,mediodia,GABAPENTINA,1/4,dado,orig02
+2026-03-29,mediodia,PROTELIV,10gotas,dado,orig02
+2026-03-29,mediodia,INSULINA,0.1ml,dado,orig02
+2026-03-23,medianoche,URSOMARINA,1/2,dado,orig02
+2026-03-23,medianoche,TRILOSTANO,1/2,dado,orig02
+2026-03-23,medianoche,DIPIRONA,1/4,dado,orig02
+2026-03-23,medianoche,GABAPENTINA,1/4,dado,orig02
+2026-03-23,medianoche,PROTELIV,10gotas,dado,orig02
+2026-03-23,medianoche,INSULINA,0.1ml,dado,orig02
+2026-03-24,medianoche,URSOMARINA,1/2,dado,orig02
+2026-03-24,medianoche,TRILOSTANO,1/2,dado,orig02
+2026-03-24,medianoche,DIPIRONA,1/4,dado,orig02
+2026-03-24,medianoche,GABAPENTINA,1/4,dado,orig02
+2026-03-24,medianoche,PROTELIV,10gotas,dado,orig02
+2026-03-24,medianoche,INSULINA,0.1ml,dado,orig02
+2026-03-25,medianoche,URSOMARINA,1/2,dado,orig02
+2026-03-25,medianoche,TRILOSTANO,1/2,dado,orig02
+2026-03-25,medianoche,DIPIRONA,1/4,dado,orig02
+2026-03-25,medianoche,GABAPENTINA,1/4,dado,orig02
+2026-03-25,medianoche,PROTELIV,10gotas,dado,orig02
+2026-03-25,medianoche,INSULINA,0.1ml,dado,orig02
+2026-03-26,medianoche,URSOMARINA,1/2,dado,orig02
+2026-03-26,medianoche,TRILOSTANO,1/2,dado,orig02
+2026-03-26,medianoche,DIPIRONA,1/4,dado,orig02
+2026-03-26,medianoche,GABAPENTINA,1/4,dado,orig02
+2026-03-26,medianoche,PROTELIV,10gotas,dado,orig02
+2026-03-26,medianoche,INSULINA,0.1ml,dado,orig02
+2026-03-27,medianoche,URSOMARINA,1/2,dado,orig02
+2026-03-27,medianoche,TRILOSTANO,1/2,dado,orig02
+2026-03-27,medianoche,DIPIRONA,1/4,dado,orig02
+2026-03-27,medianoche,GABAPENTINA,1/4,dado,orig02
+2026-03-27,medianoche,PROTELIV,10gotas,dado,orig02
+2026-03-27,medianoche,INSULINA,0.1ml,dado,orig02
+2026-03-28,medianoche,URSOMARINA,1/2,dado,orig02
+2026-03-28,medianoche,TRILOSTANO,1/2,dado,orig02
+2026-03-28,medianoche,DIPIRONA,1/4,dado,orig02
+2026-03-28,medianoche,GABAPENTINA,1/4,dado,orig02
+2026-03-28,medianoche,PROTELIV,10gotas,dado,orig02
+2026-03-28,medianoche,INSULINA,0.1ml,dado,orig02
+2026-03-29,medianoche,URSOMARINA,1/2,dado,orig02
+2026-03-29,medianoche,TRILOSTANO,1/2,dado,orig02
+2026-03-29,medianoche,DIPIRONA,1/4,dado,orig02
+2026-03-29,medianoche,GABAPENTINA,1/4,dado,orig02
+2026-03-29,medianoche,PROTELIV,10gotas,dado,orig02
+2026-03-29,medianoche,INSULINA,0.1ml,dado,orig02
+2026-03-30,ayuno,T4,1/4,dado,orig03
+2026-03-31,ayuno,T4,1/4,dado,orig03
+2026-04-01,ayuno,T4,1/4,dado,orig03
+2026-04-02,ayuno,T4,1/4,dado,orig03
+2026-04-03,ayuno,T4,1/4,dado,orig03
+2026-04-04,ayuno,T4,1/4,dado,orig03
+2026-04-05,ayuno,T4,1/4,dado,orig03
+2026-03-30,mediodia,URSOMARINA,10kg,dado,orig03
+2026-03-30,mediodia,TRILOSTANO,1/2,dado,orig03
+2026-03-30,mediodia,DIPIRONA,1/4,dado,orig03
+2026-03-30,mediodia,GABAPENTINA,1/4,dado,orig03
+2026-03-30,mediodia,PROTELIV,10gotas,dado,orig03
+2026-03-30,mediodia,INSULINA,0.1ml,dado,orig03
+2026-03-31,mediodia,URSOMARINA,10kg,dado,orig03
+2026-03-31,mediodia,TRILOSTANO,1/2,dado,orig03
+2026-03-31,mediodia,DIPIRONA,1/4,no_dado,orig03
+2026-03-31,mediodia,GABAPENTINA,1/4,dado,orig03
+2026-03-31,mediodia,PROTELIV,10gotas,dado,orig03
+2026-03-31,mediodia,INSULINA,0.1ml,dado,orig03
+2026-04-01,mediodia,URSOMARINA,10kg,dado,orig03
+2026-04-01,mediodia,TRILOSTANO,1/2,dado,orig03
+2026-04-01,mediodia,DIPIRONA,1/4,no_dado,orig03
+2026-04-01,mediodia,GABAPENTINA,1/4,dado,orig03
+2026-04-01,mediodia,PROTELIV,10gotas,dado,orig03
+2026-04-01,mediodia,INSULINA,0.1ml,dado,orig03
+2026-04-02,mediodia,URSOMARINA,10kg,dado,orig03
+2026-04-02,mediodia,TRILOSTANO,1/2,dado,orig03
+2026-04-02,mediodia,DIPIRONA,1/4,no_dado,orig03
+2026-04-02,mediodia,GABAPENTINA,1/4,dado,orig03
+2026-04-02,mediodia,PROTELIV,10gotas,dado,orig03
+2026-04-02,mediodia,INSULINA,0.1ml,dado,orig03
+2026-04-03,mediodia,URSOMARINA,10kg,dado,orig03
+2026-04-03,mediodia,TRILOSTANO,1/2,dado,orig03
+2026-04-03,mediodia,DIPIRONA,1/4,no_dado,orig03
+2026-04-03,mediodia,GABAPENTINA,1/4,dado,orig03
+2026-04-03,mediodia,PROTELIV,10gotas,dado,orig03
+2026-04-03,mediodia,INSULINA,0.1ml,dado,orig03
+2026-04-04,mediodia,URSOMARINA,10kg,dado,orig03
+2026-04-04,mediodia,TRILOSTANO,1/2,dado,orig03
+2026-04-04,mediodia,DIPIRONA,1/4,no_dado,orig03
+2026-04-04,mediodia,GABAPENTINA,1/4,dado,orig03
+2026-04-04,mediodia,PROTELIV,10gotas,dado,orig03
+2026-04-04,mediodia,INSULINA,0.1ml,dado,orig03
+2026-04-05,mediodia,URSOMARINA,10kg,dado,orig03
+2026-04-05,mediodia,TRILOSTANO,1/2,dado,orig03
+2026-04-05,mediodia,DIPIRONA,1/4,no_dado,orig03
+2026-04-05,mediodia,GABAPENTINA,1/4,dado,orig03
+2026-04-05,mediodia,PROTELIV,10gotas,dado,orig03
+2026-04-05,mediodia,INSULINA,0.1ml,dado,orig03
+2026-03-30,medianoche,URSOMARINA,10kg,dado,orig03
+2026-03-30,medianoche,TRILOSTANO,1/2,dado,orig03
+2026-03-30,medianoche,DIPIRONA,1/4,dado,orig03
+2026-03-30,medianoche,GABAPENTINA,1/4,dado,orig03
+2026-03-30,medianoche,PROTELIV,10gotas,dado,orig03
+2026-03-30,medianoche,INSULINA,0.1ml,dado,orig03
+2026-03-31,medianoche,URSOMARINA,10kg,dado,orig03
+2026-03-31,medianoche,TRILOSTANO,1/2,dado,orig03
+2026-03-31,medianoche,DIPIRONA,1/4,no_dado,orig03
+2026-03-31,medianoche,GABAPENTINA,1/4,dado,orig03
+2026-03-31,medianoche,PROTELIV,10gotas,dado,orig03
+2026-03-31,medianoche,INSULINA,0.1ml,dado,orig03
+2026-04-01,medianoche,URSOMARINA,10kg,dado,orig03
+2026-04-01,medianoche,TRILOSTANO,1/2,dado,orig03
+2026-04-01,medianoche,DIPIRONA,1/4,no_dado,orig03
+2026-04-01,medianoche,GABAPENTINA,1/4,dado,orig03
+2026-04-01,medianoche,PROTELIV,10gotas,dado,orig03
+2026-04-01,medianoche,INSULINA,0.1ml,dado,orig03
+2026-04-02,medianoche,URSOMARINA,10kg,dado,orig03
+2026-04-02,medianoche,TRILOSTANO,1/2,dado,orig03
+2026-04-02,medianoche,DIPIRONA,1/4,no_dado,orig03
+2026-04-02,medianoche,GABAPENTINA,1/4,dado,orig03
+2026-04-02,medianoche,PROTELIV,10gotas,dado,orig03
+2026-04-02,medianoche,INSULINA,0.1ml,dado,orig03
+2026-04-03,medianoche,URSOMARINA,10kg,dado,orig03
+2026-04-03,medianoche,TRILOSTANO,1/2,dado,orig03
+2026-04-03,medianoche,DIPIRONA,1/4,no_dado,orig03
+2026-04-03,medianoche,GABAPENTINA,1/4,dado,orig03
+2026-04-03,medianoche,PROTELIV,10gotas,dado,orig03
+2026-04-03,medianoche,INSULINA,0.1ml,dado,orig03
+2026-04-04,medianoche,URSOMARINA,10kg,dado,orig03
+2026-04-04,medianoche,TRILOSTANO,1/2,dado,orig03
+2026-04-04,medianoche,DIPIRONA,1/4,no_dado,orig03
+2026-04-04,medianoche,GABAPENTINA,1/4,dado,orig03
+2026-04-04,medianoche,PROTELIV,10gotas,dado,orig03
+2026-04-04,medianoche,INSULINA,0.1ml,dado,orig03
+2026-04-05,medianoche,URSOMARINA,10kg,dado,orig03
+2026-04-05,medianoche,TRILOSTANO,1/2,dado,orig03
+2026-04-05,medianoche,DIPIRONA,1/4,no_dado,orig03
+2026-04-05,medianoche,GABAPENTINA,1/4,dado,orig03
+2026-04-05,medianoche,PROTELIV,10gotas,dado,orig03
+2026-04-05,medianoche,INSULINA,0.1ml,dado,orig03
+2026-04-06,ayuno,T4,1/4,dado,orig04
+2026-04-07,ayuno,T4,1/4,dado,orig04
+2026-04-08,ayuno,T4,1/4,dado,orig04
+2026-04-09,ayuno,T4,1/4,dado,orig04
+2026-04-10,ayuno,T4,1/4,dado,orig04
+2026-04-11,ayuno,T4,1/4,dado,orig04
+2026-04-12,ayuno,T4,1/4,dado,orig04
+2026-04-06,mediodia,URSOMARINA,10kg,dado,orig04
+2026-04-06,mediodia,TRILOSTANO,1/2,dado,orig04
+2026-04-06,mediodia,GABAPENTINA,1/4,dado,orig04
+2026-04-06,mediodia,PROTELIV,10gotas,dado,orig04
+2026-04-06,mediodia,INSULINA,0.1ml,dado,orig04
+2026-04-07,mediodia,URSOMARINA,10kg,dado,orig04
+2026-04-07,mediodia,TRILOSTANO,1/2,dado,orig04
+2026-04-07,mediodia,GABAPENTINA,1/4,dado,orig04
+2026-04-07,mediodia,PROTELIV,10gotas,dado,orig04
+2026-04-07,mediodia,INSULINA,0.1ml,dado,orig04
+2026-04-08,mediodia,URSOMARINA,10kg,dado,orig04
+2026-04-08,mediodia,TRILOSTANO,1/2,dado,orig04
+2026-04-08,mediodia,GABAPENTINA,1/4,dado,orig04
+2026-04-08,mediodia,PROTELIV,10gotas,dado,orig04
+2026-04-08,mediodia,INSULINA,0.1ml,dado,orig04
+2026-04-09,mediodia,URSOMARINA,10kg,dado,orig04
+2026-04-09,mediodia,TRILOSTANO,1/2,dado,orig04
+2026-04-09,mediodia,GABAPENTINA,1/4,dado,orig04
+2026-04-09,mediodia,PROTELIV,10gotas,dado,orig04
+2026-04-09,mediodia,INSULINA,0.1ml,dado,orig04
+2026-04-10,mediodia,URSOMARINA,10kg,dado,orig04
+2026-04-10,mediodia,TRILOSTANO,1/2,dado,orig04
+2026-04-10,mediodia,GABAPENTINA,1/4,dado,orig04
+2026-04-10,mediodia,PROTELIV,10gotas,dado,orig04
+2026-04-10,mediodia,INSULINA,0.1ml,dado,orig04
+2026-04-11,mediodia,URSOMARINA,10kg,dado,orig04
+2026-04-11,mediodia,TRILOSTANO,1/2,dado,orig04
+2026-04-11,mediodia,GABAPENTINA,1/4,dado,orig04
+2026-04-11,mediodia,PROTELIV,10gotas,dado,orig04
+2026-04-11,mediodia,INSULINA,0.08ml,no_dado,orig04
+2026-04-12,mediodia,URSOMARINA,10kg,dado,orig04
+2026-04-12,mediodia,TRILOSTANO,1/2,dado,orig04
+2026-04-12,mediodia,GABAPENTINA,1/4,dado,orig04
+2026-04-12,mediodia,PROTELIV,10gotas,dado,orig04
+2026-04-12,mediodia,INSULINA,0.08ml,dado,orig04
+2026-04-06,medianoche,URSOMARINA,10,dado,orig04
+2026-04-06,medianoche,TRILOSTANO,1/2,dado,orig04
+2026-04-06,medianoche,GABAPENTINA,1/4,dado,orig04
+2026-04-06,medianoche,PROTELIV,10gotas,dado,orig04
+2026-04-06,medianoche,INSULINA,0.1ml,dado,orig04
+2026-04-07,medianoche,URSOMARINA,10,dado,orig04
+2026-04-07,medianoche,TRILOSTANO,1/2,dado,orig04
+2026-04-07,medianoche,GABAPENTINA,1/4,dado,orig04
+2026-04-07,medianoche,PROTELIV,10gotas,dado,orig04
+2026-04-07,medianoche,INSULINA,0.1ml,dado,orig04
+2026-04-08,medianoche,URSOMARINA,10,dado,orig04
+2026-04-08,medianoche,TRILOSTANO,1/2,dado,orig04
+2026-04-08,medianoche,GABAPENTINA,1/4,dado,orig04
+2026-04-08,medianoche,PROTELIV,10gotas,dado,orig04
+2026-04-08,medianoche,INSULINA,0.1ml,dado,orig04
+2026-04-09,medianoche,URSOMARINA,10,dado,orig04
+2026-04-09,medianoche,TRILOSTANO,1/2,dado,orig04
+2026-04-09,medianoche,GABAPENTINA,1/4,dado,orig04
+2026-04-09,medianoche,PROTELIV,10gotas,dado,orig04
+2026-04-09,medianoche,INSULINA,0.1ml,dado,orig04
+2026-04-10,medianoche,URSOMARINA,10,dado,orig04
+2026-04-10,medianoche,TRILOSTANO,1/2,dado,orig04
+2026-04-10,medianoche,GABAPENTINA,1/4,dado,orig04
+2026-04-10,medianoche,PROTELIV,10gotas,dado,orig04
+2026-04-10,medianoche,INSULINA,0.1ml,dado,orig04
+2026-04-11,medianoche,URSOMARINA,10,dado,orig04
+2026-04-11,medianoche,TRILOSTANO,1/2,dado,orig04
+2026-04-11,medianoche,GABAPENTINA,1/4,dado,orig04
+2026-04-11,medianoche,PROTELIV,10gotas,dado,orig04
+2026-04-11,medianoche,INSULINA,0.08ml,dado,orig04
+2026-04-12,medianoche,URSOMARINA,10,dado,orig04
+2026-04-12,medianoche,TRILOSTANO,1/2,dado,orig04
+2026-04-12,medianoche,GABAPENTINA,1/4,dado,orig04
+2026-04-12,medianoche,PROTELIV,10gotas,dado,orig04
+2026-04-12,medianoche,INSULINA,0.08ml,dado,orig04
+2026-04-13,ayuno,T4,1/4,dado,orig05
+2026-04-14,ayuno,T4,1/4,dado,orig05
+2026-04-15,ayuno,T4,1/4,dado,orig05
+2026-04-16,ayuno,T4,1/4,dado,orig05
+2026-04-17,ayuno,T4,1/4,dado,orig05
+2026-04-18,ayuno,T4,1/4,dado,orig05
+2026-04-19,ayuno,T4,1/4,dado,orig05
+2026-04-13,mediodia,URSOMARINA,10kg,dado,orig05
+2026-04-13,mediodia,TRILOSTANO,1/2,dado,orig05
+2026-04-13,mediodia,GABAPENTINA,1/4,dado,orig05
+2026-04-13,mediodia,PROTELIV,10gotas,dado,orig05
+2026-04-13,mediodia,INSULINA,0.08ml,dado,orig05
+2026-04-13,mediodia,DIPIRONA,1/4,vacio,orig05
+2026-04-14,mediodia,URSOMARINA,10kg,dado,orig05
+2026-04-14,mediodia,TRILOSTANO,1/2,dado,orig05
+2026-04-14,mediodia,GABAPENTINA,1/4,dado,orig05
+2026-04-14,mediodia,PROTELIV,10gotas,dado,orig05
+2026-04-14,mediodia,INSULINA,0.08ml,dado,orig05
+2026-04-14,mediodia,DIPIRONA,1/4,vacio,orig05
+2026-04-15,mediodia,URSOMARINA,10kg,dado,orig05
+2026-04-15,mediodia,TRILOSTANO,1/2,dado,orig05
+2026-04-15,mediodia,GABAPENTINA,1/4,dado,orig05
+2026-04-15,mediodia,PROTELIV,10gotas,dado,orig05
+2026-04-15,mediodia,INSULINA,0.1ml,dado,orig05
+2026-04-15,mediodia,DIPIRONA,1/4,vacio,orig05
+2026-04-16,mediodia,URSOMARINA,10kg,dado,orig05
+2026-04-16,mediodia,TRILOSTANO,1/2,dado,orig05
+2026-04-16,mediodia,GABAPENTINA,1/4,dado,orig05
+2026-04-16,mediodia,PROTELIV,10gotas,dado,orig05
+2026-04-16,mediodia,INSULINA,0.1ml,dado,orig05
+2026-04-16,mediodia,DIPIRONA,1/4,vacio,orig05
+2026-04-17,mediodia,URSOMARINA,10kg,dado,orig05
+2026-04-17,mediodia,TRILOSTANO,1/2,dado,orig05
+2026-04-17,mediodia,GABAPENTINA,1/4,dado,orig05
+2026-04-17,mediodia,PROTELIV,10gotas,dado,orig05
+2026-04-17,mediodia,INSULINA,0.1ml,dado,orig05
+2026-04-17,mediodia,DIPIRONA,1/4,vacio,orig05
+2026-04-18,mediodia,URSOMARINA,10kg,dado,orig05
+2026-04-18,mediodia,TRILOSTANO,1/2,dado,orig05
+2026-04-18,mediodia,GABAPENTINA,1/4,dado,orig05
+2026-04-18,mediodia,PROTELIV,10gotas,dado,orig05
+2026-04-18,mediodia,INSULINA,0.1ml,dado,orig05
+2026-04-18,mediodia,DIPIRONA,1/4,dado,orig05
+2026-04-19,mediodia,URSOMARINA,10kg,no_dado,orig05
+2026-04-19,mediodia,TRILOSTANO,1/2,no_dado,orig05
+2026-04-19,mediodia,GABAPENTINA,1/4,no_dado,orig05
+2026-04-19,mediodia,PROTELIV,10gotas,no_dado,orig05
+2026-04-19,mediodia,INSULINA,0.08ml,no_dado,orig05
+2026-04-19,mediodia,DIPIRONA,1/4,no_dado,orig05
+2026-04-13,medianoche,URSOMARINA,10kg,dado,orig05
+2026-04-13,medianoche,TRILOSTANO,1/2,dado,orig05
+2026-04-13,medianoche,GABAPENTINA,1/4,dado,orig05
+2026-04-13,medianoche,PROTELIV,10gotas,dado,orig05
+2026-04-13,medianoche,INSULINA,0.08ml,dado,orig05
+2026-04-13,medianoche,ACEITE_PESCADO,,dado,orig05
+2026-04-13,medianoche,DIPIRONA,1/4,no_dado,orig05
+2026-04-14,medianoche,URSOMARINA,10kg,dado,orig05
+2026-04-14,medianoche,TRILOSTANO,1/2,dado,orig05
+2026-04-14,medianoche,GABAPENTINA,1/4,dado,orig05
+2026-04-14,medianoche,PROTELIV,10gotas,dado,orig05
+2026-04-14,medianoche,INSULINA,0.1ml,dado,orig05
+2026-04-14,medianoche,ACEITE_PESCADO,,dado,orig05
+2026-04-14,medianoche,DIPIRONA,1/4,no_dado,orig05
+2026-04-15,medianoche,URSOMARINA,10kg,dado,orig05
+2026-04-15,medianoche,TRILOSTANO,1/2,dado,orig05
+2026-04-15,medianoche,GABAPENTINA,1/4,dado,orig05
+2026-04-15,medianoche,PROTELIV,10gotas,dado,orig05
+2026-04-15,medianoche,INSULINA,0.1ml,dado,orig05
+2026-04-15,medianoche,ACEITE_PESCADO,,dado,orig05
+2026-04-15,medianoche,DIPIRONA,1/4,no_dado,orig05
+2026-04-16,medianoche,URSOMARINA,10kg,dado,orig05
+2026-04-16,medianoche,TRILOSTANO,1/2,dado,orig05
+2026-04-16,medianoche,GABAPENTINA,1/4,dado,orig05
+2026-04-16,medianoche,PROTELIV,10gotas,dado,orig05
+2026-04-16,medianoche,INSULINA,0.1ml,dado,orig05
+2026-04-16,medianoche,ACEITE_PESCADO,,dado,orig05
+2026-04-16,medianoche,DIPIRONA,1/4,no_dado,orig05
+2026-04-17,medianoche,URSOMARINA,10kg,dado,orig05
+2026-04-17,medianoche,TRILOSTANO,1/2,dado,orig05
+2026-04-17,medianoche,GABAPENTINA,1/4,dado,orig05
+2026-04-17,medianoche,PROTELIV,10gotas,dado,orig05
+2026-04-17,medianoche,INSULINA,0.1ml,dado,orig05
+2026-04-17,medianoche,ACEITE_PESCADO,,no_dado,orig05
+2026-04-17,medianoche,DIPIRONA,1/4,dado,orig05
+2026-04-18,medianoche,URSOMARINA,10kg,dado,orig05
+2026-04-18,medianoche,TRILOSTANO,1/2,dado,orig05
+2026-04-18,medianoche,GABAPENTINA,1/4,dado,orig05
+2026-04-18,medianoche,PROTELIV,10gotas,dado,orig05
+2026-04-18,medianoche,INSULINA,0.1ml,dado,orig05
+2026-04-18,medianoche,ACEITE_PESCADO,,no_dado,orig05
+2026-04-18,medianoche,DIPIRONA,1/4,dado,orig05
+2026-04-19,medianoche,URSOMARINA,10kg,dado,orig05
+2026-04-19,medianoche,TRILOSTANO,1/2,dado,orig05
+2026-04-19,medianoche,GABAPENTINA,1/4,dado,orig05
+2026-04-19,medianoche,PROTELIV,10gotas,dado,orig05
+2026-04-19,medianoche,INSULINA,0.1ml,dado,orig05
+2026-04-19,medianoche,ACEITE_PESCADO,,no_dado,orig05
+2026-04-19,medianoche,DIPIRONA,1/4,dado,orig05
+2026-04-20,ayuno,T4,1/4,dado,orig06
+2026-04-21,ayuno,T4,1/4,dado,orig06
+2026-04-22,ayuno,T4,1/4,dado,orig06
+2026-04-23,ayuno,T4,1/4,dado,orig06
+2026-04-24,ayuno,T4,1/4,vacio,orig06
+2026-04-25,ayuno,T4,1/4,vacio,orig06
+2026-04-26,ayuno,T4,1/4,no_dado,orig06
+2026-04-20,mediodia,URSOMARINA,1/2,no_dado,orig06
+2026-04-20,mediodia,TRILOSTANO,1/2,no_dado,orig06
+2026-04-20,mediodia,GABAPENTINA,1/4,no_dado,orig06
+2026-04-20,mediodia,DIPIRONA,1/4,no_dado,orig06
+2026-04-20,mediodia,PROTELIV,10gotas,no_dado,orig06
+2026-04-20,mediodia,INSULINA,0.1,vacio,orig06
+2026-04-21,mediodia,URSOMARINA,1/2,dado,orig06
+2026-04-21,mediodia,TRILOSTANO,1/2,dado,orig06
+2026-04-21,mediodia,GABAPENTINA,1/4,dado,orig06
+2026-04-21,mediodia,DIPIRONA,1/4,dado,orig06
+2026-04-21,mediodia,PROTELIV,10gotas,dado,orig06
+2026-04-21,mediodia,INSULINA,0.1,dado,orig06
+2026-04-22,mediodia,URSOMARINA,1/2,dado,orig06
+2026-04-22,mediodia,TRILOSTANO,1/2,dado,orig06
+2026-04-22,mediodia,GABAPENTINA,1/4,dado,orig06
+2026-04-22,mediodia,DIPIRONA,1/4,dado,orig06
+2026-04-22,mediodia,PROTELIV,10gotas,dado,orig06
+2026-04-22,mediodia,INSULINA,0.1,no_dado,orig06
+2026-04-23,mediodia,URSOMARINA,1/2,vacio,orig06
+2026-04-23,mediodia,TRILOSTANO,1/2,vacio,orig06
+2026-04-23,mediodia,GABAPENTINA,1/4,vacio,orig06
+2026-04-23,mediodia,DIPIRONA,1/4,vacio,orig06
+2026-04-23,mediodia,PROTELIV,10gotas,vacio,orig06
+2026-04-23,mediodia,INSULINA,0.1,vacio,orig06
+2026-04-24,mediodia,URSOMARINA,1/2,vacio,orig06
+2026-04-24,mediodia,TRILOSTANO,1/2,vacio,orig06
+2026-04-24,mediodia,GABAPENTINA,1/4,vacio,orig06
+2026-04-24,mediodia,DIPIRONA,1/4,vacio,orig06
+2026-04-24,mediodia,PROTELIV,10gotas,vacio,orig06
+2026-04-24,mediodia,INSULINA,0.1,vacio,orig06
+2026-04-25,mediodia,URSOMARINA,1/2,vacio,orig06
+2026-04-25,mediodia,TRILOSTANO,1/2,vacio,orig06
+2026-04-25,mediodia,GABAPENTINA,1/4,vacio,orig06
+2026-04-25,mediodia,DIPIRONA,1/4,vacio,orig06
+2026-04-25,mediodia,PROTELIV,10gotas,vacio,orig06
+2026-04-25,mediodia,INSULINA,0.1,vacio,orig06
+2026-04-26,mediodia,URSOMARINA,1/2,no_dado,orig06
+2026-04-26,mediodia,TRILOSTANO,1/2,dado,orig06
+2026-04-26,mediodia,GABAPENTINA,1/4,dado,orig06
+2026-04-26,mediodia,DIPIRONA,1/4,dado,orig06
+2026-04-26,mediodia,PROTELIV,10gotas,ambiguo,orig06
+2026-04-26,mediodia,INSULINA,0.1,dado,orig06
+2026-04-20,medianoche,URSOMARINA,1/2,dado,orig06
+2026-04-20,medianoche,TRILOSTANO,1/2,dado,orig06
+2026-04-20,medianoche,GABAPENTINA,1/4,dado,orig06
+2026-04-20,medianoche,DIPIRONA,1/4,dado,orig06
+2026-04-20,medianoche,PROTELIV,10gotas,dado,orig06
+2026-04-20,medianoche,INSULINA,0.1,no_dado,orig06
+2026-04-21,medianoche,URSOMARINA,1/2,dado,orig06
+2026-04-21,medianoche,TRILOSTANO,1/2,dado,orig06
+2026-04-21,medianoche,GABAPENTINA,1/4,dado,orig06
+2026-04-21,medianoche,DIPIRONA,1/4,no_dado,orig06
+2026-04-21,medianoche,PROTELIV,10gotas,dado,orig06
+2026-04-21,medianoche,INSULINA,0.08,dado,orig06
+2026-04-22,medianoche,URSOMARINA,1/2,no_dado,orig06
+2026-04-22,medianoche,TRILOSTANO,1/2,no_dado,orig06
+2026-04-22,medianoche,GABAPENTINA,1/4,no_dado,orig06
+2026-04-22,medianoche,DIPIRONA,1/4,dado,orig06
+2026-04-22,medianoche,PROTELIV,10gotas,dado,orig06
+2026-04-22,medianoche,INSULINA,0.1,dado,orig06
+2026-04-23,medianoche,URSOMARINA,1/2,vacio,orig06
+2026-04-23,medianoche,TRILOSTANO,1/2,vacio,orig06
+2026-04-23,medianoche,GABAPENTINA,1/4,vacio,orig06
+2026-04-23,medianoche,DIPIRONA,1/4,vacio,orig06
+2026-04-23,medianoche,PROTELIV,10gotas,vacio,orig06
+2026-04-23,medianoche,INSULINA,0.1,vacio,orig06
+2026-04-24,medianoche,URSOMARINA,1/2,vacio,orig06
+2026-04-24,medianoche,TRILOSTANO,1/2,vacio,orig06
+2026-04-24,medianoche,GABAPENTINA,1/4,vacio,orig06
+2026-04-24,medianoche,DIPIRONA,1/4,vacio,orig06
+2026-04-24,medianoche,PROTELIV,10gotas,vacio,orig06
+2026-04-24,medianoche,INSULINA,0.1,vacio,orig06
+2026-04-25,medianoche,URSOMARINA,1/2,no_dado,orig06
+2026-04-25,medianoche,TRILOSTANO,1/2,dado,orig06
+2026-04-25,medianoche,GABAPENTINA,1/4,dado,orig06
+2026-04-25,medianoche,DIPIRONA,1/4,dado,orig06
+2026-04-25,medianoche,PROTELIV,10gotas,no_dado,orig06
+2026-04-25,medianoche,INSULINA,0.1,no_dado,orig06
+2026-04-26,medianoche,URSOMARINA,1/2,no_dado,orig06
+2026-04-26,medianoche,TRILOSTANO,1/2,dado,orig06
+2026-04-26,medianoche,GABAPENTINA,1/4,dado,orig06
+2026-04-26,medianoche,DIPIRONA,1/4,dado,orig06
+2026-04-26,medianoche,PROTELIV,10gotas,dado,orig06
+2026-04-26,medianoche,INSULINA,0.1,dado,orig06
+2026-04-27,ayuno,T4,,dado,orig07
+2026-04-28,ayuno,T4,,dado,orig07
+2026-04-29,ayuno,T4,,dado,orig07
+2026-04-30,ayuno,T4,,dado,orig07
+2026-05-01,ayuno,T4,,dado,orig07
+2026-05-02,ayuno,T4,,dado,orig07
+2026-05-03,ayuno,T4,,dado,orig07
+2026-04-27,mediodia,TRILOSTANO,1/2,dado,orig07
+2026-04-28,mediodia,TRILOSTANO,1/2,dado,orig07
+2026-04-29,mediodia,TRILOSTANO,1/2,dado,orig07
+2026-04-30,mediodia,TRILOSTANO,1/2,dado,orig07
+2026-05-01,mediodia,TRILOSTANO,1/2,dado,orig07
+2026-05-02,mediodia,TRILOSTANO,1/2,dado,orig07
+2026-05-03,mediodia,TRILOSTANO,1/2,dado,orig07
+2026-04-27,mediodia,GABAPENTINA,1/4,dado,orig07
+2026-04-28,mediodia,GABAPENTINA,1/4,dado,orig07
+2026-04-29,mediodia,GABAPENTINA,1/4,dado,orig07
+2026-04-30,mediodia,GABAPENTINA,1/4,dado,orig07
+2026-05-01,mediodia,GABAPENTINA,1/4,dado,orig07
+2026-05-02,mediodia,GABAPENTINA,1/4,dado,orig07
+2026-05-03,mediodia,GABAPENTINA,1/4,dado,orig07
+2026-04-27,mediodia,DIPIRONA,1/4,dado,orig07
+2026-04-28,mediodia,DIPIRONA,1/4,dado,orig07
+2026-04-29,mediodia,DIPIRONA,1/4,dado,orig07
+2026-04-30,mediodia,DIPIRONA,1/4,dado,orig07
+2026-05-01,mediodia,DIPIRONA,1/4,no_dado,orig07
+2026-05-02,mediodia,DIPIRONA,1/4,no_dado,orig07
+2026-05-03,mediodia,DIPIRONA,1/4,no_dado,orig07
+2026-04-27,mediodia,PROTELIV,10 GOTAS,dado,orig07
+2026-04-28,mediodia,PROTELIV,10 GOTAS,dado,orig07
+2026-04-29,mediodia,PROTELIV,10 GOTAS,dado,orig07
+2026-04-30,mediodia,PROTELIV,10 GOTAS,dado,orig07
+2026-05-01,mediodia,PROTELIV,10 GOTAS,dado,orig07
+2026-05-02,mediodia,PROTELIV,10 GOTAS,dado,orig07
+2026-05-03,mediodia,PROTELIV,10 GOTAS,dado,orig07
+2026-04-27,mediodia,INSULINA,0.12,dado,orig07
+2026-04-28,mediodia,INSULINA,0.12,dado,orig07
+2026-04-29,mediodia,INSULINA,0.14,dado,orig07
+2026-04-30,mediodia,INSULINA,0.14,dado,orig07
+2026-05-01,mediodia,INSULINA,0.16,dado,orig07
+2026-05-02,mediodia,INSULINA,0.14,dado,orig07
+2026-05-03,mediodia,INSULINA,0.16,dado,orig07
+2026-04-27,mediodia,METRONIDAZOL,1.5 mL,vacio,orig07
+2026-04-28,mediodia,METRONIDAZOL,1.5 mL,dado,orig07
+2026-04-29,mediodia,METRONIDAZOL,1.5 mL,dado,orig07
+2026-04-30,mediodia,METRONIDAZOL,1.5 mL,dado,orig07
+2026-05-01,mediodia,METRONIDAZOL,1.5 mL,dado,orig07
+2026-05-02,mediodia,METRONIDAZOL,1.5 mL,dado,orig07
+2026-05-03,mediodia,METRONIDAZOL,1.5 mL,dado,orig07
+2026-04-27,mediodia,MELOXICAM,0.1 18:00,dado,orig07
+2026-04-28,mediodia,MELOXICAM,0.1,dado,orig07
+2026-04-29,mediodia,MELOXICAM,0.1,dado,orig07
+2026-04-30,mediodia,MELOXICAM,0.1,no_dado,orig07
+2026-05-01,mediodia,MELOXICAM,0.1,no_dado,orig07
+2026-05-02,mediodia,MELOXICAM,0.1,no_dado,orig07
+2026-05-03,mediodia,MELOXICAM,0.1,ambiguo,orig07
+2026-04-27,medianoche,TRILOSTANO,1/2,dado,orig07
+2026-04-28,medianoche,TRILOSTANO,1/2,dado,orig07
+2026-04-29,medianoche,TRILOSTANO,1/2,dado,orig07
+2026-04-30,medianoche,TRILOSTANO,1/2,dado,orig07
+2026-05-01,medianoche,TRILOSTANO,1/2,dado,orig07
+2026-05-02,medianoche,TRILOSTANO,1/2,dado,orig07
+2026-05-03,medianoche,TRILOSTANO,1/2,dado,orig07
+2026-04-27,medianoche,GABAPENTINA,1/4,dado,orig07
+2026-04-28,medianoche,GABAPENTINA,1/4,dado,orig07
+2026-04-29,medianoche,GABAPENTINA,1/4,dado,orig07
+2026-04-30,medianoche,GABAPENTINA,1/4,dado,orig07
+2026-05-01,medianoche,GABAPENTINA,1/4,dado,orig07
+2026-05-02,medianoche,GABAPENTINA,1/4,dado,orig07
+2026-05-03,medianoche,GABAPENTINA,1/4,dado,orig07
+2026-04-27,medianoche,DIPIRONA,1/4,dado,orig07
+2026-04-28,medianoche,DIPIRONA,1/4,dado,orig07
+2026-04-29,medianoche,DIPIRONA,1/4,dado,orig07
+2026-04-30,medianoche,DIPIRONA,1/4,no_dado,orig07
+2026-05-01,medianoche,DIPIRONA,1/4,no_dado,orig07
+2026-05-02,medianoche,DIPIRONA,1/4,no_dado,orig07
+2026-05-03,medianoche,DIPIRONA,1/4,no_dado,orig07
+2026-04-27,medianoche,PROTELIV,10 GOTAS,dado,orig07
+2026-04-28,medianoche,PROTELIV,10 GOTAS,dado,orig07
+2026-04-29,medianoche,PROTELIV,10 GOTAS,dado,orig07
+2026-04-30,medianoche,PROTELIV,10 GOTAS,dado,orig07
+2026-05-01,medianoche,PROTELIV,10 GOTAS,dado,orig07
+2026-05-02,medianoche,PROTELIV,10 GOTAS,dado,orig07
+2026-05-03,medianoche,PROTELIV,10 GOTAS,dado,orig07
+2026-04-27,medianoche,INSULINA,0.12,dado,orig07
+2026-04-28,medianoche,INSULINA,0.14,dado,orig07
+2026-04-29,medianoche,INSULINA,0.14,dado,orig07
+2026-04-30,medianoche,INSULINA,0.16,dado,orig07
+2026-05-01,medianoche,INSULINA,0.14,dado,orig07
+2026-05-02,medianoche,INSULINA,0.16,dado,orig07
+2026-05-03,medianoche,INSULINA,0.16,dado,orig07
+2026-04-27,medianoche,METRONIDAZOL,1.5 mL,dado,orig07
+2026-04-28,medianoche,METRONIDAZOL,1.5 mL,dado,orig07
+2026-04-29,medianoche,METRONIDAZOL,1.5 mL,dado,orig07
+2026-04-30,medianoche,METRONIDAZOL,1.5 mL,dado,orig07
+2026-05-01,medianoche,METRONIDAZOL,1.5 mL,dado,orig07
+2026-05-02,medianoche,METRONIDAZOL,1.5 mL,dado,orig07
+2026-05-03,medianoche,METRONIDAZOL,1.5 mL,dado,orig07
+2026-05-04,ayuno,T4,,dado,orig08
+2026-05-05,ayuno,T4,,dado,orig08
+2026-05-06,ayuno,T4,,dado,orig08
+2026-05-07,ayuno,T4,,dado,orig08
+2026-05-08,ayuno,T4,,dado,orig08
+2026-05-09,ayuno,T4,,dado,orig08
+2026-05-10,ayuno,T4,,dado,orig08
+2026-05-04,mediodia,TRILOSTANO,1/2,dado,orig08
+2026-05-05,mediodia,TRILOSTANO,1/2,dado,orig08
+2026-05-06,mediodia,TRILOSTANO,1/2,dado,orig08
+2026-05-07,mediodia,TRILOSTANO,1/2,dado,orig08
+2026-05-08,mediodia,TRILOSTANO,1/2,dado,orig08
+2026-05-09,mediodia,TRILOSTANO,1/2,dado,orig08
+2026-05-10,mediodia,TRILOSTANO,1/2,dado,orig08
+2026-05-04,mediodia,PROTELIV,10 GOTAS,dado,orig08
+2026-05-05,mediodia,PROTELIV,10 GOTAS,dado,orig08
+2026-05-06,mediodia,PROTELIV,10 GOTAS,dado,orig08
+2026-05-07,mediodia,PROTELIV,10 GOTAS,dado,orig08
+2026-05-08,mediodia,PROTELIV,10 GOTAS,dado,orig08
+2026-05-09,mediodia,PROTELIV,10 GOTAS,dado,orig08
+2026-05-10,mediodia,PROTELIV,10 GOTAS,dado,orig08
+2026-05-04,mediodia,GABAPENTINA,1/4,dado,orig08
+2026-05-05,mediodia,GABAPENTINA,1/4,dado,orig08
+2026-05-06,mediodia,GABAPENTINA,1/4,dado,orig08
+2026-05-07,mediodia,GABAPENTINA,1/4,dado,orig08
+2026-05-08,mediodia,GABAPENTINA,1/4,dado,orig08
+2026-05-09,mediodia,GABAPENTINA,1/4,dado,orig08
+2026-05-10,mediodia,GABAPENTINA,1/4,dado,orig08
+2026-05-04,mediodia,METRONIDAZOL,1.5 mL,dado,orig08
+2026-05-05,mediodia,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-06,mediodia,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-07,mediodia,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-08,mediodia,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-09,mediodia,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-10,mediodia,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-04,mediodia,TONANVIT,2 mL,dado,orig08
+2026-05-05,mediodia,TONANVIT,2 mL,dado,orig08
+2026-05-06,mediodia,TONANVIT,2 mL,dado,orig08
+2026-05-07,mediodia,TONANVIT,2 mL,dado,orig08
+2026-05-08,mediodia,TONANVIT,2 mL,dado,orig08
+2026-05-09,mediodia,TONANVIT,2 mL,dado,orig08
+2026-05-10,mediodia,TONANVIT,2 mL,dado,orig08
+2026-05-04,mediodia,INSULINA,0.16,dado,orig08
+2026-05-05,mediodia,INSULINA,0.16,dado,orig08
+2026-05-06,mediodia,INSULINA,0.16,dado,orig08
+2026-05-07,mediodia,INSULINA,0.16,dado,orig08
+2026-05-08,mediodia,INSULINA,0.2,dado,orig08
+2026-05-09,mediodia,INSULINA,0.2,dado,orig08
+2026-05-10,mediodia,INSULINA,0.2,dado,orig08
+2026-05-04,medianoche,TRILOSTANO,1/2,dado,orig08
+2026-05-05,medianoche,TRILOSTANO,1/2,dado,orig08
+2026-05-06,medianoche,TRILOSTANO,1/2,dado,orig08
+2026-05-07,medianoche,TRILOSTANO,1/2,dado,orig08
+2026-05-08,medianoche,TRILOSTANO,1/2,dado,orig08
+2026-05-09,medianoche,TRILOSTANO,1/2,dado,orig08
+2026-05-10,medianoche,TRILOSTANO,1/2,dado,orig08
+2026-05-04,medianoche,PROTELIV,10 GOTAS,dado,orig08
+2026-05-05,medianoche,PROTELIV,10 GOTAS,dado,orig08
+2026-05-06,medianoche,PROTELIV,10 GOTAS,dado,orig08
+2026-05-07,medianoche,PROTELIV,10 GOTAS,dado,orig08
+2026-05-08,medianoche,PROTELIV,10 GOTAS,dado,orig08
+2026-05-09,medianoche,PROTELIV,10 GOTAS,dado,orig08
+2026-05-10,medianoche,PROTELIV,10 GOTAS,dado,orig08
+2026-05-04,medianoche,GABAPENTINA,1/4,dado,orig08
+2026-05-05,medianoche,GABAPENTINA,1/4,dado,orig08
+2026-05-06,medianoche,GABAPENTINA,1/4,dado,orig08
+2026-05-07,medianoche,GABAPENTINA,1/4,dado,orig08
+2026-05-08,medianoche,GABAPENTINA,1/4,dado,orig08
+2026-05-09,medianoche,GABAPENTINA,1/4,dado,orig08
+2026-05-10,medianoche,GABAPENTINA,1/4,dado,orig08
+2026-05-04,medianoche,METRONIDAZOL,1.5 mL,dado,orig08
+2026-05-05,medianoche,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-06,medianoche,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-07,medianoche,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-08,medianoche,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-09,medianoche,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-10,medianoche,METRONIDAZOL,1.5 mL,no_dado,orig08
+2026-05-04,medianoche,TONANVIT,2 mL,dado,orig08
+2026-05-05,medianoche,TONANVIT,2 mL,dado,orig08
+2026-05-06,medianoche,TONANVIT,2 mL,dado,orig08
+2026-05-07,medianoche,TONANVIT,2 mL,dado,orig08
+2026-05-08,medianoche,TONANVIT,2 mL,dado,orig08
+2026-05-09,medianoche,TONANVIT,2 mL,dado,orig08
+2026-05-10,medianoche,TONANVIT,2 mL,dado,orig08
+2026-05-04,medianoche,INSULINA,0.16,dado,orig08
+2026-05-05,medianoche,INSULINA,0.16,dado,orig08
+2026-05-06,medianoche,INSULINA,0.16,dado,orig08
+2026-05-07,medianoche,INSULINA,0.2,dado,orig08
+2026-05-08,medianoche,INSULINA,0.2,dado,orig08
+2026-05-09,medianoche,INSULINA,0.2,dado,orig08
+2026-05-10,medianoche,INSULINA,0.2,dado,orig08
+2026-05-11,ayuno,T4,1/4,dado,orig09
+2026-05-11,mediodia,TRILOSTANO,1/2,dado,orig09
+2026-05-11,mediodia,GABAPENTINA,1/4,dado,orig09
+2026-05-11,mediodia,PROTELIV,10 GOTAS,dado,orig09
+2026-05-11,mediodia,TONANVIT,2 mL,dado,orig09
+2026-05-11,mediodia,INSULINA,"0,2 mL",dado,orig09
+2026-05-11,medianoche,TRILOSTANO,1/2,dado,orig09
+2026-05-11,medianoche,GABAPENTINA,1/4,dado,orig09
+2026-05-11,medianoche,PROTELIV,10 GOTAS,dado,orig09
+2026-05-11,medianoche,TONANVIT,2 mL,dado,orig09
+2026-05-11,medianoche,INSULINA,"0,2 mL",dado,orig09
+2026-05-12,ayuno,T4,1/4,dado,orig09
+2026-05-12,mediodia,TRILOSTANO,1/2,dado,orig09
+2026-05-12,mediodia,GABAPENTINA,1/4,dado,orig09
+2026-05-12,mediodia,PROTELIV,10 GOTAS,dado,orig09
+2026-05-12,mediodia,TONANVIT,2 mL,dado,orig09
+2026-05-12,mediodia,INSULINA,"0,2 mL",dado,orig09
+2026-05-12,medianoche,TRILOSTANO,1/2,dado,orig09
+2026-05-12,medianoche,GABAPENTINA,1/4,dado,orig09
+2026-05-12,medianoche,PROTELIV,10 GOTAS,dado,orig09
+2026-05-12,medianoche,TONANVIT,2 mL,dado,orig09
+2026-05-12,medianoche,INSULINA,"0,2 mL",dado,orig09
+2026-05-13,ayuno,T4,1/4,dado,orig09
+2026-05-13,mediodia,TRILOSTANO,1/2,dado,orig09
+2026-05-13,mediodia,GABAPENTINA,1/4,dado,orig09
+2026-05-13,mediodia,PROTELIV,10 GOTAS,dado,orig09
+2026-05-13,mediodia,TONANVIT,2 mL,dado,orig09
+2026-05-13,mediodia,INSULINA,"0,2 mL",dado,orig09
+2026-05-13,medianoche,TRILOSTANO,1/2,dado,orig09
+2026-05-13,medianoche,GABAPENTINA,1/4,dado,orig09
+2026-05-13,medianoche,PROTELIV,10 GOTAS,dado,orig09
+2026-05-13,medianoche,TONANVIT,2 mL,dado,orig09
+2026-05-13,medianoche,INSULINA,"0,2 mL",dado,orig09
+2026-05-14,ayuno,T4,1/4,dado,orig09
+2026-05-14,mediodia,TRILOSTANO,1/2,dado,orig09
+2026-05-14,mediodia,GABAPENTINA,1/4,dado,orig09
+2026-05-14,mediodia,PROTELIV,10 GOTAS,dado,orig09
+2026-05-14,mediodia,TONANVIT,2 mL,dado,orig09
+2026-05-14,mediodia,INSULINA,"0,22 mL",dado,orig09
+2026-05-14,medianoche,TRILOSTANO,1/2,dado,orig09
+2026-05-14,medianoche,GABAPENTINA,1/4,dado,orig09
+2026-05-14,medianoche,PROTELIV,10 GOTAS,dado,orig09
+2026-05-14,medianoche,TONANVIT,2 mL,dado,orig09
+2026-05-14,medianoche,INSULINA,"0,22 mL",dado,orig09
+2026-05-15,ayuno,T4,1/4,dado,orig09
+2026-05-15,mediodia,TRILOSTANO,1/2,dado,orig09
+2026-05-15,mediodia,GABAPENTINA,1/4,dado,orig09
+2026-05-15,mediodia,PROTELIV,10 GOTAS,dado,orig09
+2026-05-15,mediodia,TONANVIT,2 mL,dado,orig09
+2026-05-15,mediodia,INSULINA,"0,22 mL",dado,orig09
+2026-05-15,medianoche,TRILOSTANO,1/2,dado,orig09
+2026-05-15,medianoche,GABAPENTINA,1/4,dado,orig09
+2026-05-15,medianoche,PROTELIV,10 GOTAS,dado,orig09
+2026-05-15,medianoche,TONANVIT,2 mL,dado,orig09
+2026-05-15,medianoche,INSULINA,"0,22 mL",dado,orig09
+2026-05-16,ayuno,T4,1/4,dado,orig09
+2026-05-16,mediodia,TRILOSTANO,1/2,dado,orig09
+2026-05-16,mediodia,GABAPENTINA,1/4,dado,orig09
+2026-05-16,mediodia,PROTELIV,10 GOTAS,dado,orig09
+2026-05-16,mediodia,TONANVIT,2 mL,dado,orig09
+2026-05-16,mediodia,INSULINA,"0,22 mL",dado,orig09
+2026-05-16,medianoche,TRILOSTANO,1/2,dado,orig09
+2026-05-16,medianoche,GABAPENTINA,1/4,dado,orig09
+2026-05-16,medianoche,PROTELIV,10 GOTAS,dado,orig09
+2026-05-16,medianoche,TONANVIT,2 mL,dado,orig09
+2026-05-16,medianoche,INSULINA,"0,22 mL",dado,orig09
+2026-05-17,ayuno,T4,1/4,dado,orig09
+2026-05-17,mediodia,TRILOSTANO,1/2,dado,orig09
+2026-05-17,mediodia,GABAPENTINA,1/4,dado,orig09
+2026-05-17,mediodia,PROTELIV,10 GOTAS,dado,orig09
+2026-05-17,mediodia,TONANVIT,2 mL,dado,orig09
+2026-05-17,mediodia,INSULINA,"0,2 mL",no_dado,orig09
+2026-05-17,medianoche,TRILOSTANO,1/2,dado,orig09
+2026-05-17,medianoche,GABAPENTINA,1/4,dado,orig09
+2026-05-17,medianoche,PROTELIV,10 GOTAS,dado,orig09
+2026-05-17,medianoche,TONANVIT,2 mL,dado,orig09
+2026-05-17,medianoche,INSULINA,"0,22 mL",dado,orig09
+2026-05-18,ayuno,T4,,dado,orig10
+2026-05-19,ayuno,T4,,dado,orig10
+2026-05-20,ayuno,T4,,dado,orig10
+2026-05-21,ayuno,T4,,dado,orig10
+2026-05-22,ayuno,T4,,dado,orig10
+2026-05-23,ayuno,T4,,dado,orig10
+2026-05-24,ayuno,T4,,dado,orig10
+2026-05-18,mediodia,TRILOSTANO,1/2,dado,orig10
+2026-05-18,mediodia,GABAPENTINA,1/4,dado,orig10
+2026-05-18,mediodia,PROTELIV,10 GOTAS,dado,orig10
+2026-05-18,mediodia,TONANVIT,2cc,dado,orig10
+2026-05-18,mediodia,INSULINA,0.22,dado,orig10
+2026-05-19,mediodia,TRILOSTANO,1/2,dado,orig10
+2026-05-19,mediodia,GABAPENTINA,1/4,dado,orig10
+2026-05-19,mediodia,PROTELIV,10 GOTAS,dado,orig10
+2026-05-19,mediodia,TONANVIT,2cc,dado,orig10
+2026-05-19,mediodia,INSULINA,0.22,dado,orig10
+2026-05-20,mediodia,TRILOSTANO,1/2,dado,orig10
+2026-05-20,mediodia,GABAPENTINA,1/4,dado,orig10
+2026-05-20,mediodia,PROTELIV,10 GOTAS,dado,orig10
+2026-05-20,mediodia,TONANVIT,2cc,dado,orig10
+2026-05-20,mediodia,INSULINA,0.22,dado,orig10
+2026-05-21,mediodia,TRILOSTANO,1/2,dado,orig10
+2026-05-21,mediodia,GABAPENTINA,1/4,dado,orig10
+2026-05-21,mediodia,PROTELIV,10 GOTAS,dado,orig10
+2026-05-21,mediodia,TONANVIT,2cc,dado,orig10
+2026-05-21,mediodia,INSULINA,0.22,dado,orig10
+2026-05-22,mediodia,TRILOSTANO,1/2,dado,orig10
+2026-05-22,mediodia,GABAPENTINA,1/4,dado,orig10
+2026-05-22,mediodia,PROTELIV,10 GOTAS,dado,orig10
+2026-05-22,mediodia,TONANVIT,2cc,dado,orig10
+2026-05-22,mediodia,INSULINA,0.22,dado,orig10
+2026-05-23,mediodia,TRILOSTANO,1/2,dado,orig10
+2026-05-23,mediodia,GABAPENTINA,1/4,no_dado,orig10
+2026-05-23,mediodia,PROTELIV,10 GOTAS,dado,orig10
+2026-05-23,mediodia,TONANVIT,2cc,dado,orig10
+2026-05-23,mediodia,INSULINA,0.22,dado,orig10
+2026-05-24,mediodia,TRILOSTANO,1/2,dado,orig10
+2026-05-24,mediodia,GABAPENTINA,1/4,no_dado,orig10
+2026-05-24,mediodia,PROTELIV,10 GOTAS,dado,orig10
+2026-05-24,mediodia,TONANVIT,2cc,dado,orig10
+2026-05-24,mediodia,INSULINA,0.22,no_dado,orig10
+2026-05-18,medianoche,TRILOSTANO,1/2,dado,orig10
+2026-05-18,medianoche,GABAPENTINA,1/4,dado,orig10
+2026-05-18,medianoche,PROTELIV,10 GOTAS,dado,orig10
+2026-05-18,medianoche,TONANVIT,2cc,dado,orig10
+2026-05-18,medianoche,INSULINA,0.22,dado,orig10
+2026-05-19,medianoche,TRILOSTANO,1/2,dado,orig10
+2026-05-19,medianoche,GABAPENTINA,1/4,dado,orig10
+2026-05-19,medianoche,PROTELIV,10 GOTAS,dado,orig10
+2026-05-19,medianoche,TONANVIT,2cc,dado,orig10
+2026-05-19,medianoche,INSULINA,0.22,dado,orig10
+2026-05-20,medianoche,TRILOSTANO,1/2,dado,orig10
+2026-05-20,medianoche,GABAPENTINA,1/4,dado,orig10
+2026-05-20,medianoche,PROTELIV,10 GOTAS,dado,orig10
+2026-05-20,medianoche,TONANVIT,2cc,dado,orig10
+2026-05-20,medianoche,INSULINA,0.22,dado,orig10
+2026-05-21,medianoche,TRILOSTANO,1/2,dado,orig10
+2026-05-21,medianoche,GABAPENTINA,1/4,dado,orig10
+2026-05-21,medianoche,PROTELIV,10 GOTAS,dado,orig10
+2026-05-21,medianoche,TONANVIT,2cc,dado,orig10
+2026-05-21,medianoche,INSULINA,0.22,dado,orig10
+2026-05-22,medianoche,TRILOSTANO,1/2,dado,orig10
+2026-05-22,medianoche,GABAPENTINA,1/4,no_dado,orig10
+2026-05-22,medianoche,PROTELIV,10 GOTAS,dado,orig10
+2026-05-22,medianoche,TONANVIT,2cc,dado,orig10
+2026-05-22,medianoche,INSULINA,0.22,dado,orig10
+2026-05-23,medianoche,TRILOSTANO,1/2,dado,orig10
+2026-05-23,medianoche,GABAPENTINA,1/4,no_dado,orig10
+2026-05-23,medianoche,PROTELIV,10 GOTAS,dado,orig10
+2026-05-23,medianoche,TONANVIT,2cc,dado,orig10
+2026-05-23,medianoche,INSULINA,0.22,dado,orig10
+2026-05-24,medianoche,TRILOSTANO,1/2,dado,orig10
+2026-05-24,medianoche,GABAPENTINA,1/4,no_dado,orig10
+2026-05-24,medianoche,PROTELIV,10 GOTAS,dado,orig10
+2026-05-24,medianoche,TONANVIT,2cc,dado,orig10
+2026-05-24,medianoche,INSULINA,0.22,dado,orig10
+2026-05-25,ayuno,T4,,dado,orig11
+2026-05-25,mediodia,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-25,mediodia,PROTELIV,10 GOTAS,dado,orig11
+2026-05-25,mediodia,TONANVIT,2 CC,dado,orig11
+2026-05-25,mediodia,CANINSULIN,"0,22",dado,orig11
+2026-05-25,medianoche,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-25,medianoche,PROTELIV,10 GOTAS,dado,orig11
+2026-05-25,medianoche,TONANVIT,2 CC,dado,orig11
+2026-05-25,medianoche,CANINSULIN,"0,22",dado,orig11
+2026-05-26,ayuno,T4,,dado,orig11
+2026-05-26,mediodia,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-26,mediodia,PROTELIV,10 GOTAS,dado,orig11
+2026-05-26,mediodia,TONANVIT,2 CC,dado,orig11
+2026-05-26,mediodia,CANINSULIN,"0,22",no_dado,orig11
+2026-05-26,medianoche,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-26,medianoche,PROTELIV,10 GOTAS,dado,orig11
+2026-05-26,medianoche,TONANVIT,2 CC,dado,orig11
+2026-05-26,medianoche,CANINSULIN,"0,22",dado,orig11
+2026-05-27,ayuno,T4,,dado,orig11
+2026-05-27,mediodia,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-27,mediodia,PROTELIV,10 GOTAS,dado,orig11
+2026-05-27,mediodia,TONANVIT,2 CC,no_dado,orig11
+2026-05-27,mediodia,CANINSULIN,"0,22",dado,orig11
+2026-05-27,medianoche,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-27,medianoche,PROTELIV,10 GOTAS,dado,orig11
+2026-05-27,medianoche,TONANVIT,2 CC,no_dado,orig11
+2026-05-27,medianoche,CANINSULIN,"0,22",dado,orig11
+2026-05-28,ayuno,T4,,dado,orig11
+2026-05-28,mediodia,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-28,mediodia,PROTELIV,10 GOTAS,dado,orig11
+2026-05-28,mediodia,TONANVIT,2 CC,no_dado,orig11
+2026-05-28,mediodia,CANINSULIN,"0,22",no_dado,orig11
+2026-05-28,medianoche,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-28,medianoche,PROTELIV,10 GOTAS,dado,orig11
+2026-05-28,medianoche,TONANVIT,2 CC,no_dado,orig11
+2026-05-28,medianoche,CANINSULIN,"0,22",dado,orig11
+2026-05-29,ayuno,T4,,dado,orig11
+2026-05-29,mediodia,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-29,mediodia,PROTELIV,10 GOTAS,dado,orig11
+2026-05-29,mediodia,TONANVIT,2 CC,no_dado,orig11
+2026-05-29,mediodia,CANINSULIN,"0,22",dado,orig11
+2026-05-29,medianoche,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-29,medianoche,PROTELIV,10 GOTAS,dado,orig11
+2026-05-29,medianoche,TONANVIT,2 CC,no_dado,orig11
+2026-05-29,medianoche,CANINSULIN,"0,22",dado,orig11
+2026-05-30,ayuno,T4,,dado,orig11
+2026-05-30,mediodia,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-30,mediodia,PROTELIV,10 GOTAS,dado,orig11
+2026-05-30,mediodia,TONANVIT,2 CC,no_dado,orig11
+2026-05-30,mediodia,CANINSULIN,"0,22",no_dado,orig11
+2026-05-30,medianoche,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-30,medianoche,PROTELIV,10 GOTAS,dado,orig11
+2026-05-30,medianoche,TONANVIT,2 CC,no_dado,orig11
+2026-05-30,medianoche,CANINSULIN,"0,22",dado,orig11
+2026-05-31,ayuno,T4,,dado,orig11
+2026-05-31,mediodia,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-31,mediodia,PROTELIV,10 GOTAS,dado,orig11
+2026-05-31,mediodia,TONANVIT,2 CC,no_dado,orig11
+2026-05-31,mediodia,CANINSULIN,"0,22",dado,orig11
+2026-05-31,medianoche,TRILOSTANO,10mg 1/2,dado,orig11
+2026-05-31,medianoche,PROTELIV,10 GOTAS,dado,orig11
+2026-05-31,medianoche,TONANVIT,2 CC,no_dado,orig11
+2026-05-31,medianoche,CANINSULIN,"0,22",dado,orig11
+2026-06-01,ayuno,T4,,dado,orig12
+2026-06-01,mediodia,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-01,mediodia,PROTELIV,10 GOTAS,dado,orig12
+2026-06-01,mediodia,CANINSULIN,"0,22",dado,orig12
+2026-06-01,medianoche,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-01,medianoche,PROTELIV,10 GOTAS,dado,orig12
+2026-06-01,medianoche,CANINSULIN,"0,22",dado,orig12
+2026-06-02,ayuno,T4,,dado,orig12
+2026-06-02,mediodia,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-02,mediodia,PROTELIV,10 GOTAS,dado,orig12
+2026-06-02,mediodia,CANINSULIN,,no_dado,orig12
+2026-06-02,medianoche,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-02,medianoche,PROTELIV,10 GOTAS,dado,orig12
+2026-06-02,medianoche,CANINSULIN,"0,22",dado,orig12
+2026-06-03,ayuno,T4,,dado,orig12
+2026-06-03,mediodia,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-03,mediodia,PROTELIV,10 GOTAS,dado,orig12
+2026-06-03,mediodia,CANINSULIN,"0,22",dado,orig12
+2026-06-03,medianoche,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-03,medianoche,PROTELIV,10 GOTAS,dado,orig12
+2026-06-03,medianoche,CANINSULIN,"0,22",dado,orig12
+2026-06-04,ayuno,T4,,dado,orig12
+2026-06-04,mediodia,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-04,mediodia,PROTELIV,10 GOTAS,dado,orig12
+2026-06-04,mediodia,CANINSULIN,"0,22",dado,orig12
+2026-06-04,medianoche,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-04,medianoche,PROTELIV,10 GOTAS,dado,orig12
+2026-06-04,medianoche,CANINSULIN,"0,22",dado,orig12
+2026-06-05,ayuno,T4,,dado,orig12
+2026-06-05,mediodia,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-05,mediodia,PROTELIV,10 GOTAS,dado,orig12
+2026-06-05,mediodia,CANINSULIN,"0,22",dado,orig12
+2026-06-05,medianoche,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-05,medianoche,PROTELIV,10 GOTAS,dado,orig12
+2026-06-05,medianoche,CANINSULIN,"0,22",dado,orig12
+2026-06-06,ayuno,T4,,dado,orig12
+2026-06-06,mediodia,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-06,mediodia,PROTELIV,10 GOTAS,dado,orig12
+2026-06-06,mediodia,CANINSULIN,"0,22",dado,orig12
+2026-06-06,medianoche,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-06,medianoche,PROTELIV,10 GOTAS,dado,orig12
+2026-06-06,medianoche,CANINSULIN,"0,22",dado,orig12
+2026-06-07,ayuno,T4,,dado,orig12
+2026-06-07,mediodia,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-07,mediodia,PROTELIV,10 GOTAS,dado,orig12
+2026-06-07,mediodia,CANINSULIN,"0,22",dado,orig12
+2026-06-07,medianoche,TRILOSTANO,10mg 1/2,dado,orig12
+2026-06-07,medianoche,PROTELIV,10 GOTAS,dado,orig12
+2026-06-07,medianoche,CANINSULIN,"0,22",dado,orig12
+2026-06-08,ayuno,T4,,dado,orig13
+2026-06-09,ayuno,T4,,dado,orig13
+2026-06-10,ayuno,T4,,dado,orig13
+2026-06-11,ayuno,T4,,dado,orig13
+2026-06-12,ayuno,T4,,dado,orig13
+2026-06-13,ayuno,T4,,dado,orig13
+2026-06-14,ayuno,T4,,dado,orig13
+2026-06-08,mediodia,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-08,mediodia,PROTELIV,10 GOTAS,dado,orig13
+2026-06-08,mediodia,CANINSULIN,0.22,dado,orig13
+2026-06-08,medianoche,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-08,medianoche,PROTELIV,,dado,orig13
+2026-06-08,medianoche,CANINSULIN,0.22,dado,orig13
+2026-06-08,medianoche,FENOFIBRATO,1/2 100mg,vacio,orig13
+2026-06-09,mediodia,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-09,mediodia,PROTELIV,10 GOTAS,dado,orig13
+2026-06-09,mediodia,CANINSULIN,0.22,dado,orig13
+2026-06-09,medianoche,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-09,medianoche,PROTELIV,,dado,orig13
+2026-06-09,medianoche,CANINSULIN,0.22,dado,orig13
+2026-06-09,medianoche,FENOFIBRATO,1/2 100mg,vacio,orig13
+2026-06-10,mediodia,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-10,mediodia,PROTELIV,10 GOTAS,dado,orig13
+2026-06-10,mediodia,CANINSULIN,0.22,dado,orig13
+2026-06-10,medianoche,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-10,medianoche,PROTELIV,,dado,orig13
+2026-06-10,medianoche,CANINSULIN,0.22,dado,orig13
+2026-06-10,medianoche,FENOFIBRATO,1/2 100mg,vacio,orig13
+2026-06-11,mediodia,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-11,mediodia,PROTELIV,10 GOTAS,dado,orig13
+2026-06-11,mediodia,CANINSULIN,0.22,dado,orig13
+2026-06-11,medianoche,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-11,medianoche,PROTELIV,,no_dado,orig13
+2026-06-11,medianoche,CANINSULIN,0.22,dado,orig13
+2026-06-11,medianoche,FENOFIBRATO,1/2 100mg,vacio,orig13
+2026-06-12,mediodia,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-12,mediodia,PROTELIV,10 GOTAS,no_dado,orig13
+2026-06-12,mediodia,CANINSULIN,0.22,no_dado,orig13
+2026-06-12,medianoche,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-12,medianoche,PROTELIV,,no_dado,orig13
+2026-06-12,medianoche,CANINSULIN,0.22,dado,orig13
+2026-06-12,medianoche,FENOFIBRATO,1/2 100mg,dado,orig13
+2026-06-13,mediodia,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-13,mediodia,PROTELIV,10 GOTAS,no_dado,orig13
+2026-06-13,mediodia,CANINSULIN,0.22,dado,orig13
+2026-06-13,medianoche,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-13,medianoche,PROTELIV,,no_dado,orig13
+2026-06-13,medianoche,CANINSULIN,0.22,dado,orig13
+2026-06-13,medianoche,FENOFIBRATO,1/2 100mg,dado,orig13
+2026-06-14,mediodia,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-14,mediodia,PROTELIV,10 GOTAS,no_dado,orig13
+2026-06-14,mediodia,CANINSULIN,0.22,dado,orig13
+2026-06-14,medianoche,TRILOSTANO,1/2 10mg,dado,orig13
+2026-06-14,medianoche,PROTELIV,,no_dado,orig13
+2026-06-14,medianoche,CANINSULIN,0.22,dado,orig13
+2026-06-14,medianoche,FENOFIBRATO,1/2 100mg,dado,orig13
+2026-06-15,ayuno,T4,"0,3 1/4",dado,orig15
+2026-06-15,mediodia,TRILOSTANO,,dado,orig15
+2026-06-15,mediodia,CANINSULIN,"0,22",dado,orig15
+2026-06-15,medianoche,TRILOSTANO,1/2,dado,orig15
+2026-06-15,medianoche,CANINSULIN,"0,22",dado,orig15
+2026-06-15,medianoche,FENOFIBRATO,1/2,dado,orig15
+2026-06-15,medianoche,DIPIRONA,1/4,dado,orig15
+2026-06-16,ayuno,T4,"0,3 1/4",dado,orig15
+2026-06-16,mediodia,TRILOSTANO,,dado,orig15
+2026-06-16,mediodia,CANINSULIN,"0,24",dado,orig15
+2026-06-16,medianoche,TRILOSTANO,1/2,dado,orig15
+2026-06-16,medianoche,CANINSULIN,"0,22",dado,orig15
+2026-06-16,medianoche,FENOFIBRATO,1/2,dado,orig15
+2026-06-16,medianoche,DIPIRONA,1/4,no_dado,orig15
+2026-06-17,ayuno,T4,"0,3 1/4",dado,orig15
+2026-06-17,mediodia,TRILOSTANO,,dado,orig15
+2026-06-17,mediodia,CANINSULIN,"0,24",dado,orig15
+2026-06-17,medianoche,TRILOSTANO,1/2,dado,orig15
+2026-06-17,medianoche,CANINSULIN,"0,22",dado,orig15
+2026-06-17,medianoche,FENOFIBRATO,1/2,dado,orig15
+2026-06-17,medianoche,DIPIRONA,1/4,no_dado,orig15
+2026-06-18,ayuno,T4,"0,3 1/4",dado,orig15
+2026-06-18,mediodia,TRILOSTANO,,dado,orig15
+2026-06-18,mediodia,CANINSULIN,"0,24",dado,orig15
+2026-06-18,medianoche,TRILOSTANO,1/2,dado,orig15
+2026-06-18,medianoche,CANINSULIN,"0,22",dado,orig15
+2026-06-18,medianoche,FENOFIBRATO,1/2,dado,orig15
+2026-06-18,medianoche,DIPIRONA,1/4,no_dado,orig15
+2026-06-19,ayuno,T4,"0,3 1/4",dado,orig15
+2026-06-19,mediodia,TRILOSTANO,,dado,orig15
+2026-06-19,mediodia,CANINSULIN,"0,24",dado,orig15
+2026-06-19,medianoche,TRILOSTANO,1/2,dado,orig15
+2026-06-19,medianoche,CANINSULIN,"0,22",dado,orig15
+2026-06-19,medianoche,FENOFIBRATO,1/2,dado,orig15
+2026-06-19,medianoche,DIPIRONA,1/4,no_dado,orig15
+2026-06-20,ayuno,T4,"0,3 1/4",dado,orig15
+2026-06-20,mediodia,TRILOSTANO,,dado,orig15
+2026-06-20,mediodia,CANINSULIN,"0,24",dado,orig15
+2026-06-20,medianoche,TRILOSTANO,1/2,dado,orig15
+2026-06-20,medianoche,CANINSULIN,"0,22",dado,orig15
+2026-06-20,medianoche,FENOFIBRATO,1/2,dado,orig15
+2026-06-20,medianoche,DIPIRONA,1/4,no_dado,orig15
+2026-06-21,ayuno,T4,"0,3 1/4",dado,orig15
+2026-06-21,mediodia,TRILOSTANO,,dado,orig15
+2026-06-21,mediodia,CANINSULIN,"0,24",dado,orig15
+2026-06-21,medianoche,TRILOSTANO,1/2,dado,orig15
+2026-06-21,medianoche,CANINSULIN,"0,22",dado,orig15
+2026-06-21,medianoche,FENOFIBRATO,1/2,dado,orig15
+2026-06-21,medianoche,DIPIRONA,1/4,no_dado,orig15
+2026-06-22,ayuno,T4,"0,3 1/4",dado,orig17
+2026-06-22,mediodia,TRILOSTANO,1/2,dado,orig17
+2026-06-22,mediodia,CANINSULIN,"0,24",dado,orig17
+2026-06-22,medianoche,TRILOSTANO,1/2,dado,orig17
+2026-06-22,medianoche,FENOFIBRATO,1/2,dado,orig17
+2026-06-22,medianoche,CANINSULIN,"0,22",dado,orig17
+2026-06-23,ayuno,T4,"0,3 1/4",dado,orig17
+2026-06-23,mediodia,TRILOSTANO,1/2,dado,orig17
+2026-06-23,mediodia,CANINSULIN,"0,24",dado,orig17
+2026-06-23,medianoche,TRILOSTANO,1/2,dado,orig17
+2026-06-23,medianoche,FENOFIBRATO,1/2,dado,orig17
+2026-06-23,medianoche,CANINSULIN,"0,22",dado,orig17
+2026-06-24,ayuno,T4,"0,3 1/4",dado,orig17
+2026-06-24,mediodia,TRILOSTANO,1/2,dado,orig17
+2026-06-24,mediodia,CANINSULIN,"0,24",dado,orig17
+2026-06-24,medianoche,TRILOSTANO,1/2,dado,orig17
+2026-06-24,medianoche,FENOFIBRATO,1/2,dado,orig17
+2026-06-24,medianoche,CANINSULIN,"0,24",dado,orig17
+2026-06-25,ayuno,T4,"0,3 1/4",dado,orig17
+2026-06-25,mediodia,TRILOSTANO,1/2,dado,orig17
+2026-06-25,mediodia,CANINSULIN,"0,24",dado,orig17
+2026-06-25,medianoche,TRILOSTANO,1/2,dado,orig17
+2026-06-25,medianoche,FENOFIBRATO,1/2,dado,orig17
+2026-06-25,medianoche,CANINSULIN,"0,24",dado,orig17
+2026-06-26,ayuno,T4,"0,3 1/4",dado,orig17
+2026-06-26,mediodia,TRILOSTANO,1/2,dado,orig17
+2026-06-26,mediodia,CANINSULIN,"0,24",dado,orig17
+2026-06-26,medianoche,TRILOSTANO,1/2,dado,orig17
+2026-06-26,medianoche,FENOFIBRATO,1/2,dado,orig17
+2026-06-26,medianoche,CANINSULIN,"0,24",dado,orig17
+2026-06-27,ayuno,T4,"0,3 1/4",dado,orig17
+2026-06-27,mediodia,TRILOSTANO,1/2,dado,orig17
+2026-06-27,mediodia,CANINSULIN,,no_dado,orig17
+2026-06-27,medianoche,TRILOSTANO,1/2,dado,orig17
+2026-06-27,medianoche,FENOFIBRATO,1/2,dado,orig17
+2026-06-27,medianoche,CANINSULIN,"0,24",dado,orig17
+2026-06-28,ayuno,T4,"0,3 1/4",dado,orig17
+2026-06-28,mediodia,TRILOSTANO,1/2,dado,orig17
+2026-06-28,mediodia,CANINSULIN,"0,24",dado,orig17
+2026-06-28,medianoche,TRILOSTANO,1/2,dado,orig17
+2026-06-28,medianoche,FENOFIBRATO,1/2,dado,orig17
+2026-06-28,medianoche,CANINSULIN,"0,24",dado,orig17
+2026-06-29,ayuno,T4,"0,3 1/4",dado,orig19
+2026-06-29,mediodia,TRILOSTANO,10 1/2,dado,orig19
+2026-06-29,mediodia,CANINSULIN,"0,24",dado,orig19
+2026-06-29,medianoche,TRILOSTANO,10 1/2,dado,orig19
+2026-06-29,medianoche,FENOFIBRATO,1/2,dado,orig19
+2026-06-29,medianoche,CANINSULIN,"0,24",dado,orig19
+2026-06-30,ayuno,T4,"0,3 1/4",dado,orig19
+2026-06-30,mediodia,TRILOSTANO,10 1/2,dado,orig19
+2026-06-30,mediodia,CANINSULIN,"0,24",dado,orig19
+2026-06-30,medianoche,TRILOSTANO,10 1/2,dado,orig19
+2026-06-30,medianoche,FENOFIBRATO,1/2,dado,orig19
+2026-06-30,medianoche,CANINSULIN,"0,24",dado,orig19
+2026-07-01,ayuno,T4,"0,3 1/4",dado,orig19
+2026-07-01,mediodia,TRILOSTANO,10 1/2,dado,orig19
+2026-07-01,mediodia,CANINSULIN,"0,24",dado,orig19
+2026-07-01,medianoche,TRILOSTANO,10 1/2,dado,orig19
+2026-07-01,medianoche,FENOFIBRATO,1/2,dado,orig19
+2026-07-01,medianoche,CANINSULIN,"0,24",dado,orig19
+2026-07-02,ayuno,T4,"0,3 1/4",dado,orig19
+2026-07-02,mediodia,TRILOSTANO,10 1/2,dado,orig19
+2026-07-02,mediodia,CANINSULIN,"0,24",dado,orig19
+2026-07-02,medianoche,TRILOSTANO,10 1/2,dado,orig19
+2026-07-02,medianoche,FENOFIBRATO,1/2,dado,orig19
+2026-07-02,medianoche,CANINSULIN,"0,24",dado,orig19
+2026-07-03,ayuno,T4,"0,3 1/4",dado,orig19
+2026-07-03,mediodia,TRILOSTANO,10 1/2,dado,orig19
+2026-07-03,mediodia,CANINSULIN,"0,24",dado,orig19
+2026-07-03,medianoche,TRILOSTANO,10 1/2,dado,orig19
+2026-07-03,medianoche,FENOFIBRATO,1/2,dado,orig19
+2026-07-03,medianoche,CANINSULIN,"0,24",ambiguo,orig19
+2026-07-04,ayuno,T4,"0,3 1/4",dado,orig19
+2026-07-04,mediodia,TRILOSTANO,10 1/2,dado,orig19
+2026-07-04,mediodia,CANINSULIN,"0,24",dado,orig19
+2026-07-04,medianoche,TRILOSTANO,10 1/2,dado,orig19
+2026-07-04,medianoche,FENOFIBRATO,1/2,dado,orig19
+2026-07-04,medianoche,CANINSULIN,"0,24",dado,orig19
+2026-07-05,ayuno,T4,"0,3 1/4",dado,orig19
+2026-07-05,mediodia,TRILOSTANO,10 1/2,dado,orig19
+2026-07-05,mediodia,CANINSULIN,"0,24",dado,orig19
+2026-07-05,medianoche,TRILOSTANO,10 1/2,dado,orig19
+2026-07-05,medianoche,FENOFIBRATO,1/2,dado,orig19
+2026-07-05,medianoche,CANINSULIN,"0,24",dado,orig19
+2026-07-06,ayuno,T4,"0,3 1/4",dado,orig21
+2026-07-06,mediodia,TRILOSTANO,10 1/2,dado,orig21
+2026-07-06,mediodia,CANINSULIN,"0,24",dado,orig21
+2026-07-06,medianoche,TRILOSTANO,10 1/2,dado,orig21
+2026-07-06,medianoche,FENOFIBRATO,1/2,dado,orig21
+2026-07-06,medianoche,CANINSULIN,"0,24",dado,orig21
+2026-07-07,ayuno,T4,"0,3 1/4",dado,orig21
+2026-07-07,mediodia,TRILOSTANO,10 1/2,dado,orig21
+2026-07-07,mediodia,CANINSULIN,"0,24",dado,orig21
+2026-07-07,medianoche,TRILOSTANO,10 1/2,dado,orig21
+2026-07-07,medianoche,FENOFIBRATO,1/2,dado,orig21
+2026-07-07,medianoche,CANINSULIN,"0,24",dado,orig21
+2026-07-08,ayuno,T4,"0,3 1/4",dado,orig21
+2026-07-08,mediodia,TRILOSTANO,10 1/2,dado,orig21
+2026-07-08,mediodia,CANINSULIN,"0,24",dado,orig21
+2026-07-08,medianoche,TRILOSTANO,10 1/2,dado,orig21
+2026-07-08,medianoche,FENOFIBRATO,1/2,dado,orig21
+2026-07-08,medianoche,CANINSULIN,"0,24",dado,orig21
+2026-07-09,ayuno,T4,"0,3 1/4",dado,orig21
+2026-07-09,mediodia,TRILOSTANO,10 1/2,dado,orig21
+2026-07-09,mediodia,CANINSULIN,"0,24",dado,orig21
+2026-07-09,medianoche,TRILOSTANO,10 1/2,dado,orig21
+2026-07-09,medianoche,FENOFIBRATO,1/2,dado,orig21
+2026-07-09,medianoche,CANINSULIN,"0,24",dado,orig21
+2026-07-10,ayuno,T4,"0,3 1/4",dado,orig21
+2026-07-10,mediodia,TRILOSTANO,10 1/2,dado,orig21
+2026-07-10,mediodia,CANINSULIN,"0,24",dado,orig21
+2026-07-10,medianoche,TRILOSTANO,10 1/2,dado,orig21
+2026-07-10,medianoche,FENOFIBRATO,1/2,dado,orig21
+2026-07-10,medianoche,CANINSULIN,"0,24",dado,orig21
+2026-07-11,ayuno,T4,"0,3 1/4",dado,orig21
+2026-07-11,mediodia,TRILOSTANO,10 1/2,dado,orig21
+2026-07-11,mediodia,CANINSULIN,"0,24",dado,orig21
+2026-07-11,medianoche,TRILOSTANO,10 1/2,dado,orig21
+2026-07-11,medianoche,FENOFIBRATO,1/2,dado,orig21
+2026-07-11,medianoche,CANINSULIN,"0,24",dado,orig21
+2026-07-12,ayuno,T4,"0,3 1/4",dado,orig21
+2026-07-12,mediodia,TRILOSTANO,10 1/2,dado,orig21
+2026-07-12,mediodia,CANINSULIN,,no_dado,orig21
+2026-07-12,medianoche,TRILOSTANO,10 1/2,dado,orig21
+2026-07-12,medianoche,FENOFIBRATO,1/2,dado,orig21
+2026-07-12,medianoche,CANINSULIN,"0,24",dado,orig21
+2026-07-13,ayuno,T4,"0,3 1/4",dado,orig23
+2026-07-13,mediodia,TRILOSTANO,10 1/2,dado,orig23
+2026-07-13,mediodia,CANINSULIN,"0,24",dado,orig23
+2026-07-13,medianoche,TRILOSTANO,10 1/2,dado,orig23
+2026-07-13,medianoche,FENOFIBRATO,100 1/2,dado,orig23
+2026-07-13,medianoche,CANINSULIN,"0,24",dado,orig23
+2026-07-14,ayuno,T4,"0,3 1/4",dado,orig23
+2026-07-14,mediodia,TRILOSTANO,10 1/2,dado,orig23
+2026-07-14,mediodia,CANINSULIN,,no_dado,orig23
+2026-07-14,medianoche,TRILOSTANO,10 1/2,dado,orig23
+2026-07-14,medianoche,FENOFIBRATO,100 1/2,dado,orig23
+2026-07-14,medianoche,CANINSULIN,"0,24",dado,orig23
+2026-07-15,ayuno,T4,"0,3 1/4",dado,orig23
+2026-07-15,mediodia,TRILOSTANO,10 1/2,dado,orig23
+2026-07-15,mediodia,CANINSULIN,,ambiguo,orig23
+2026-07-15,medianoche,TRILOSTANO,10 1/2,dado,orig23
+2026-07-15,medianoche,FENOFIBRATO,100 1/2,dado,orig23
+2026-07-15,medianoche,CANINSULIN,"0,24",dado,orig23
+2026-07-16,ayuno,T4,"0,3 1/4",dado,orig23
+2026-07-16,mediodia,TRILOSTANO,10 1/2,dado,orig23
+2026-07-16,mediodia,CANINSULIN,"0,24",dado,orig23
+2026-07-16,medianoche,TRILOSTANO,10 1/2,dado,orig23
+2026-07-16,medianoche,FENOFIBRATO,100 1/2,dado,orig23
+2026-07-16,medianoche,CANINSULIN,"0,24",dado,orig23
+2026-07-17,ayuno,T4,"0,3 1/4",dado,orig23
+2026-07-17,mediodia,TRILOSTANO,10 1/2,dado,orig23
+2026-07-17,mediodia,CANINSULIN,,ambiguo,orig23
+2026-07-17,medianoche,TRILOSTANO,10 1/2,dado,orig23
+2026-07-17,medianoche,FENOFIBRATO,100 1/2,dado,orig23
+2026-07-17,medianoche,CANINSULIN,"0,24",dado,orig23
+2026-07-18,ayuno,T4,"0,3 1/4",dado,orig23
+2026-07-18,mediodia,TRILOSTANO,10 1/2,dado,orig23
+2026-07-18,mediodia,CANINSULIN,"0,24",dado,orig23
+2026-07-18,medianoche,TRILOSTANO,10 1/2,dado,orig23
+2026-07-18,medianoche,FENOFIBRATO,100 1/2,dado,orig23
+2026-07-18,medianoche,CANINSULIN,"0,24",dado,orig23
+2026-07-19,ayuno,T4,"0,3 1/4",dado,orig23
+2026-07-19,mediodia,TRILOSTANO,10 1/2,dado,orig23
+2026-07-19,mediodia,CANINSULIN,"0,24",dado,orig23
+2026-07-19,medianoche,TRILOSTANO,10 1/2,dado,orig23
+2026-07-19,medianoche,FENOFIBRATO,100 1/2,dado,orig23
+2026-07-19,medianoche,CANINSULIN,,no_dado,orig23
+2026-07-20,ayuno,T4,"0,3 1/4",dado,orig25
+2026-07-20,mediodia,TRILOSTANO,10 1/2,dado,orig25
+2026-07-20,mediodia,CANINSULIN,,dado,orig25
+2026-07-20,medianoche,TRILOSTANO,10 1/2,dado,orig25
+2026-07-20,medianoche,FENOFIBRATO,100 1/2,dado,orig25
+2026-07-20,medianoche,CANINSULIN,"0,24",dado,orig25
+2026-07-21,ayuno,T4,"0,3 1/4",dado,orig25
+2026-07-21,mediodia,TRILOSTANO,10 1/2,dado,orig25
+2026-07-21,mediodia,CANINSULIN,,dado,orig25
+2026-07-21,medianoche,TRILOSTANO,10 1/2,dado,orig25
+2026-07-21,medianoche,FENOFIBRATO,100 1/2,dado,orig25
+2026-07-21,medianoche,CANINSULIN,"0,24",dado,orig25
+2026-07-22,ayuno,T4,"0,3 1/4",dado,orig25
+2026-07-22,mediodia,TRILOSTANO,10 1/2,dado,orig25
+2026-07-22,mediodia,CANINSULIN,,dado,orig25
+2026-07-22,medianoche,TRILOSTANO,10 1/2,dado,orig25
+2026-07-22,medianoche,FENOFIBRATO,100 1/2,dado,orig25
+2026-07-22,medianoche,CANINSULIN,"0,24",dado,orig25
+2026-07-23,ayuno,T4,"0,3 1/4",dado,orig25
+2026-07-23,mediodia,TRILOSTANO,10 1/2,dado,orig25
+2026-07-23,mediodia,CANINSULIN,"0,24",dado,orig25
+2026-07-23,medianoche,TRILOSTANO,10 1/2,dado,orig25
+2026-07-23,medianoche,FENOFIBRATO,100 1/2,dado,orig25
+2026-07-23,medianoche,CANINSULIN,"0,24",dado,orig25
+2026-07-24,ayuno,T4,"0,3 1/4",dado,orig25
+2026-07-24,mediodia,TRILOSTANO,10 1/2,dado,orig25
+2026-07-24,mediodia,CANINSULIN,,dado,orig25
+2026-07-24,medianoche,TRILOSTANO,10 1/2,dado,orig25
+2026-07-24,medianoche,FENOFIBRATO,100 1/2,dado,orig25
+2026-07-24,medianoche,CANINSULIN,"0,24",dado,orig25
+2026-07-25,ayuno,T4,"0,3 1/4",dado,orig25
+2026-07-25,mediodia,TRILOSTANO,10 1/2,dado,orig25
+2026-07-25,mediodia,CANINSULIN,,no_dado,orig25
+2026-07-25,medianoche,TRILOSTANO,10 1/2,dado,orig25
+2026-07-25,medianoche,FENOFIBRATO,100 1/2,dado,orig25
+2026-07-25,medianoche,CANINSULIN,,dado,orig25
+2026-07-26,ayuno,T4,"0,3 1/4",dado,orig25
+2026-07-26,mediodia,TRILOSTANO,10 1/2,dado,orig25
+2026-07-26,mediodia,CANINSULIN,,dado,orig25
+2026-07-26,medianoche,TRILOSTANO,10 1/2,dado,orig25
+2026-07-26,medianoche,FENOFIBRATO,100 1/2,dado,orig25
+2026-07-26,medianoche,CANINSULIN,"0,24",dado,orig25
+2026-07-27,ayuno,T4,"0,3 1/4",dado,orig27
+2026-07-28,ayuno,T4,"0,3 1/4",dado,orig27
+2026-07-29,ayuno,T4,"0,3 1/4",dado,orig27
+2026-07-30,ayuno,T4,"0,3 1/4",dado,orig27
+2026-07-31,ayuno,T4,"0,3 1/4",dado,orig27
+2026-08-01,ayuno,T4,"0,3 1/4",dado,orig27
+2026-08-02,ayuno,T4,"0,3 1/4",dado,orig27
+2026-07-27,mediodia,TRILOSTANO,10 1/2,dado,orig27
+2026-07-28,mediodia,TRILOSTANO,10 1/2,dado,orig27
+2026-07-29,mediodia,TRILOSTANO,10 1/2,dado,orig27
+2026-07-30,mediodia,TRILOSTANO,10 1/2,dado,orig27
+2026-07-31,mediodia,TRILOSTANO,10 1/2,dado,orig27
+2026-08-01,mediodia,TRILOSTANO,10 1/2,dado,orig27
+2026-08-02,mediodia,TRILOSTANO,10 1/2,dado,orig27
+2026-07-27,mediodia,CANINSULIN,"0,24",no_dado,orig27
+2026-07-28,mediodia,CANINSULIN,"0,24",dado,orig27
+2026-07-29,mediodia,CANINSULIN,"0,24",dado,orig27
+2026-07-30,mediodia,CANINSULIN,"0,24",dado,orig27
+2026-07-31,mediodia,CANINSULIN,"0,24",dado,orig27
+2026-08-01,mediodia,CANINSULIN,"0,24",dado,orig27
+2026-08-02,mediodia,CANINSULIN,"0,24",dado,orig27
+2026-07-27,medianoche,TRILOSTANO,10 1/2,dado,orig27
+2026-07-28,medianoche,TRILOSTANO,10 1/2,dado,orig27
+2026-07-29,medianoche,TRILOSTANO,10 1/2,dado,orig27
+2026-07-30,medianoche,TRILOSTANO,10 1/2,dado,orig27
+2026-07-31,medianoche,TRILOSTANO,10 1/2,dado,orig27
+2026-08-01,medianoche,TRILOSTANO,10 1/2,dado,orig27
+2026-08-02,medianoche,TRILOSTANO,10 1/2,dado,orig27
+2026-07-27,medianoche,FENOFIBRATO,100 1/2,dado,orig27
+2026-07-28,medianoche,FENOFIBRATO,100 1/2,dado,orig27
+2026-07-29,medianoche,FENOFIBRATO,100 1/2,dado,orig27
+2026-07-30,medianoche,FENOFIBRATO,100 1/2,dado,orig27
+2026-07-31,medianoche,FENOFIBRATO,100 1/2,dado,orig27
+2026-08-01,medianoche,FENOFIBRATO,100 1/2,dado,orig27
+2026-08-02,medianoche,FENOFIBRATO,100 1/2,dado,orig27
+2026-07-27,medianoche,CANINSULIN,"0,24",dado,orig27
+2026-07-28,medianoche,CANINSULIN,"0,24",dado,orig27
+2026-07-29,medianoche,CANINSULIN,"0,24",dado,orig27
+2026-07-30,medianoche,CANINSULIN,"0,24",dado,orig27
+2026-07-31,medianoche,CANINSULIN,"0,24",dado,orig27
+2026-08-01,medianoche,CANINSULIN,"0,24",dado,orig27
+2026-08-02,medianoche,CANINSULIN,"0,24",dado,orig27
+2026-08-03,ayuno,T4,"0,3 1/4",dado,orig29
+2026-08-04,ayuno,T4,"0,3 1/4",dado,orig29
+2026-08-05,ayuno,T4,"0,3 1/4",dado,orig29
+2026-08-06,ayuno,T4,"0,3 1/4",dado,orig29
+2026-08-07,ayuno,T4,"0,3 1/4",dado,orig29
+2026-08-08,ayuno,T4,"0,3 1/4",dado,orig29
+2026-08-09,ayuno,T4,"0,3 1/4",dado,orig29
+2026-08-03,mediodia,TRILOSTANO,10 1/2,dado,orig29
+2026-08-04,mediodia,TRILOSTANO,10 1/2,dado,orig29
+2026-08-05,mediodia,TRILOSTANO,10 1/2,dado,orig29
+2026-08-06,mediodia,TRILOSTANO,10 1/2,dado,orig29
+2026-08-07,mediodia,TRILOSTANO,10 1/2,dado,orig29
+2026-08-08,mediodia,TRILOSTANO,10 1/2,dado,orig29
+2026-08-09,mediodia,TRILOSTANO,10 1/2,dado,orig29
+2026-08-03,mediodia,CANINSULIN,"0,24",dado,orig29
+2026-08-04,mediodia,CANINSULIN,"0,24",dado,orig29
+2026-08-05,mediodia,CANINSULIN,"0,24",dado,orig29
+2026-08-06,mediodia,CANINSULIN,"0,24",dado,orig29
+2026-08-07,mediodia,CANINSULIN,"0,24",dado,orig29
+2026-08-08,mediodia,CANINSULIN,"0,24",dado,orig29
+2026-08-09,mediodia,CANINSULIN,"0,24",dado,orig29
+2026-08-03,medianoche,TRILOSTANO,10 1/2,dado,orig29
+2026-08-04,medianoche,TRILOSTANO,10 1/2,dado,orig29
+2026-08-05,medianoche,TRILOSTANO,10 1/2,dado,orig29
+2026-08-06,medianoche,TRILOSTANO,10 1/2,dado,orig29
+2026-08-07,medianoche,TRILOSTANO,10 1/2,dado,orig29
+2026-08-08,medianoche,TRILOSTANO,10 1/2,dado,orig29
+2026-08-09,medianoche,TRILOSTANO,10 1/2,dado,orig29
+2026-08-03,medianoche,FENOFIBRATO,100 1/2,dado,orig29
+2026-08-04,medianoche,FENOFIBRATO,100 1/2,dado,orig29
+2026-08-05,medianoche,FENOFIBRATO,100 1/2,dado,orig29
+2026-08-06,medianoche,FENOFIBRATO,100 1/2,dado,orig29
+2026-08-07,medianoche,FENOFIBRATO,100 1/2,dado,orig29
+2026-08-08,medianoche,FENOFIBRATO,100 1/2,dado,orig29
+2026-08-09,medianoche,FENOFIBRATO,100 1/2,dado,orig29
+2026-08-03,medianoche,CANINSULIN,"0,22",dado,orig29
+2026-08-04,medianoche,CANINSULIN,"0,22",dado,orig29
+2026-08-05,medianoche,CANINSULIN,"0,22",dado,orig29
+2026-08-06,medianoche,CANINSULIN,"0,22",dado,orig29
+2026-08-07,medianoche,CANINSULIN,"0,22",dado,orig29
+2026-08-08,medianoche,CANINSULIN,"0,22",dado,orig29
+2026-08-09,medianoche,CANINSULIN,"0,22",dado,orig29
+2026-08-10,ayuno,T4,1/2,dado,orig32
+2026-08-11,ayuno,T4,1/2,dado,orig32
+2026-08-12,ayuno,T4,1/2,dado,orig32
+2026-08-13,ayuno,T4,1/2,dado,orig32
+2026-08-14,ayuno,T4,1/2,dado,orig32
+2026-08-15,ayuno,T4,1/2,dado,orig32
+2026-08-16,ayuno,T4,1/2,dado,orig32
+2026-08-10,mediodia,TRILOSTANO,1/2,dado,orig32
+2026-08-11,mediodia,TRILOSTANO,1/2,dado,orig32
+2026-08-12,mediodia,TRILOSTANO,1/2,dado,orig32
+2026-08-13,mediodia,TRILOSTANO,1/2,dado,orig32
+2026-08-14,mediodia,TRILOSTANO,1/2,dado,orig32
+2026-08-15,mediodia,TRILOSTANO,1/2,dado,orig32
+2026-08-16,mediodia,TRILOSTANO,1/2,dado,orig32
+2026-08-10,mediodia,CANINSULIN,"0,22",dado,orig32
+2026-08-11,mediodia,CANINSULIN,"0,22",dado,orig32
+2026-08-12,mediodia,CANINSULIN,"0,22",dado,orig32
+2026-08-13,mediodia,CANINSULIN,"0,22",no_dado,orig32
+2026-08-14,mediodia,CANINSULIN,"0,22",dado,orig32
+2026-08-15,mediodia,CANINSULIN,"0,22",dado,orig32
+2026-08-16,mediodia,CANINSULIN,"0,22",dado,orig32
+2026-08-10,medianoche,TRILOSTANO,1/2,dado,orig32
+2026-08-11,medianoche,TRILOSTANO,1/2,dado,orig32
+2026-08-12,medianoche,TRILOSTANO,1/2,dado,orig32
+2026-08-13,medianoche,TRILOSTANO,1/2,dado,orig32
+2026-08-14,medianoche,TRILOSTANO,1/2,dado,orig32
+2026-08-15,medianoche,TRILOSTANO,1/2,dado,orig32
+2026-08-16,medianoche,TRILOSTANO,1/2,dado,orig32
+2026-08-10,medianoche,FENOFIBRATO,1/2,dado,orig32
+2026-08-11,medianoche,FENOFIBRATO,1/2,dado,orig32
+2026-08-12,medianoche,FENOFIBRATO,1/2,dado,orig32
+2026-08-13,medianoche,FENOFIBRATO,1/2,dado,orig32
+2026-08-14,medianoche,FENOFIBRATO,1/2,dado,orig32
+2026-08-15,medianoche,FENOFIBRATO,1/2,dado,orig32
+2026-08-16,medianoche,FENOFIBRATO,1/2,dado,orig32
+2026-08-10,medianoche,SILIMARINA,150 1/2,dado,orig32
+2026-08-11,medianoche,SILIMARINA,150 1/2,dado,orig32
+2026-08-12,medianoche,SILIMARINA,150 1/2,dado,orig32
+2026-08-13,medianoche,SILIMARINA,150 1/2,dado,orig32
+2026-08-14,medianoche,SILIMARINA,150 1/2,dado,orig32
+2026-08-15,medianoche,SILIMARINA,150 1/2,dado,orig32
+2026-08-16,medianoche,SILIMARINA,150 1/2,dado,orig32
+2026-08-10,medianoche,CANINSULIN,"0,22",dado,orig32
+2026-08-11,medianoche,CANINSULIN,"0,22",dado,orig32
+2026-08-12,medianoche,CANINSULIN,"0,22",dado,orig32
+2026-08-13,medianoche,CANINSULIN,"0,22",dado,orig32
+2026-08-14,medianoche,CANINSULIN,"0,22",dado,orig32
+2026-08-15,medianoche,CANINSULIN,"0,22",dado,orig32
+2026-08-16,medianoche,CANINSULIN,"0,22",dado,orig32
+2026-08-17,ayuno,T4,1/2,dado,orig34
+2026-08-18,ayuno,T4,1/2,dado,orig34
+2026-08-19,ayuno,T4,1/2,dado,orig34
+2026-08-20,ayuno,T4,1/2,no_dado,orig34
+2026-08-21,ayuno,T4,1/2,dado,orig34
+2026-08-22,ayuno,T4,1/2,dado,orig34
+2026-08-23,ayuno,T4,1/2,dado,orig34
+2026-08-21,ayuno,DIPIRONA,1/4,dado,orig34
+2026-08-17,mediodia,TRILOSTANO,1/2,dado,orig34
+2026-08-18,mediodia,TRILOSTANO,1/2,dado,orig34
+2026-08-19,mediodia,TRILOSTANO,1/2,dado,orig34
+2026-08-20,mediodia,TRILOSTANO,1/2,dado,orig34
+2026-08-21,mediodia,TRILOSTANO,1/2,dado,orig34
+2026-08-22,mediodia,TRILOSTANO,1/2,dado,orig34
+2026-08-23,mediodia,TRILOSTANO,1/2,dado,orig34
+2026-08-17,mediodia,CANINSULIN,"0,22",dado,orig34
+2026-08-18,mediodia,CANINSULIN,"0,22",dado,orig34
+2026-08-19,mediodia,CANINSULIN,"0,22",no_dado,orig34
+2026-08-20,mediodia,CANINSULIN,"0,22",dado,orig34
+2026-08-21,mediodia,CANINSULIN,"0,22",no_dado,orig34
+2026-08-22,mediodia,CANINSULIN,"0,2",dado,orig34
+2026-08-23,mediodia,CANINSULIN,"0,2",dado,orig34
+2026-08-17,mediodia,SILIMARINA,,no_dado,orig34
+2026-08-18,mediodia,SILIMARINA,,no_dado,orig34
+2026-08-19,mediodia,SILIMARINA,,ambiguo,orig34
+2026-08-20,mediodia,SILIMARINA,,ambiguo,orig34
+2026-08-21,mediodia,SILIMARINA,,no_dado,orig34
+2026-08-22,mediodia,SILIMARINA,1/4,dado,orig34
+2026-08-23,mediodia,SILIMARINA,1/4,dado,orig34
+2026-08-17,medianoche,TRILOSTANO,1/2,dado,orig34
+2026-08-18,medianoche,TRILOSTANO,1/2,dado,orig34
+2026-08-19,medianoche,TRILOSTANO,1/2,dado,orig34
+2026-08-20,medianoche,TRILOSTANO,1/2,dado,orig34
+2026-08-21,medianoche,TRILOSTANO,1/2,dado,orig34
+2026-08-22,medianoche,TRILOSTANO,1/2,dado,orig34
+2026-08-23,medianoche,TRILOSTANO,1/2,dado,orig34
+2026-08-17,medianoche,FENOFIBRATO,1/2,dado,orig34
+2026-08-18,medianoche,FENOFIBRATO,1/2,dado,orig34
+2026-08-19,medianoche,FENOFIBRATO,1/2,dado,orig34
+2026-08-20,medianoche,FENOFIBRATO,1/2,dado,orig34
+2026-08-21,medianoche,FENOFIBRATO,1/2,dado,orig34
+2026-08-22,medianoche,FENOFIBRATO,1/2,dado,orig34
+2026-08-23,medianoche,FENOFIBRATO,1/2,dado,orig34
+2026-08-17,medianoche,SILIMARINA,150 1/2,dado,orig34
+2026-08-18,medianoche,SILIMARINA,150 1/2,dado,orig34
+2026-08-19,medianoche,SILIMARINA,150 1/2,dado,orig34
+2026-08-20,medianoche,SILIMARINA,150 1/2,dado,orig34
+2026-08-21,medianoche,SILIMARINA,1/4,dado,orig34
+2026-08-22,medianoche,SILIMARINA,1/4,dado,orig34
+2026-08-23,medianoche,SILIMARINA,1/4,dado,orig34
+2026-08-17,medianoche,CANINSULIN,"0,22",no_dado,orig34
+2026-08-18,medianoche,CANINSULIN,"0,22",dado,orig34
+2026-08-19,medianoche,CANINSULIN,"0,20",dado,orig34
+2026-08-20,medianoche,CANINSULIN,"0,2",dado,orig34
+2026-08-21,medianoche,CANINSULIN,"0,2",dado,orig34
+2026-08-22,medianoche,CANINSULIN,"0,2",dado,orig34
+2026-08-23,medianoche,CANINSULIN,"0,2",dado,orig34
+2026-08-24,ayuno,T4,1/2,dado,orig36
+2026-08-25,ayuno,T4,1/4,dado,orig36
+2026-08-26,ayuno,T4,1/4,dado,orig36
+2026-08-27,ayuno,T4,1/4,dado,orig36
+2026-08-28,ayuno,T4,1/4,dado,orig36
+2026-08-29,ayuno,T4,1/4,dado,orig36
+2026-08-30,ayuno,T4,1/4,dado,orig36
+2026-08-24,mediodia,TRILOSTANO,1/2,dado,orig36
+2026-08-25,mediodia,TRILOSTANO,1/2,dado,orig36
+2026-08-26,mediodia,TRILOSTANO,1/2,dado,orig36
+2026-08-27,mediodia,TRILOSTANO,1/2,dado,orig36
+2026-08-28,mediodia,TRILOSTANO,1/2,dado,orig36
+2026-08-29,mediodia,TRILOSTANO,1/2,dado,orig36
+2026-08-30,mediodia,TRILOSTANO,1/2,dado,orig36
+2026-08-24,mediodia,SILIMARINA,1/4,dado,orig36
+2026-08-25,mediodia,SILIMARINA,1/4,dado,orig36
+2026-08-26,mediodia,SILIMARINA,1/4,dado,orig36
+2026-08-27,mediodia,SILIMARINA,1/4,dado,orig36
+2026-08-28,mediodia,SILIMARINA,1/4,dado,orig36
+2026-08-29,mediodia,SILIMARINA,1/4,dado,orig36
+2026-08-30,mediodia,SILIMARINA,1/4,dado,orig36
+2026-08-24,mediodia,FENOFIBRATO,1/4,dado,orig36
+2026-08-25,mediodia,FENOFIBRATO,1/4,dado,orig36
+2026-08-26,mediodia,FENOFIBRATO,1/4,dado,orig36
+2026-08-27,mediodia,FENOFIBRATO,1/4,dado,orig36
+2026-08-28,mediodia,FENOFIBRATO,1/4,dado,orig36
+2026-08-29,mediodia,FENOFIBRATO,1/4,dado,orig36
+2026-08-30,mediodia,FENOFIBRATO,1/4,dado,orig36
+2026-08-24,mediodia,CANINSULIN,"0,2",no_dado,orig36
+2026-08-25,mediodia,CANINSULIN,"0,18",dado,orig36
+2026-08-26,mediodia,CANINSULIN,"0,18",dado,orig36
+2026-08-27,mediodia,CANINSULIN,"0,2",no_dado,orig36
+2026-08-28,mediodia,CANINSULIN,"0,18",dado,orig36
+2026-08-29,mediodia,CANINSULIN,"0,18",dado,orig36
+2026-08-30,mediodia,CANINSULIN,"0,18",dado,orig36
+2026-08-25,mediodia,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-26,mediodia,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-27,mediodia,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-28,mediodia,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-29,mediodia,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-30,mediodia,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-24,medianoche,TRILOSTANO,1/2,dado,orig36
+2026-08-25,medianoche,TRILOSTANO,1/2,dado,orig36
+2026-08-26,medianoche,TRILOSTANO,1/2,dado,orig36
+2026-08-27,medianoche,TRILOSTANO,1/2,dado,orig36
+2026-08-28,medianoche,TRILOSTANO,1/2,dado,orig36
+2026-08-29,medianoche,TRILOSTANO,1/2,dado,orig36
+2026-08-30,medianoche,TRILOSTANO,1/2,dado,orig36
+2026-08-24,medianoche,SILIMARINA,1/4,dado,orig36
+2026-08-25,medianoche,SILIMARINA,1/4,dado,orig36
+2026-08-26,medianoche,SILIMARINA,1/4,dado,orig36
+2026-08-27,medianoche,SILIMARINA,1/4,dado,orig36
+2026-08-28,medianoche,SILIMARINA,1/4,dado,orig36
+2026-08-29,medianoche,SILIMARINA,1/4,dado,orig36
+2026-08-30,medianoche,SILIMARINA,1/4,dado,orig36
+2026-08-24,medianoche,FENOFIBRATO,1/4,dado,orig36
+2026-08-25,medianoche,FENOFIBRATO,1/4,dado,orig36
+2026-08-26,medianoche,FENOFIBRATO,1/4,dado,orig36
+2026-08-27,medianoche,FENOFIBRATO,1/4,dado,orig36
+2026-08-28,medianoche,FENOFIBRATO,1/4,dado,orig36
+2026-08-29,medianoche,FENOFIBRATO,1/4,dado,orig36
+2026-08-30,medianoche,FENOFIBRATO,1/4,dado,orig36
+2026-08-24,medianoche,CANINSULIN,"0,18",dado,orig36
+2026-08-25,medianoche,CANINSULIN,"0,2",no_dado,orig36
+2026-08-26,medianoche,CANINSULIN,"0,20",dado,orig36
+2026-08-27,medianoche,CANINSULIN,"0,18",dado,orig36
+2026-08-28,medianoche,CANINSULIN,"0,18",dado,orig36
+2026-08-29,medianoche,CANINSULIN,"0,18",dado,orig36
+2026-08-30,medianoche,CANINSULIN,"0,18",dado,orig36
+2026-08-24,medianoche,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-25,medianoche,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-26,medianoche,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-27,medianoche,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-28,medianoche,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-29,medianoche,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-30,medianoche,METRONIDAZOL,"2,5ml",dado,orig36
+2026-08-31,ayuno,T4,1/4,dado,orig38
+2026-09-01,ayuno,T4,1/4,dado,orig38
+2026-09-02,ayuno,T4,1/4,dado,orig38
+2026-09-03,ayuno,T4,1/4,dado,orig38
+2026-09-04,ayuno,T4,1/4,dado,orig38
+2026-09-05,ayuno,T4,1/4,dado,orig38
+2026-09-06,ayuno,T4,1/4,dado,orig38
+2026-08-31,mediodia,TRILOSTANO,1/2,dado,orig38
+2026-09-01,mediodia,TRILOSTANO,1/2,dado,orig38
+2026-09-02,mediodia,TRILOSTANO,1/2,dado,orig38
+2026-09-03,mediodia,TRILOSTANO,1/2,dado,orig38
+2026-09-04,mediodia,TRILOSTANO,1/2,dado,orig38
+2026-09-05,mediodia,TRILOSTANO,1/2,dado,orig38
+2026-09-06,mediodia,TRILOSTANO,1/2,dado,orig38
+2026-08-31,mediodia,SILIMARINA,1/4,dado,orig38
+2026-09-01,mediodia,SILIMARINA,1/4,dado,orig38
+2026-09-02,mediodia,SILIMARINA,1/4,dado,orig38
+2026-09-03,mediodia,SILIMARINA,1/4,dado,orig38
+2026-09-04,mediodia,SILIMARINA,1/4,dado,orig38
+2026-09-05,mediodia,SILIMARINA,1/4,dado,orig38
+2026-09-06,mediodia,SILIMARINA,1/4,dado,orig38
+2026-08-31,mediodia,FENOFIBRATO,1/4,dado,orig38
+2026-09-01,mediodia,FENOFIBRATO,1/4,dado,orig38
+2026-09-02,mediodia,FENOFIBRATO,1/4,dado,orig38
+2026-09-03,mediodia,FENOFIBRATO,1/4,dado,orig38
+2026-09-04,mediodia,FENOFIBRATO,1/4,dado,orig38
+2026-09-05,mediodia,FENOFIBRATO,1/4,dado,orig38
+2026-09-06,mediodia,FENOFIBRATO,1/4,dado,orig38
+2026-08-31,mediodia,CANINSULIN,"0,18",dado,orig38
+2026-09-01,mediodia,CANINSULIN,"0,18",dado,orig38
+2026-09-02,mediodia,CANINSULIN,"0,18",dado,orig38
+2026-09-03,mediodia,CANINSULIN,"0,18",dado,orig38
+2026-09-04,mediodia,CANINSULIN,"0,18",dado,orig38
+2026-09-05,mediodia,CANINSULIN,"0,18",dado,orig38
+2026-09-06,mediodia,CANINSULIN,"0,18",dado,orig38
+2026-09-02,mediodia,METRONIDAZOL,"2,5",dado,orig38
+2026-09-03,mediodia,METRONIDAZOL,"2,5",dado,orig38
+2026-09-04,mediodia,METRONIDAZOL,"2,5",dado,orig38
+2026-09-05,mediodia,METRONIDAZOL,"2,5",no_dado,orig38
+2026-09-06,mediodia,METRONIDAZOL,"2,5",no_dado,orig38
+2026-08-31,medianoche,TRILOSTANO,1/2,dado,orig38
+2026-09-01,medianoche,TRILOSTANO,1/2,dado,orig38
+2026-09-02,medianoche,TRILOSTANO,1/2,dado,orig38
+2026-09-03,medianoche,TRILOSTANO,1/2,dado,orig38
+2026-09-04,medianoche,TRILOSTANO,1/2,dado,orig38
+2026-09-05,medianoche,TRILOSTANO,1/2,dado,orig38
+2026-09-06,medianoche,TRILOSTANO,1/2,dado,orig38
+2026-08-31,medianoche,SILIMARINA,1/4,dado,orig38
+2026-09-01,medianoche,SILIMARINA,1/4,dado,orig38
+2026-09-02,medianoche,SILIMARINA,1/4,dado,orig38
+2026-09-03,medianoche,SILIMARINA,1/4,dado,orig38
+2026-09-04,medianoche,SILIMARINA,1/4,dado,orig38
+2026-09-05,medianoche,SILIMARINA,1/4,dado,orig38
+2026-09-06,medianoche,SILIMARINA,1/4,dado,orig38
+2026-08-31,medianoche,FENOFIBRATO,1/4,dado,orig38
+2026-09-01,medianoche,FENOFIBRATO,1/4,dado,orig38
+2026-09-02,medianoche,FENOFIBRATO,1/4,dado,orig38
+2026-09-03,medianoche,FENOFIBRATO,1/4,dado,orig38
+2026-09-04,medianoche,FENOFIBRATO,1/4,dado,orig38
+2026-09-05,medianoche,FENOFIBRATO,1/4,dado,orig38
+2026-09-06,medianoche,FENOFIBRATO,1/4,dado,orig38
+2026-08-31,medianoche,CANINSULIN,"0,18",dado,orig38
+2026-09-01,medianoche,CANINSULIN,"0,18",dado,orig38
+2026-09-02,medianoche,CANINSULIN,"0,18",dado,orig38
+2026-09-03,medianoche,CANINSULIN,"0,2",dado,orig38
+2026-09-04,medianoche,CANINSULIN,"0,18",dado,orig38
+2026-09-05,medianoche,CANINSULIN,"0,18",dado,orig38
+2026-09-06,medianoche,CANINSULIN,"0,2",dado,orig38
+2026-09-02,medianoche,METRONIDAZOL,"2,5",dado,orig38
+2026-09-03,medianoche,METRONIDAZOL,"2,5",dado,orig38
+2026-09-04,medianoche,METRONIDAZOL,"2,5",dado,orig38
+2026-09-05,medianoche,METRONIDAZOL,"2,5",no_dado,orig38
+2026-09-06,medianoche,METRONIDAZOL,"2,5",no_dado,orig38
+2026-09-07,ayuno,T4,1/4,dado,orig40
+2026-09-08,ayuno,T4,1/4,dado,orig40
+2026-09-09,ayuno,T4,1/4,dado,orig40
+2026-09-10,ayuno,T4,1/4,dado,orig40
+2026-09-11,ayuno,T4,1/4,dado,orig40
+2026-09-12,ayuno,T4,1/4,dado,orig40
+2026-09-13,ayuno,T4,1/4,dado,orig40
+2026-09-09,ayuno,DIPIRONA,1/4,dado,orig40
+2026-09-10,ayuno,DIPIRONA,1/4,dado,orig40
+2026-09-11,ayuno,DIPIRONA,1/4,dado,orig40
+2026-09-12,ayuno,DIPIRONA,1/4,dado,orig40
+2026-09-13,ayuno,DIPIRONA,1/4,dado,orig40
+2026-09-07,mediodia,TRILOSTANO,1/2,dado,orig40
+2026-09-08,mediodia,TRILOSTANO,1/2,dado,orig40
+2026-09-09,mediodia,TRILOSTANO,1/2,dado,orig40
+2026-09-10,mediodia,TRILOSTANO,1/2,dado,orig40
+2026-09-11,mediodia,TRILOSTANO,1/2,dado,orig40
+2026-09-12,mediodia,TRILOSTANO,1/2,dado,orig40
+2026-09-13,mediodia,TRILOSTANO,1/2,dado,orig40
+2026-09-07,mediodia,SILIMARINA,1/4,dado,orig40
+2026-09-08,mediodia,SILIMARINA,1/4,dado,orig40
+2026-09-09,mediodia,SILIMARINA,1/4,dado,orig40
+2026-09-10,mediodia,SILIMARINA,1/4,dado,orig40
+2026-09-11,mediodia,SILIMARINA,1/4,dado,orig40
+2026-09-12,mediodia,SILIMARINA,1/4,dado,orig40
+2026-09-13,mediodia,SILIMARINA,1/4,dado,orig40
+2026-09-07,mediodia,FENOFIBRATO,1/4,dado,orig40
+2026-09-08,mediodia,FENOFIBRATO,1/4,dado,orig40
+2026-09-09,mediodia,FENOFIBRATO,1/4,dado,orig40
+2026-09-10,mediodia,FENOFIBRATO,1/4,dado,orig40
+2026-09-11,mediodia,FENOFIBRATO,1/4,dado,orig40
+2026-09-12,mediodia,FENOFIBRATO,1/4,dado,orig40
+2026-09-13,mediodia,FENOFIBRATO,1/4,dado,orig40
+2026-09-07,mediodia,CANINSULIN,"0,18",dado,orig40
+2026-09-08,mediodia,CANINSULIN,"0,18",dado,orig40
+2026-09-09,mediodia,CANINSULIN,"0,18",dado,orig40
+2026-09-10,mediodia,CANINSULIN,"0,2",dado,orig40
+2026-09-11,mediodia,CANINSULIN,"0,2",dado,orig40
+2026-09-12,mediodia,CANINSULIN,"0,18",no_dado,orig40
+2026-09-13,mediodia,CANINSULIN,"0,2",dado,orig40
+2026-09-13,mediodia,BILETAN_ENZIMATICO,1/2,dado,orig40
+2026-09-13,mediodia,PSYLLIUM,,dado,orig40
+2026-09-07,medianoche,TRILOSTANO,1/2,dado,orig40
+2026-09-08,medianoche,TRILOSTANO,1/2,dado,orig40
+2026-09-09,medianoche,TRILOSTANO,1/2,dado,orig40
+2026-09-10,medianoche,TRILOSTANO,1/2,dado,orig40
+2026-09-11,medianoche,TRILOSTANO,1/2,dado,orig40
+2026-09-12,medianoche,TRILOSTANO,1/2,dado,orig40
+2026-09-07,medianoche,SILIMARINA,1/4,dado,orig40
+2026-09-08,medianoche,SILIMARINA,1/4,dado,orig40
+2026-09-09,medianoche,SILIMARINA,1/4,dado,orig40
+2026-09-10,medianoche,SILIMARINA,1/4,dado,orig40
+2026-09-11,medianoche,SILIMARINA,1/4,dado,orig40
+2026-09-12,medianoche,SILIMARINA,1/4,dado,orig40
+2026-09-07,medianoche,FENOFIBRATO,1/4,dado,orig40
+2026-09-08,medianoche,FENOFIBRATO,1/4,dado,orig40
+2026-09-09,medianoche,FENOFIBRATO,1/4,dado,orig40
+2026-09-10,medianoche,FENOFIBRATO,1/4,dado,orig40
+2026-09-11,medianoche,FENOFIBRATO,1/4,dado,orig40
+2026-09-12,medianoche,FENOFIBRATO,1/4,dado,orig40
+2026-09-07,medianoche,CANINSULIN,"0,2",dado,orig40
+2026-09-08,medianoche,CANINSULIN,"0,2",dado,orig40
+2026-09-09,medianoche,CANINSULIN,"0,18",dado,orig40
+2026-09-10,medianoche,CANINSULIN,"0,2",dado,orig40
+2026-09-11,medianoche,CANINSULIN,"0,2",dado,orig40
+2026-09-12,medianoche,CANINSULIN,"0,2",dado,orig40
+2026-09-12,medianoche,BILETAN_ENZIMATICO,1/2,dado,orig40
+2026-09-12,medianoche,PSYLLIUM,,dado,orig40
