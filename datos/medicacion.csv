@@ -442,7 +442,7 @@ fecha,momento,farmaco,dosis,estado,origen
 2026-04-26,mediodia,TRILOSTANO,1/2,dado,orig06
 2026-04-26,mediodia,GABAPENTINA,1/4,dado,orig06
 2026-04-26,mediodia,DIPIRONA,1/4,dado,orig06
-2026-04-26,mediodia,PROTELIV,10gotas,ambiguo,orig06
+2026-04-26,mediodia,PROTELIV,10gotas,dado,orig06
 2026-04-26,mediodia,INSULINA,0.1,dado,orig06
 2026-04-20,medianoche,URSOMARINA,1/2,dado,orig06
 2026-04-20,medianoche,TRILOSTANO,1/2,dado,orig06
@@ -541,7 +541,7 @@ fecha,momento,farmaco,dosis,estado,origen
 2026-04-30,mediodia,MELOXICAM,0.1,no_dado,orig07
 2026-05-01,mediodia,MELOXICAM,0.1,no_dado,orig07
 2026-05-02,mediodia,MELOXICAM,0.1,no_dado,orig07
-2026-05-03,mediodia,MELOXICAM,0.1,ambiguo,orig07
+2026-05-03,mediodia,MELOXICAM,0.1,no_dado,orig07
 2026-04-27,medianoche,TRILOSTANO,1/2,dado,orig07
 2026-04-28,medianoche,TRILOSTANO,1/2,dado,orig07
 2026-04-29,medianoche,TRILOSTANO,1/2,dado,orig07
@@ -941,13 +941,13 @@ fecha,momento,farmaco,dosis,estado,origen
 2026-06-07,medianoche,TRILOSTANO,10mg 1/2,dado,orig12
 2026-06-07,medianoche,PROTELIV,10 GOTAS,dado,orig12
 2026-06-07,medianoche,CANINSULIN,"0,22",dado,orig12
-2026-06-08,ayuno,T4,,dado,orig13
-2026-06-09,ayuno,T4,,dado,orig13
-2026-06-10,ayuno,T4,,dado,orig13
-2026-06-11,ayuno,T4,,dado,orig13
-2026-06-12,ayuno,T4,,dado,orig13
-2026-06-13,ayuno,T4,,dado,orig13
-2026-06-14,ayuno,T4,,dado,orig13
+2026-06-08,ayuno,T4,1/4,dado,orig13
+2026-06-09,ayuno,T4,1/4,dado,orig13
+2026-06-10,ayuno,T4,1/4,dado,orig13
+2026-06-11,ayuno,T4,1/4,dado,orig13
+2026-06-12,ayuno,T4,1/4,dado,orig13
+2026-06-13,ayuno,T4,1/4,dado,orig13
+2026-06-14,ayuno,T4,1/4,dado,orig13
 2026-06-08,mediodia,TRILOSTANO,1/2 10mg,dado,orig13
 2026-06-08,mediodia,PROTELIV,10 GOTAS,dado,orig13
 2026-06-08,mediodia,CANINSULIN,0.22,dado,orig13
@@ -1117,7 +1117,7 @@ fecha,momento,farmaco,dosis,estado,origen
 2026-07-03,mediodia,CANINSULIN,"0,24",dado,orig19
 2026-07-03,medianoche,TRILOSTANO,10 1/2,dado,orig19
 2026-07-03,medianoche,FENOFIBRATO,1/2,dado,orig19
-2026-07-03,medianoche,CANINSULIN,"0,24",ambiguo,orig19
+2026-07-03,medianoche,CANINSULIN,"0,24",dado,orig19
 2026-07-04,ayuno,T4,"0,3 1/4",dado,orig19
 2026-07-04,mediodia,TRILOSTANO,10 1/2,dado,orig19
 2026-07-04,mediodia,CANINSULIN,"0,24",dado,orig19
@@ -1186,7 +1186,7 @@ fecha,momento,farmaco,dosis,estado,origen
 2026-07-14,medianoche,CANINSULIN,"0,24",dado,orig23
 2026-07-15,ayuno,T4,"0,3 1/4",dado,orig23
 2026-07-15,mediodia,TRILOSTANO,10 1/2,dado,orig23
-2026-07-15,mediodia,CANINSULIN,,ambiguo,orig23
+2026-07-15,mediodia,CANINSULIN,,no_dado,orig23
 2026-07-15,medianoche,TRILOSTANO,10 1/2,dado,orig23
 2026-07-15,medianoche,FENOFIBRATO,100 1/2,dado,orig23
 2026-07-15,medianoche,CANINSULIN,"0,24",dado,orig23
@@ -1198,7 +1198,7 @@ fecha,momento,farmaco,dosis,estado,origen
 2026-07-16,medianoche,CANINSULIN,"0,24",dado,orig23
 2026-07-17,ayuno,T4,"0,3 1/4",dado,orig23
 2026-07-17,mediodia,TRILOSTANO,10 1/2,dado,orig23
-2026-07-17,mediodia,CANINSULIN,,ambiguo,orig23
+2026-07-17,mediodia,CANINSULIN,,no_dado,orig23
 2026-07-17,medianoche,TRILOSTANO,10 1/2,dado,orig23
 2026-07-17,medianoche,FENOFIBRATO,100 1/2,dado,orig23
 2026-07-17,medianoche,CANINSULIN,"0,24",dado,orig23
@@ -1413,8 +1413,8 @@ fecha,momento,farmaco,dosis,estado,origen
 2026-08-23,mediodia,CANINSULIN,"0,2",dado,orig34
 2026-08-17,mediodia,SILIMARINA,,no_dado,orig34
 2026-08-18,mediodia,SILIMARINA,,no_dado,orig34
-2026-08-19,mediodia,SILIMARINA,,ambiguo,orig34
-2026-08-20,mediodia,SILIMARINA,,ambiguo,orig34
+2026-08-19,mediodia,SILIMARINA,,no_dado,orig34
+2026-08-20,mediodia,SILIMARINA,,no_dado,orig34
 2026-08-21,mediodia,SILIMARINA,,no_dado,orig34
 2026-08-22,mediodia,SILIMARINA,1/4,dado,orig34
 2026-08-23,mediodia,SILIMARINA,1/4,dado,orig34
@@ -1663,3 +1663,5 @@ fecha,momento,farmaco,dosis,estado,origen
 2026-09-12,medianoche,CANINSULIN,"0,2",dado,orig40
 2026-09-12,medianoche,BILETAN_ENZIMATICO,1/2,dado,orig40
 2026-09-12,medianoche,PSYLLIUM,,dado,orig40
+2026-08-24,mediodia,METRONIDAZOL,"2,5ml",no_dado,orig36
+2026-08-31,mediodia,METRONIDAZOL,"2,5",no_dado,orig38

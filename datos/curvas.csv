@@ -7,6 +7,6 @@ fecha,hora,glucosa,insulina,notas,origen
 2026-08-09,06:00,99,,,orig30
 2026-08-09,09:00,90,,,orig30
 2026-08-09,12:00,222,"0,24",,orig30
-2026-08-09,18:00,41,,MIEL,orig30
+2026-08-09,18:00,41,,MIEL por hipoglucemia,orig30
 2026-08-09,18:45,72,,POLLO 40g,orig30
 2026-08-10,00:00,341,,,orig30
