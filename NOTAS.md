@@ -139,6 +139,17 @@ La franja del mediodía es la más inestable (CV 41%), pese a menor media. Refer
 ### Conclusión del análisis avanzado
 El "mejora de promedio" de agosto esconde: (1) brecha nocturna que empeora y es estadísticamente robusta, (2) CV global por encima del umbral de estabilidad con el mediodía como zona más inestable, (3) solo la mitad del tiempo en rango objetivo, (4) hipoglucemias confinadas a julio-agosto con overshoot moderado pero sin Somogyi franco, y (5) una respuesta a dosis impredecible que hace del ajuste reactivo la única herramienta disponible sin CGM/fructosamina. El próximo control debería apuntar a re-distribuir la cobertura nocturna y medir fructosamina+cPLI para cerrar estas dos preguntas con datos, no con inferencias.
 
+### Glosario de abreviaturas
+- **TIR** — tiempo dentro del rango (% de lecturas en 100–250 mg/dL)
+- **TAR** — tiempo por encima del rango (>250 mg/dL) · **TBR** — tiempo por debajo del rango (<80 mg/dL)
+- **CV** — coeficiente de variación (desviación estándar/media ×100) · **SD** — desviación estándar
+- **GLU** — glucosa (lecturas de planillas) · **F** — fructosamina (µmol/L) · **eAG** — glucosa promedio estimada
+- **CGM / BG** — monitorización continua de glucosa / glucosa sanguínea
+- **UCCR** — cociente cortisol–creatinina urinaria (control del Cushing) · **UPC** — cociente proteína–creatinina urinaria
+- **LPCE (cPLI)** — lipasa pancreática específica canina
+- **Hto / Hb** — hematocrito / hemoglobina · **T4 libre / TSH** — tiroxina libre / hormona estimulante de la tiroides
+- **ALT (GPT) / FAL / GGT** — enzimas hepáticas: alanina-aminotransferasa / fosfatasa alcalina / gamma-glutamil transferasa
+
 ### Bibliografía consultada (online, 13/9/2026)
 - AAHA 2018 Diabetes Management Guidelines (Dog & Cat), PMID 29314873 (nadir 80–150, 200-250 la mayor parte del intervalo).
 - Merck/Vetsulin — Somogyi effect and glucose curves (100–250 objetivo; definición Somogyi: mín <65, máx 400–800, dosis ≥2,2 IU/kg, rebote puede durar días).

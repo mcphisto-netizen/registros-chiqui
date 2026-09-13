@@ -115,6 +115,21 @@ def adv():
         '<tr><td>7</td><td>Kuzi 2023 (Vet Record): fructosamina e hipos</td><td>10.1002/vetr.2236</td></tr>'
         '<tr><td>8</td><td>CV&lt;36% umbral riesgo hipo (Castañeda 2023; Mo 2020)</td><td>10.1111/dom.15139 | PMC8169344</td></tr>'
         '<tr><td>9</td><td>Variabilidad día-a-día de insulina en perros</td><td>10.1111/jvim.16006</td></tr></table>')
+    out.append('<h3>Glosario de abreviaturas</h3>')
+    out.append('<table class="k"><tr><th>Abreviatura</th><th>Significado</th></tr>'
+        '<tr><td><b>TIR</b></td><td>Tiempo dentro del rango: % de lecturas en 100–250 mg/dL</td></tr>'
+        '<tr><td><b>TAR</b></td><td>Tiempo por encima del rango: % de lecturas &gt; 250 mg/dL</td></tr>'
+        '<tr><td><b>TBR</b></td><td>Tiempo por debajo del rango: % de lecturas &lt; 80 mg/dL</td></tr>'
+        '<tr><td><b>CV</b></td><td>Coeficiente de variación: desviación estándar / media × 100</td></tr>'
+        '<tr><td><b>SD</b></td><td>Desviación estándar</td></tr>'
+        '<tr><td><b>GLU / F</b></td><td>Glucosa (planillas) / Fructosamina (µmol/L)</td></tr>'
+        '<tr><td><b>eAG</b></td><td>Glucosa promedio estimada (estimated average glucose)</td></tr>'
+        '<tr><td><b>CGM / BG</b></td><td>Monitorización continua de glucosa / Glucosa sanguínea</td></tr>'
+        '<tr><td><b>UCCR</b></td><td>Cociente cortisol–creatinina urinaria (control del Cushing)</td></tr>'
+        '<tr><td><b>UPC</b></td><td>Cociente proteína–creatinina urinaria (proteinuria)</td></tr>'
+        '<tr><td><b>LPCE (cPLI)</b></td><td>Lipasa pancreática específica canina</td></tr>'
+        '<tr><td><b>Hto / Hb</b></td><td>Hematocrito / Hemoglobina</td></tr>'
+        '<tr><td><b>T4 libre / TSH</b></td><td>Tiroxina libre / Hormona estimulante de la tiroides</td></tr></table>')
     return "".join(out)
 
 ADV = adv()

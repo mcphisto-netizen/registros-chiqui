@@ -8,6 +8,14 @@ Período: 2026-03-20 a 2026-09-13. Total: 40 hojas.
 - `excel/` — datos crudos y análisis en planillas para acceso directo sin depender de resúmenes IA: `01_glucosa.xlsx` (359 lecturas), `02_medicacion.xlsx` (1666 registros), `03_comidas.xlsx` (1260 registros), `04_analisis.xlsx` (métricas mensuales, brecha noche-día, rebote post-hipo, fructosamina estimada, laboratorio completo, bibliografía y nota IA).
 - `NOTAS.md` — análisis clínico integrado + análisis avanzado cuantitativo con bibliografía.
 
+## Abreviaturas
+- **TIR / TAR / TBR** — tiempo dentro / sobre / bajo el rango (lecturas 100–250, >250, <80 mg/dL)
+- **CV / SD** — coeficiente de variación (desviación estándar ÷ media ×100) / desviación estándar
+- **GLU / F / eAG** — glucosa de planillas / fructosamina (µmol/L) / glucosa promedio estimada
+- **UCCR** — cociente cortisol–creatinina urinaria · **UPC** — cociente proteína–creatinina urinaria
+- **LPCE (cPLI)** — lipasa pancreática específica canina · **Hto / Hb** — hematocrito / hemoglobina
+- **T4 libre / TSH** — tiroxina libre / hormona estimulante de la tiroides · **CGM/BG** — monitorización continua / glucosa sanguínea
+
 ## Estructura
 
 - `scans/medicacion-glucosa/` — 26 hojas. Planilla semanal 3 bloques: Ayuno / Mediodía / Medianoche. Filas: Medición glucosa + medicamento/dosis. Marca X / ✓ / — / dosis. Esquema cambia en tiempo:
