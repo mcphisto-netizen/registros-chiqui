@@ -10,6 +10,7 @@ Período: 2026-03-20 a 2026-09-13. Total: 40 hojas.
   - may: sale Dipirona, entra Metronidazol, Tonanvit; Insulina 0,22 / 0,1
   - jun-sep: T4, Trilostano, Caninsulin 0,18-0,2, Fenofibrato, Silimarina, Biletan enzimático, Psyllium
 - `scans/comidas/` — 13 hojas. Planilla semanal INGREDIENTE/Dosis: Mediodía + Medianoche. Pechuga 100, muslo 25, arroz 25, zapallito 25, jurel 25, Calcivet, taurina, F.M., + zanahoria / sopa moro / manzana / boniato según semana. Desde 2026-06-17. Cada semana partida en 2 hojas: comidas + medicación.
+FM = fórmula magistral 1 cap (colina 400mg, carnitina 400mg, zinc 15mg, selenio 40mcg, vit D 8mcg). Desde 10/9 dieta antiinflamatoria: cerdo 125 + manzana 20 + boniato 25 + sopa moro (9/9 pechuga 125 sustituye cerdo).
 - `scans/curvas-notas/` — 1 hoja. Nota libre 2026-08-08 a 2026-08-10: curva horaria (hora - glucosa - dosis insulina), ej 12:00-163-0,24, 18:00-52, 21:00-67. Miel / pollo 40g anotados.
 - `datos/` — tablas OCR: `glucosa.csv` (fecha,momento,valor,origen, 352 filas), `medicacion.csv` (fecha,momento,farmaco,dosis,estado,origen, 1664 filas), `comidas.csv` (fecha,momento,ingrediente,dosis,estado,origen, 1260 filas), `curvas.csv` (nota libre 8-10/8, 11 filas), `ambiguos.csv` (90 celdas dudosas). Estados: dado (X/✓//), no_dado (—), vacio (celda vacía/diagonal), ambiguo (ver `ambiguos.csv`). Dosis literal de hoja (coma decimal original).
 
