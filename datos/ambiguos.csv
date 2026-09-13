@@ -16,7 +16,7 @@ orig06,2026-04-20/23,ayuno,segunda fila,"T°=39,2°C Lun 7:15 + 39,9°C DIPI Jue
 orig06,2026-04-22,medianoche,DIPIRONA estado,"X 40,1°C, dado + temp aparte",¼ dipirona y medicion de temperatura
 orig06,2026-04-26,mediodia,PROTELIV estado,"asterisco/tachón, ambiguo",proteliv dado
 orig07,2026-04-27,ayuno,glucosa valor,"209 trazo grueso, posible 209/203",Glucemia 209
-orig07,2026-05-03,mediodia,MELOXICAM,"CALCIVET .FM. ilegible, ambiguo","sin meloxicam, dado calcivet y fm"
+orig07,2026-05-03,mediodia,MELOXICAM,"CALCIVET .FM. ilegible, ambiguo","sin meloxicam, dado calcivet y fm [CSV: meloxicam no_dado; sin filas dieta]"
 orig07,2026-04-29,mediodia,GABAPENTINA,"marca P/8, probable X",dado gabapentina
 orig07,2026-05-01,medianoche,glucosa valor,"4 números superpuestos N458/397/263/A287 + 16° 262, ilegible",mediciones multiples. M= glucometro maverick 458/397 A= glucometro accuchek 263/287 [CSV: 263 mínimo]
 orig07,2026-05-02,mediodia,GABAPENTINA,marca tenue vs X,gabapentina dado
@@ -36,7 +36,7 @@ orig13,2026-06-11,ayuno,nota,"7,3 kg peso",peso
 orig13,2026-06-08/14,ayuno,T4 filas,"resumen ayuno dado x7, dosis vacía","dado t4, ¼ de comprimido de 0.3mg"
 orig08,2026-05-06,mediodia,nota,APETITO ARRIBA ESUELDO bajo INSULINA,"aumento de apetito, aumento de energia"
 orig09,2026-05-15,mediodia,nota,16 40/139 circulado bajo INSULINA,medicion glucemia extra a las 16:40 139 [CSV: fila 16:40 agregada]
-orig15,2026-06-21,mediodia,glucosa valor,154 grande + 186 pequeño debajo,medicion glucemia extra
+orig15,2026-06-21,mediodia,glucosa valor,154 grande + 186 pequeño debajo,medicion glucemia extra [CSV: queda 154 mínimo]
 orig15,2026-06-15,mediodia,CANINSULIN dosis,"0,22 solo lunes vs 0,24 resto",datos correctos
 orig15,2026-06-20,ayuno,nota,"7,6kg peso sábado",peso
 orig17,2026-06-27,medianoche,glucosa valor,298 vs 299,299
@@ -44,7 +44,7 @@ orig17,2026-06-24,medianoche,CANINSULIN dosis,"0,24 vs 0,22",0.24
 orig19,2026-07-03,ayuno,nota,"7,4kg peso viernes",peso
 orig19,2026-07-03,medianoche,CANINSULIN,"0,24 tachado, ambiguo","Dado, 0.24"
 orig21,2026-07-10/12,mediodia,CANINSULIN,"dosis 0,24 + check vs guion",todo dado
-orig23,2026-07-14,mediodia,glucosa valor,"99 con 46 pequeño arriba, posible 499/469",medicion extra 96 y 99
+orig23,2026-07-14,mediodia,glucosa valor,"99 con 46 pequeño arriba, posible 499/469",medicion extra 96 y 99 [CSV: 96 confirmado]
 orig23,2026-07-15,mediodia,CANINSULIN,"flecha ->, ambiguo",no dado caninsulin por glucemia baja 
 orig23,2026-07-17,mediodia,CANINSULIN,"flecha ->, ambiguo",no dado caninsulin por glucemia baja 
 orig23,2026-07-19,medianoche,glucosa valor,50 con 53 debajo,medicion extra 50 y 53
@@ -70,7 +70,7 @@ orig40,2026-09-09,ayuno,DIPIRONA,1/4 DIPI abreviatura parcial,¼ comprimido de d
 orig40,2026-09-10,medianoche,DIPIRONA,20hs 1/4 DIPI sobre miércoles,¼ comprimido de dipirona
 orig40,2026-09-12,medianoche,DIPIRONA,22hs DIPI? sobre sábado,¼ comprimido de dipirona
 orig40,2026-09-11,medianoche,CANINSULIN dosis,"0,2 tachado, ambiguo dosis","Dado 0,2"
-orig29,2026-08-09,ayuno,nota,"99 bajo domingo, ilegible",medicion extra a la mañana
+orig29,2026-08-09,ayuno,nota,"99 bajo domingo, ilegible",medicion extra a la mañana [CSV: fila ayuno 99 agregada]
 orig14,2026-06-15,mediodia,FECHA,"Lun header vacío, inferido 15/6",15/06/26
 orig14,2026-06-16,mediodia,FECHA,"Mar header vacío, inferido 16/6",16/06/26
 orig14,2026-06-18,mediodia,PECHUGA,"RC + garabato, ambiguo","royal canin diabetic en vez de pechuga, porque no tenía [CSV: ROYAL_CANIN 100 dado]"
@@ -80,7 +80,7 @@ orig24,2026-07-25,mediodia,TAURINA,sábado — vs vacío,no dado taurina
 orig28,2026-08-03/09,mediodia,ingrediente,RESUELTO: siempre F.M. 1 (fórmula magistral),formula magistral 1 capsula
 orig33,2026-08-17/23,,ingrediente,ZANAHORIA cursiva,zanahoria 25g
 orig33,2026-08-17/22,mediodia,ZANAHORIA estado,vacío gris vs —,"no dado, todavia no prescripto."
-orig37,2026-08-31/09-06,,SOPA_MORO,sin dosis escrita,"sopa de moro (50% zanahoria hervida en 100% agua, licuado) 3 cucharadas. Para tratar diarrea"
+orig37,2026-08-31/09-06,,SOPA_MORO,sin dosis escrita,"sopa de moro (50% zanahoria hervida en 100% agua, licuado) 3 cucharadas. Para tratar diarrea [CSV: dosis 3 cucharadas en filas dado]"
 orig39,2026-09-09,mediodia,PECHUGA estado,"RESUELTO: comió 125g pechuga (dieta nueva, sin cerdo aún)",correcto
 orig39,2026-09-08,mediodia,ZAPALLITO estado,X con tachón,"no dado zapallito, por sospecha que empeore diarrea"
 orig39,2026-09-13,mediodia,CALCIVET estado,X + asterisco/borrón,dado 

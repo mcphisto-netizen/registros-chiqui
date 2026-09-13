@@ -228,7 +228,7 @@ fecha,momento,valor,origen
 2026-07-12,medianoche,356,orig21
 2026-07-13,mediodia,201,orig23
 2026-07-13,medianoche,423,orig23
-2026-07-14,mediodia,99,orig23
+2026-07-14,mediodia,96,orig23
 2026-07-14,medianoche,322,orig23
 2026-07-15,mediodia,102,orig23
 2026-07-15,medianoche,366,orig23
@@ -357,3 +357,4 @@ fecha,momento,valor,origen
 2026-05-15,16:40,139,orig09
 2026-07-17,20:15,360,orig23
 2026-09-08,22:26,189,orig40
+2026-08-09,ayuno,99,orig29

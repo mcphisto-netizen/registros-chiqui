@@ -1056,13 +1056,13 @@ fecha,momento,ingrediente,dosis,estado,origen
 2026-09-02,mediodia,JUREL,25,dado,orig37
 2026-09-02,mediodia,CALCIVET,"0,5",dado,orig37
 2026-09-02,mediodia,TAURINA,"0,25",dado,orig37
-2026-09-02,mediodia,SOPA_MORO,,dado,orig37
+2026-09-02,mediodia,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-02,medianoche,PECHUGA,100,dado,orig37
 2026-09-02,medianoche,MUSLO,25,no_dado,orig37
 2026-09-02,medianoche,ZAPALLITO,25,no_dado,orig37
 2026-09-02,medianoche,ARROZ,25,dado,orig37
 2026-09-02,medianoche,CALCIVET,"0,5",dado,orig37
-2026-09-02,medianoche,SOPA_MORO,,dado,orig37
+2026-09-02,medianoche,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-03,mediodia,PECHUGA,100,dado,orig37
 2026-09-03,mediodia,MUSLO,25,no_dado,orig37
 2026-09-03,mediodia,ZAPALLITO,25,no_dado,orig37
@@ -1070,13 +1070,13 @@ fecha,momento,ingrediente,dosis,estado,origen
 2026-09-03,mediodia,JUREL,25,no_dado,orig37
 2026-09-03,mediodia,CALCIVET,"0,5",dado,orig37
 2026-09-03,mediodia,TAURINA,"0,25",dado,orig37
-2026-09-03,mediodia,SOPA_MORO,,dado,orig37
+2026-09-03,mediodia,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-03,medianoche,PECHUGA,100,dado,orig37
 2026-09-03,medianoche,MUSLO,25,no_dado,orig37
 2026-09-03,medianoche,ZAPALLITO,25,no_dado,orig37
 2026-09-03,medianoche,ARROZ,25,dado,orig37
 2026-09-03,medianoche,CALCIVET,"0,5",dado,orig37
-2026-09-03,medianoche,SOPA_MORO,,dado,orig37
+2026-09-03,medianoche,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-04,mediodia,PECHUGA,100,dado,orig37
 2026-09-04,mediodia,MUSLO,25,no_dado,orig37
 2026-09-04,mediodia,ZAPALLITO,25,no_dado,orig37
@@ -1084,13 +1084,13 @@ fecha,momento,ingrediente,dosis,estado,origen
 2026-09-04,mediodia,JUREL,25,no_dado,orig37
 2026-09-04,mediodia,CALCIVET,"0,5",dado,orig37
 2026-09-04,mediodia,TAURINA,"0,25",dado,orig37
-2026-09-04,mediodia,SOPA_MORO,,dado,orig37
+2026-09-04,mediodia,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-04,medianoche,PECHUGA,100,dado,orig37
 2026-09-04,medianoche,MUSLO,25,dado,orig37
 2026-09-04,medianoche,ZAPALLITO,25,dado,orig37
 2026-09-04,medianoche,ARROZ,25,dado,orig37
 2026-09-04,medianoche,CALCIVET,"0,5",dado,orig37
-2026-09-04,medianoche,SOPA_MORO,,dado,orig37
+2026-09-04,medianoche,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-05,mediodia,PECHUGA,100,dado,orig37
 2026-09-05,mediodia,MUSLO,25,dado,orig37
 2026-09-05,mediodia,ZAPALLITO,25,dado,orig37
@@ -1098,13 +1098,13 @@ fecha,momento,ingrediente,dosis,estado,origen
 2026-09-05,mediodia,JUREL,25,no_dado,orig37
 2026-09-05,mediodia,CALCIVET,"0,5",dado,orig37
 2026-09-05,mediodia,TAURINA,"0,25",dado,orig37
-2026-09-05,mediodia,SOPA_MORO,,dado,orig37
+2026-09-05,mediodia,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-05,medianoche,PECHUGA,100,dado,orig37
 2026-09-05,medianoche,MUSLO,25,dado,orig37
 2026-09-05,medianoche,ZAPALLITO,25,dado,orig37
 2026-09-05,medianoche,ARROZ,25,dado,orig37
 2026-09-05,medianoche,CALCIVET,"0,5",dado,orig37
-2026-09-05,medianoche,SOPA_MORO,,dado,orig37
+2026-09-05,medianoche,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-06,mediodia,PECHUGA,100,dado,orig37
 2026-09-06,mediodia,MUSLO,25,dado,orig37
 2026-09-06,mediodia,ZAPALLITO,25,dado,orig37
@@ -1112,13 +1112,13 @@ fecha,momento,ingrediente,dosis,estado,origen
 2026-09-06,mediodia,JUREL,25,dado,orig37
 2026-09-06,mediodia,CALCIVET,"0,5",dado,orig37
 2026-09-06,mediodia,TAURINA,"0,25",dado,orig37
-2026-09-06,mediodia,SOPA_MORO,,dado,orig37
+2026-09-06,mediodia,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-06,medianoche,PECHUGA,100,dado,orig37
 2026-09-06,medianoche,MUSLO,25,dado,orig37
 2026-09-06,medianoche,ZAPALLITO,25,dado,orig37
 2026-09-06,medianoche,ARROZ,25,dado,orig37
 2026-09-06,medianoche,CALCIVET,"0,5",dado,orig37
-2026-09-06,medianoche,SOPA_MORO,,dado,orig37
+2026-09-06,medianoche,SOPA_MORO,3 cucharadas,dado,orig37
 2026-09-07,mediodia,PECHUGA,100,dado,orig39
 2026-09-07,mediodia,MUSLO,25,dado,orig39
 2026-09-07,mediodia,ZAPALLITO,25,no_dado,orig39
@@ -1126,7 +1126,7 @@ fecha,momento,ingrediente,dosis,estado,origen
 2026-09-07,mediodia,JUREL,25,no_dado,orig39
 2026-09-07,mediodia,CALCIVET,"0,5",dado,orig39
 2026-09-07,mediodia,TAURINA,"0,25",dado,orig39
-2026-09-07,mediodia,SOPA_MORO,,dado,orig39
+2026-09-07,mediodia,SOPA_MORO,3 cucharadas,dado,orig39
 2026-09-07,mediodia,MANZANA,20,no_dado,orig39
 2026-09-07,mediodia,BONIATO,25,no_dado,orig39
 2026-09-07,mediodia,CERDO,125,vacio,orig39
@@ -1135,7 +1135,7 @@ fecha,momento,ingrediente,dosis,estado,origen
 2026-09-07,medianoche,ZAPALLITO,25,no_dado,orig39
 2026-09-07,medianoche,ARROZ,25,dado,orig39
 2026-09-07,medianoche,CALCIVET,"0,5",dado,orig39
-2026-09-07,medianoche,SOPA_MORO,,dado,orig39
+2026-09-07,medianoche,SOPA_MORO,3 cucharadas,dado,orig39
 2026-09-07,medianoche,MANZANA,20,no_dado,orig39
 2026-09-07,medianoche,BONIATO,25,no_dado,orig39
 2026-09-07,medianoche,CERDO,125,no_dado,orig39
@@ -1146,7 +1146,7 @@ fecha,momento,ingrediente,dosis,estado,origen
 2026-09-08,mediodia,JUREL,25,dado,orig39
 2026-09-08,mediodia,CALCIVET,"0,5",dado,orig39
 2026-09-08,mediodia,TAURINA,"0,25",dado,orig39
-2026-09-08,mediodia,SOPA_MORO,,dado,orig39
+2026-09-08,mediodia,SOPA_MORO,3 cucharadas,dado,orig39
 2026-09-08,mediodia,MANZANA,20,no_dado,orig39
 2026-09-08,mediodia,BONIATO,25,no_dado,orig39
 2026-09-08,mediodia,CERDO,125,vacio,orig39
