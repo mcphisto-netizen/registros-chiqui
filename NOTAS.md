@@ -1,6 +1,6 @@
 # Notas y conclusiones — Chiqui
 
-Análisis del 13/9/2026. Fuentes: 40 planillas caseras (mar–sep 2026), 15 laboratorios (ene 2024 – ago 2026) y línea de tiempo clínica. Visualización: `panel-chiqui.html`.
+Análisis del 19/9/2026. Fuentes: 40 planillas caseras + registros del responsable (mar–sep 2026), 15 laboratorios (ene 2024 – ago 2026) y línea de tiempo clínica. Visualización: `panel-chiqui.html`.
 
 ## Línea de tiempo completa
 
@@ -19,7 +19,11 @@ Análisis del 13/9/2026. Fuentes: 40 planillas caseras (mar–sep 2026), 15 labo
 | 3/8 | UCCR 22,8 (normal), ALT 344, UPC 0,05 | LAB02/03 |
 | 8–10/8 | Hipoglucemia con rescate (miel) | orig30 |
 | 17–23/8 | Gastroenteritis | orig34 |
+| 24/8 | Diarrea intermitente (hasta 18/9) | usuario |
 | 10/9 | Dieta antiinflamatoria + Biletan/Psyllium | orig39/40 |
+| 14–19/9 | T4 ayuno; Dipirona pasa a mediodía+noche; Caninsulin 0,2 fijo; Biletan hasta 16/9 md | usuario |
+| 18/9 | **Amoxicilina inyectable única** (disbiosis + diarrea, vet Cagliero, 20:00) | usuario |
+| 19/9 | **Vitamina B12 inyectable**, pauta semanal (absorción intestinal) + depósito normal | usuario |
 
 ## Cruces clave
 
@@ -80,7 +84,7 @@ Dic-2025 amilasa 1652 + trombocitopenia 56000; amilasa 1163 en LAB14 (4/5/26) co
 6. Bioquímica hepática de control post-Biletan/Psyllium.
 ## Análisis avanzado cuantitativo (13/9/2026) — métricas de la bibliografía canina
 
-Script: `analisis_avanzado.py` (se puede regenerar). 359 lecturas, objetivos caninos según AAHA 2018 y Merck/Vetsulin (dentro de 100–250 mg/dL la mayor parte del día; nadir 100–150).
+Script: `analisis_avanzado.py` (se puede regenerar). 371 lecturas, objetivos caninos según AAHA 2018 y Merck/Vetsulin (dentro de 100–250 mg/dL la mayor parte del día; nadir 100–150).
 
 ### Tiempo en rango (aproximado con 1–3 lecturas/día)
 | Mes | n | TIR 100–250 | TAR >250 | TBR <80 | TBR <70 |
@@ -91,10 +95,10 @@ Script: `analisis_avanzado.py` (se puede regenerar). 359 lecturas, objetivos can
 | Jun | 60 | 30,0% | 70,0% | 0 | 0 |
 | Jul | 64 | 51,6% | 39,1% | 6,2% | 4,7% |
 | Ago | 63 | 63,5% | 23,8% | 7,9% | 6,3% |
-| Sep | 26 | 46,2% | 50,0% | 0 | 0 |
-| **Total** | 359 | **49,9%** | 46,0% | 2,5% | 1,9% |
+| Sep | 38 | 44,7% | 52,6% | 0 | 0 |
+| **Total** | 371 | **49,6%** | 46,4% | 2,4% | 1,9% |
 
-Solo 12 de 26 semanas activas (46%) logran ≥50% de lecturas en rango: mayo-junio fueron los peores meses, marzo el mejor, con repunte (perjuicio) en septiembre.
+Solo 12 de 27 semanas activas (44%) logran ≥50% de lecturas en rango: mayo-junio fueron los peores meses, marzo el mejor, con repunte (perjuicio) en septiembre.
 
 ### Variabilidad glucémica (CV% = SD/media×100) — umbral humano de estabilidad 36%
 | Mes | media | SD | CV% |
@@ -105,18 +109,18 @@ Solo 12 de 26 semanas activas (46%) logran ≥50% de lecturas en rango: mayo-jun
 | Jun | 267 | 66 | 24,8 |
 | Jul | 226 | 98 | **43,2** (peor) |
 | Ago | 193 | 72 | 37,4 |
-| Sep | 250 | 72 | 28,7 |
-| Total | 246 | 93 | **37,7** — por encima del umbral de estabilidad (distribución inestable) |
-| Mediodía | 223 | 91 | **41,0** |
-| Medianoche | 271 | 88 | 32,4 |
+| Sep | 250 | 69 | 27,6 |
+| Total | 246 | 92 | **37,3** — por encima del umbral de estabilidad (distribución inestable) |
+| Mediodía | 222 | 90 | **40,7** |
+| Medianoche | 272 | 87 | 32,0 |
 
 La franja del mediodía es la más inestable (CV 41%), pese a menor media. Referencias: ICAST/Castañeda 2023 (CV<36% objetivo), Mo 2020 (CV ~36% umbral), métricas AGP caninas (Pudenz/Pedersen 2025: TIR, TAR, media, CV asociados a control clínico en perros).
 
 ### Día vs noche — el gap es real, estadísticamente significativo y EMPEORA
-- Prueba de Wilcoxon pareada en 171 días con lecturas en ambos horarios: mediana noche − mediodía = **+50 mg/dL en promedio**, p = 7,6×10⁻¹⁰.
-- 70% de los días (119/171), la noche supera al mediodía (p binom = 3,2×10⁻⁷).
-- El gap crece con los meses: Mar +23 → May +52 → Jul +79 → Sep +72.
-- Correlación mediodía→medianoche del mismo día: r=0,32 (p=2,6×10⁻⁵): una mañana alta tiende a arrastrar una noche alta (efecto de inercia, no independencia).
+- Prueba de Wilcoxon pareada en 177 días con lecturas en ambos horarios: mediana noche − mediodía = **+51 mg/dL en promedio**, p = 9,6×10⁻¹¹.
+- 71% de los días (125/177), la noche supera al mediodía (p binom = 4,0×10⁻⁸).
+- El gap crece con los meses: Mar +23 → May +52 → Jul +79 → Sep +78.
+- Correlación mediodía→medianoche del mismo día: r=0,31 (p=3,3×10⁻⁵): una mañana alta tiende a arrastrar una noche alta (efecto de inercia, no independencia).
 - Interpretación: la brecha nocturna no es artefacto ni ruido; es el punto terapéutico más débil y está empeorando (Cover: la dosis nocturna se queda corta o la cobertura decae hacia la madrugada; en perros la glucose nocturna tiende a ser más alta — JVIM 2021 FGM 268 vs 259 mg/dL, p<0,001).
 
 ### Rebote post-hipoglucemia — NO hay Somogyi clásico, pero sí overshoot moderado
@@ -126,12 +130,18 @@ La franja del mediodía es la más inestable (CV 41%), pese a menor media. Refer
 - Luz de contexto: hoy el manejo ya es reactivo — 21 omisiones de Caninsulin, muchas en días con lectura <150 (ej. 25/7, 27/7, 19/7). Ese comportamiento del responsable coincide con la recomendación AAHA (reducir/omitir si BG <150). Buen praxis documentada.
 
 ### Dosis de insulina vs glucosa — sin correlación (variabilidad inter-día manda)
-- Correlación de Spearman dosis↔lectura del mismo momento: mediodía r=−0,01 (p=0,91), medianoche r=0,02 (p=0,88), para dosis 0,18–0,2–0,22–0,24.
+- Correlación de Spearman dosis↔lectura del mismo momento: mediodía r=0,01 (p=0,93), medianoche r=−0,01 (p=0,92), para dosis 0,18–0,2–0,22–0,24.
 - El dato no predice el resultado: la respuesta a la insulina domina la señal. Coherente con la alta variabilidad día-a-día descrita en perros (JVIM 2021: CV entre-días alto incluso con porcino lente).
+
+### Manejo digestivo (14–19/9): diarrea intermitente, amoxicilina y B12 — revisión bibliográfica
+- **Contexto**: diarrea intermitente desde 24/8 (tras gastroenteritis de agosto). 18/9 20:00: amoxicilina inyectable única (disbiosis, vet Cagliero). 19/9: vitamina B12 inyectable, pauta semanal (pérdida de absorción intestinal de B12). 19/9 depósito de consistencia normal.
+- **B12 inyectable: criterio correcto.** En enteropatía crónica con diarrea, el déficit de cobalamina es factor pronóstico negativo y la suplementación mejora la clínica; se da parenteral por absorción intestinal comprometida (PMC11898182).
+- **Amoxicilina: no es primera línea para diarrea crónica canina.** Guías priorizan metronidazol o tilosina; la amoxicilina no figura como elección y puede alterar más la microbiota (PMC7079140). Conviene confirmar con la veterinaria la indicación/duración y monitorear respuesta (ya hay signo positivo: depósito normal el 19/9).
+- **Esquema desde 14/9**: dipirona pasó a mediodía+noche (mejor adherencia, se corría en ayuno); Caninsulin unificado a 0,2 en ambos horarios; Biletan suspendido el 16/9 mediodía.
 
 ### Fructosamina estimada (para validar el próximo laboratorio)
 - Período completo: media 246 → F estimada ≈ **433 µmol/L** (eAG = 0,59×F − 9,6, Kang 2015).
-- Últimas 3 semanas (24/8–13/9): media 230 → F ≈ **405 µmol/L**.
+- Últimas 4 semanas (24/8–19/9): media 235 → F ≈ **415 µmol/L**.
 - Clasificación canina habitual: <360 BUENO · 360–442 REGULAR · ≥443 MALO → se espera **control REGULAR**.
 - Si la fructosamina real diera <~350, las planillas caseras (criterio del mínimo + medidores) subestiman la hiperglucemia. Si diera 400–440, se valida el registro domiciliario.
 - Advertencia de interpretación (Kuzi 2023, Vet Record): F menor puede reflejar episodios recientes de hipoglucemia (F media 496 con sospecha de hipos vs 572 sin ellos), no buen control. Dado el racimo de hipos de julio-agosto, una F "regular-baja" DEBE leerse con la planilla, no en solitario.
@@ -150,7 +160,7 @@ El "mejora de promedio" de agosto esconde: (1) brecha nocturna que empeora y es 
 - **Hto / Hb** — hematocrito / hemoglobina · **T4 libre / TSH** — tiroxina libre / hormona estimulante de la tiroides
 - **ALT (GPT) / FAL / GGT** — enzimas hepáticas: alanina-aminotransferasa / fosfatasa alcalina / gamma-glutamil transferasa
 
-### Bibliografía consultada (online, 13/9/2026)
+### Bibliografía consultada (online, 13/9/2026, actualizada 19/9)
 - AAHA 2018 Diabetes Management Guidelines (Dog & Cat), PMID 29314873 (nadir 80–150, 200-250 la mayor parte del intervalo).
 - Merck/Vetsulin — Somogyi effect and glucose curves (100–250 objetivo; definición Somogyi: mín <65, máx 400–800, dosis ≥2,2 IU/kg, rebote puede durar días).
 - JVIM 2021, Postprandial hyperglycemia and circadian fluctuation in diabetic dogs (FGMS): 268 vs 259 mg/dL noche vs día, p<0,001.
@@ -160,6 +170,8 @@ El "mejora de promedio" de agosto esconde: (1) brecha nocturna que empeora y es 
 - Kuzi S 2023, Vet Record DOI 10.1002/vetr.2236: fructosamina con vs sin sospecha de hipos (496 vs 572 µmol/L).
 - Castañeda et al 2023 (DOM DOI 10.1111/dom.15139): CV <36% umbral de riesgo de hipoglucemia; Mo 2020 (PMC8169344): CV ~36% umbral de exceso de variabilidad en DM humano.
 - JVIM 2021 (8448650): day-to-day CV entre formulaciones de insulina en perros.
+- PMC7079140: propuesta de uso racional de antibióticos en enteropatía/diarrea crónica canina — metronidazol y tilosina como elección; amoxicilina no primera línea.
+- PMC11898182: cobalamina (B12) en enteropatía crónica canina — déficit = factor pronóstico negativo; suplementación parenteral mejora la clínica.
 </think>
 
 <｜DSML｜tool_calls>

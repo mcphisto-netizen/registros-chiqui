@@ -1,10 +1,14 @@
 fecha_inicio,fecha_fin,evento,detalle,fuente
-2026-04-24,2026-04-26,cirugía vesícula biliar por mucocele,"colecistectomía con internación; explica días sin registro 23-26/4 (orig06); sin corticoides en postoperatorio por cushing",usuario
-2026-04-27,2026-05-10,postoperatorio complicado,"recuperación difícil; coincide con pico de hiperglucemias 400-548 y escalada de insulina",usuario+registro
-2026-08-08,2026-08-10,crisis hipoglucemia,"mínimos 52 y 41 con rescate miel + pollo 40g; rebote 341",registro orig30
-2026-08-17,2026-08-23,gastroenteritis,"diarrea y vómito anotados; entra silimarina diurna y metronidazol",registro orig34
-2026-09-10,,inicio dieta antiinflamatoria,"cerdo 125 + manzana 20 + boniato 25 + sopa de moro; biletan enzimático y psyllium desde 12-13/9",registro orig39-40+usuario
+2026-04-24,2026-04-26,cirugía vesícula biliar por mucocele,colecistectomía con internación; explica días sin registro 23-26/4 (orig06); sin corticoides en postoperatorio por cushing,usuario
+2026-04-27,2026-05-10,postoperatorio complicado,recuperación difícil; coincide con pico de hiperglucemias 400-548 y escalada de insulina,usuario+registro
+2026-08-08,2026-08-10,crisis hipoglucemia,mínimos 52 y 41 con rescate miel + pollo 40g; rebote 341,registro orig30
+2026-08-17,2026-08-23,gastroenteritis,diarrea y vómito anotados; entra silimarina diurna y metronidazol,registro orig34
+2026-09-10,,inicio dieta antiinflamatoria,cerdo 125 + manzana 20 + boniato 25 + sopa de moro; biletan enzimático y psyllium desde 12-13/9,registro orig39-40+usuario
 2026-02-18,2026-02-20,diagnóstico inicial,"glucosa 487-508, FAL 1626, UCCR alta, T4 libre 0.17 + TSH alta (hipotiroidismo); inicia seguimiento",laboratorio LAB08-13
 2026-05-04,,anemia severa postoperatoria,"Hto 12.9%, Hb 4.9, monocitosis; una semana post-colecistectomía",laboratorio LAB15
-2026-05-26,,histopatología hígado/vesícula,"lipidosis hepática difusa moderada + colangiohepatitis linfoplasmocítica",laboratorio LAB01
+2026-05-26,,histopatología hígado/vesícula,lipidosis hepática difusa moderada + colangiohepatitis linfoplasmocítica,laboratorio LAB01
 2026-08-03,,control integral,"UCCR 22.8 normal (cushing controlado), ALT 344, proteinuria resuelta UPC 0.05, T4 libre aún baja 0.70",laboratorio LAB02-03
+2026-08-24,,diarrea intermitente,diarrea intermitente desde 24/8; motivo de consulta del 18/9 con vet Cagliero,usuario
+2026-09-18,,amoxicilina inyectable única (vet Cagliero),disbiosis + diarrea intermitente desde 24/8; aplicada 20:00 del 18/9,usuario
+2026-09-19,,vitamina B12 inyectable (vet Cagliero),"pérdida de absorción intestinal de B12 en diarrea crónica; pauta semanal, primera dosis 19/9 mediodía",usuario
+2026-09-19,,depósito consistencia normal,mediodía del 19/9,usuario

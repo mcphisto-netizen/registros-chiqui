@@ -1,11 +1,11 @@
 # Registros Chiqui
 
 Registros manuscritos escaneados de perra Chiqui: glucemia, medicación, comidas.
-Período: 2026-03-20 a 2026-09-13. Total: 40 hojas.
+Período: 2026-03-20 a 2026-09-19. Total: 40 hojas + datos aportados desde 14/9 por el responsable.
 
 - `panel-chiqui.html` — panel dinámico autocontenido: gráficos de glucosa y laboratorio + sección 5 de análisis cuantitativo avanzado (TIR/CV, brecha noche-día, Somogyi, fructosamina) + informe resumido para veterinaria imprimible. Todo con bibliografía citada y aviso de observaciones elaboradas con IA. Abrir en cualquier navegador, funciona sin internet.
 - `informe-veterinaria-chiqui.pdf` — informe clínico para la veterinaria (6 páginas): esquema actual, glucemias mensuales, laboratorio destacado, observaciones derivadas de datos, roadmap de estudios y sección 6 de análisis cuantitativo avanzado con bibliografía. Regenerable con `informe.py` (requiere weasyprint + scipy).
-- `excel/` — datos crudos y análisis en planillas para acceso directo sin depender de resúmenes IA: `01_glucosa.xlsx` (359 lecturas), `02_medicacion.xlsx` (1666 registros), `03_comidas.xlsx` (1260 registros), `04_analisis.xlsx` (métricas mensuales, brecha noche-día, rebote post-hipo, fructosamina estimada, laboratorio completo, bibliografía y nota IA).
+- `excel/` — datos crudos y análisis en planillas para acceso directo sin depender de resúmenes IA: `01_glucosa.xlsx` (371 lecturas), `02_medicacion.xlsx` (1756 registros), `03_comidas.xlsx` (1380 registros), `04_analisis.xlsx` (métricas mensuales, brecha noche-día, rebote post-hipo, fructosamina estimada, laboratorio completo, bibliografía y nota IA). Regenerable con `gen_excel.py`.
 - `NOTAS.md` — análisis clínico integrado + análisis avanzado cuantitativo con bibliografía.
 
 ## Abreviaturas
@@ -26,7 +26,7 @@ Período: 2026-03-20 a 2026-09-13. Total: 40 hojas.
 FM = fórmula magistral 1 cap (colina 400mg, carnitina 400mg, zinc 15mg, selenio 40mcg, vit D 8mcg). Desde 10/9 dieta antiinflamatoria: cerdo 125 + manzana 20 + boniato 25 + sopa moro (9/9 pechuga 125 sustituye cerdo).
 - `scans/curvas-notas/` — 1 hoja. Nota libre 2026-08-08 a 2026-08-10: curva horaria (hora - glucosa - dosis insulina), ej 12:00-163-0,24, 18:00-52, 21:00-67. Miel / pollo 40g anotados.
 - `lab/` — 15 informes originales (enero 2024 a agosto 2026): hemogramas, bioquímica, orina, cortisol, tiroideos, histopatología. Nombres `YYYYMMDD_descripcion_orig-labNN`.
-- `datos/` — tablas OCR: `glucosa.csv` (fecha,momento,valor,origen, 359 filas), `medicacion.csv` (fecha,momento,farmaco,dosis,estado,origen, ~1666 filas), `comidas.csv` (fecha,momento,ingrediente,dosis,estado,origen, 1260 filas), `curvas.csv` (nota libre 8-10/8, 11 filas), `ambiguos.csv` (celdas dudosas + columna desambiguacion), `eventos_clinicos.csv` (hitos: cirugía, postoperatorio, crisis, dieta), `laboratorio.csv` (fecha,parametro,valor,unidad,ref_min,ref_max,origen, 274 filas; LAB02 duplica a LAB03, protocolo completo). Estados: dado (X/✓//), no_dado (—), vacio (celda vacía/diagonal), ambiguo (ver `ambiguos.csv`). Dosis literal de hoja (coma decimal original).
+- `datos/` — tablas OCR: `glucosa.csv` (fecha,momento,valor,origen, 371 filas), `medicacion.csv` (fecha,momento,farmaco,dosis,estado,origen, ~1756 filas), `comidas.csv` (fecha,momento,ingrediente,dosis,estado,origen, 1380 filas), `curvas.csv` (nota libre 8-10/8, 11 filas), `ambiguos.csv` (celdas dudosas + columna desambiguacion), `eventos_clinicos.csv` (hitos: cirugía, postoperatorio, crisis, dieta, diarrea/amoxicilina/B12), `laboratorio.csv` (fecha,parametro,valor,unidad,ref_min,ref_max,origen, 274 filas; LAB02 duplica a LAB03, protocolo completo). Estados: dado (X/✓//), no_dado (—), vacio (celda vacía/diagonal), ambiguo (ver `ambiguos.csv`). Dosis literal de hoja (coma decimal original).
 
 ## Nombres
 

@@ -16,7 +16,7 @@ SEM = [
     ["2026-06-29", 214, 223], ["2026-07-06", 244, 301], ["2026-07-13", 161, 237],
     ["2026-07-20", 158, 282], ["2026-07-27", 170, 245], ["2026-08-03", 176, 239],
     ["2026-08-10", 141, 241], ["2026-08-17", 161, 212], ["2026-08-24", 173, 226],
-    ["2026-08-31", 215, 265], ["2026-09-07", 222, 291]]
+    ["2026-08-31", 215, 265], ["2026-09-07", 222, 292], ["2026-09-14", 210, 291]]
 
 def bar_chart(data, unit, cmax, color_fn, label_w=300):
     rows = []
@@ -30,9 +30,9 @@ def glu_bars(label, series):
         series, "", 560, lambda l, v: "#1f7a8c", 120)+'</div>'
 
 glu_m = glu_bars("Mediodía", [
-    ("Mar", 214), ("Abr", 241), ("May", 281), ("Jun", 249), ("Jul", 187), ("Ago", 165), ("Sep*", 220)]) + \
+    ("Mar", 214), ("Abr", 241), ("May", 281), ("Jun", 249), ("Jul", 187), ("Ago", 165), ("Sep*", 216)]) + \
         '<div class="twocol"><p class="note"><b>Medianoche</b> · media mensual (mg/dL)</p>'+bar_chart([
-    ("Mar", 236), ("Abr", 262), ("May", 331), ("Jun", 285), ("Jul", 259), ("Ago", 225), ("Sep*", 287)], "",
+    ("Mar", 236), ("Abr", 262), ("May", 331), ("Jun", 285), ("Jul", 259), ("Ago", 225), ("Sep*", 289)], "",
     560, lambda l, v: "#4b2e83", 120)+'</div>'
 
 enz = bar_chart([
@@ -73,7 +73,7 @@ def adv():
     cv_all = pstdev(a) / mean(a) * 100
     tir_all = sum(100 <= x <= 250 for x in a) / len(a) * 100
     out.append(f"<table>{''.join(rows)}<tr><td><b>TOTAL</b></td><td class='c'><b>{len(a)}</b></td><td class='c'><b>{tir_all:.0f}%</b></td><td class='c'>{sum(x>250 for x in a)/len(a)*100:.0f}%</td><td class='c'>{sum(x<80 for x in a)/len(a)*100:.0f}%</td><td class='c'><b class='bad'>{cv_all:.1f}%</b></td><td class='c'>{mean(a):.0f}</td><td class='c'>{pstdev(a):.0f}</td></tr></table>")
-    out.append('<p class="note">CV% &gt; 36% = distribución inestable y mayor riesgo de hipoglucemia (umbral humano ICAST/ADA, extrapolado). Solo 12/26 semanas alcanzan ≥50% de lecturas en rango. Mediodía CV 41% vs medianoche 32%: el día es la franja más inestable.</p>')
+    out.append('<p class="note">CV% &gt; 36% = distribución inestable y mayor riesgo de hipoglucemia (umbral humano ICAST/ADA, extrapolado). Solo 12/27 semanas alcanzan ≥50% de lecturas en rango. Mediodía CV 41% vs medianoche 32%: el día es la franja más inestable.</p>')
     # brecha noche-día
     dias = defaultdict(dict)
     for (dt, mom, v) in glu:
@@ -84,7 +84,7 @@ def adv():
     gtw = sum(d > 0 for d in diff)
     bpri = stats.binomtest(gtw, len(diff))
     out.append("<h3>b) Brecha noche–día: real y significativa</h3>")
-    out.append(f'<p>Prueba pareada (Wilcoxon) en {len(pairs)} días con ambos horarios: diferencia media de noche − mediodía = <b>+{mean(diff):.0f} mg/dL</b>, <b>p = {w.pvalue:.1e}</b>. En el <b>{gtw/len(pairs)*100:.0f}%</b> de los días la noche supera al día (p={bpri.pvalue:.0e}). El gap empeora: +23 (mar) → +52 (may) → +79 (jul) → +72 (sep). Correlación mediodía→medianoche r=0,32 (p&lt;10⁻⁴): una mañana alta arrastra la noche.</p>')
+    out.append(f'<p>Prueba pareada (Wilcoxon) en {len(pairs)} días con ambos horarios: diferencia media de noche − mediodía = <b>+{mean(diff):.0f} mg/dL</b>, <b>p = {w.pvalue:.1e}</b>. En el <b>{gtw/len(pairs)*100:.0f}%</b> de los días la noche supera al día (p={bpri.pvalue:.0e}). El gap empeora: +23 (mar) → +52 (may) → +79 (jul) → +78 (sep). Correlación mediodía→medianoche r=0,31 (p&lt;10⁻⁴): una mañana alta arrastra la noche.</p>')
     out.append('<p class="note">Coherente con la literatura canina (FGMS): glucemia nocturna más alta que diurna (JVIM 2021, 268 vs 259 mg/dL, p&lt;0,001). Clave: revisar cobertura/fracionamiento de la insulina nocturna, no solo el promedio.</p>')
     # rebote post-hipo
     out.append("<h3>c) Hipoglucemias y rebote (evaluación de Somogyi)</h3>")
@@ -96,15 +96,15 @@ def adv():
     out.append("<h3>d) Fructosamina estimada — para validar el próximo dosaje real</h3>")
     out.append(f'<table class="k"><tr><th>Período</th><th>Glucosa media</th><th>Fructosamina estimada</th><th>Clasificación</th></tr>'
                f'<tr><td>Completo (mar–sep)</td><td class="c">{mean(a):.0f}</td><td class="c"><b>{(mean(a)+9.6)/0.59:.0f} µmol/L</b></td><td class="c">REGULAR (360–442)</td></tr>'
-               f'<tr><td>Últimas 3 sem (24/8–13/9)</td><td class="c">{mean(recent):.0f}</td><td class="c"><b>{(mean(recent)+9.6)/0.59:.0f} µmol/L</b></td><td class="c">REGULAR (360–442)</td></tr></table>')
+               f'<tr><td>Últimas 4 sem (24/8–19/9)</td><td class="c">{mean(recent):.0f}</td><td class="c"><b>{(mean(recent)+9.6)/0.59:.0f} µmol/L</b></td><td class="c">REGULAR (360–442)</td></tr></table>')
     out.append('<p class="note">Fórmula canina eAG = 0,59×F − 9,6 (Kang 2015). Si el dosaje real sale &lt;350, las planillas caseras subestiman la hiperglucemia (criterio del mínimo + medidores); si sale 400–440, se valida. Alerta (Kuzi 2023): F menor con hipos recientes puede parecer mejor control del real → leer junto con la planilla.</p>')
     # correlación dosis
     out.append("<h3>e) Dosis de insulina vs glucosa</h3>")
-    out.append('<p class="note">Correlación dosis↔lectura del mismo momento ≈ 0 (r=−0,01 mediodía; r=0,02 noche). La respuesta diaria a la insulina domina la señal (variabilidad inter-día descrita en perros, JVIM 2021). El ajuste reactivo domiciliario es hoy el único mecanismo disponible sin CGM.</p>')
+    out.append('<p class="note">Correlación dosis↔lectura del mismo momento ≈ 0 (r≈0 mediodía y noche). La respuesta diaria a la insulina domina la señal (variabilidad inter-día descrita en perros, JVIM 2021). El ajuste reactivo domiciliario es hoy el único mecanismo disponible sin CGM.</p>')
     # conclusión + bibliografía
     out.append("<h3>Conclusión del análisis</h3>")
     out.append('<p>El mejor promedio de agosto esconde: (1) brecha nocturna que <b>empeora</b> (estadísticamente robusta), (2) CV global sobre el umbral de estabilidad con el mediodía más inestable, (3) solo ~50% del tiempo en rango, (4) hipos confinadas a jul–ago con overshoot moderado <i>sin</i> Somogyi franco, y (5) respuesta a dosis impredecible. Las dos preguntas que mejor resuelve el próximo control: <b>fructosamina</b> y <b>cPLI</b>, más redistribuir la cobertura nocturna.</p>')
-    out.append("<h3>Bibliografía consultada (IA, 13/9/2026 — enlaces en repositorio)</h3>")
+    out.append("<h3>Bibliografía consultada (IA, 19/9/2026 — enlaces en repositorio)</h3>")
     out.append('<table class="k"><tr><th>Ref</th><th>Fuente</th><th>DOI/PMID</th></tr>'
         '<tr><td>1</td><td>AAHA Diabetes Management Guidelines (dogs/cats)</td><td>PMID 29314873</td></tr>'
         '<tr><td>2</td><td>Merck/Vetsulin: glucose curves y Somogyi effect</td><td>merck-animal-health-usa.com</td></tr>'
@@ -114,7 +114,9 @@ def adv():
         '<tr><td>6</td><td>Cut-offs caninos fructosamina</td><td>PMC8880912</td></tr>'
         '<tr><td>7</td><td>Kuzi 2023 (Vet Record): fructosamina e hipos</td><td>10.1002/vetr.2236</td></tr>'
         '<tr><td>8</td><td>CV&lt;36% umbral riesgo hipo (Castañeda 2023; Mo 2020)</td><td>10.1111/dom.15139 | PMC8169344</td></tr>'
-        '<tr><td>9</td><td>Variabilidad día-a-día de insulina en perros</td><td>10.1111/jvim.16006</td></tr></table>')
+        '<tr><td>9</td><td>Variabilidad día-a-día de insulina en perros</td><td>10.1111/jvim.16006</td></tr>'
+        '<tr><td>10</td><td>Antibióticos en diarrea crónica canina: metronidazol/tilosina como elección (amoxicilina no primera línea)</td><td>PMC7079140</td></tr>'
+        '<tr><td>11</td><td>Cobalamina (B12) en enteropatía crónica canina: déficit = mala prognosis; suplementación mejora clínica</td><td>PMC11898182</td></tr></table>')
     out.append('<h3>Glosario de abreviaturas</h3>')
     out.append('<table class="k"><tr><th>Abreviatura</th><th>Significado</th></tr>'
         '<tr><td><b>TIR</b></td><td>Tiempo dentro del rango: % de lecturas en 100–250 mg/dL</td></tr>'
@@ -167,14 +169,14 @@ table.k {{ page-break-inside:avoid; break-inside:avoid; }}
 
 <div class="head">
 <h1>Informe clínico resumido — canina “Chiqui”</h1>
-<p><b>Período analizado:</b> 20/3/2026 – 13/9/2026 &nbsp;·&nbsp; <b>Fuente:</b> 40 planillas caseras diarias (glucemia, insulina, fármacos, comida) + 15 informes de laboratorio (1/2024 – 8/2026).</p>
-<p><b>Referencia:</b> github.com/mcphisto-netizen/registros-chiqui · Panel interactivo: <span class="var">panel-chiqui.html</span> · Documento generado 13/9/2026.</p>
+<p><b>Período analizado:</b> 20/3/2026 – 19/9/2026 &nbsp;·&nbsp; <b>Fuente:</b> 40 planillas caseras diarias (glucemia, insulina, fármacos, comida) + 15 informes de laboratorio (1/2024 – 8/2026).</p>
+<p><b>Referencia:</b> github.com/mcphisto-netizen/registros-chiqui · Panel interactivo: <span class="var">panel-chiqui.html</span> · Documento generado 19/9/2026.</p>
 </div>
 
 <h2>1 · Diagnósticos y contexto</h2>
 <table>
-<tr><th>Diagnósticos</th><td>Diabetes mellitus insulinodependiente (posición 20/3/2026) · Hiperadrenocorticismo (Cushing) · Hipotiroidismo · Hepatopatía mixta (lipidosis difusa moderada + colangiohepatitis linfoplasmocítica, biopsia 26/5/2026) · Colecistectomía por mucocele biliar (24–26/4/2026) · Gastroenteritis aguda 17–23/8/2026</td></tr>
-<tr><th>Esquema actual (7–13/9)</th><td>Ayuno: T4 ¼ + Dipirona ¼. Mediodía y noche: Trilostano ½, Silimarina ¼, Fenofibrato ¼, Caninsulin 0,18–0,2 U (ajuste por lectura; omitida 12/9 mediodía por peso). Desde 12/9: Biletan enzimático ½ + Psyllium. Dieta antiinflamatoria desde 10/9: cerdo 125 g + manzana 20 g + boniato 25 g + sopa de moro (3 cucharadas).</td></tr>
+<tr><th>Diagnósticos</th><td>Diabetes mellitus insulinodependiente (posición 20/3/2026) · Hiperadrenocorticismo (Cushing) · Hipotiroidismo · Hepatopatía mixta (lipidosis difusa moderada + colangiohepatitis linfoplasmocítica, biopsia 26/5/2026) · Colecistectomía por mucocele biliar (24–26/4/2026) · Gastroenteritis aguda 17–23/8/2026 · Diarrea intermitente desde 24/8/2026</td></tr>
+<tr><th>Esquema actual (14–19/9)</th><td>Ayuno: T4 ¼. Mediodía y medianoche: Trilostano ½, Silimarina ¼, Fenofibrato ¼, Dipirona ¼, Caninsulin 0,2 U (todas las dosis desde 14/9), Psyllium. Biletan enzimático ½ hasta 16/9 mediodía (suspendido). Dieta antiinflamatoria desde 10/9: cerdo 125 g + manzana 20 g + boniato 25 g + sopa de moro. 18/9 20:00: amoxicilina inyectable única (disbiosis + diarrea, vet Cagliero) · 19/9: vitamina B12 inyectable, pauta semanal (absorción intestinal, vet Cagliero).</td></tr>
 </table>
 
 <h2>2 · Glucemia de las planillas</h2>
@@ -188,9 +190,9 @@ table.k {{ page-break-inside:avoid; break-inside:avoid; }}
 <tr><td>Junio</td><td class="c">30</td><td class="c">249</td><td class="c">129</td><td class="c">357</td><td class="c">30</td><td class="c">285</td><td class="c">166</td><td class="c">370</td></tr>
 <tr><td>Julio</td><td class="c">31</td><td class="c">187</td><td class="c">55</td><td class="c">428</td><td class="c">32</td><td class="c">259</td><td class="c">50</td><td class="c">433</td></tr>
 <tr><td>Agosto</td><td class="c">31</td><td class="c">165</td><td class="c">40</td><td class="c">260</td><td class="c">31</td><td class="c">225</td><td class="c">62</td><td class="c">341</td></tr>
-<tr><td>Sept (1–13)</td><td class="c">13</td><td class="c">220</td><td class="c">80</td><td class="c">305</td><td class="c">12</td><td class="c">287</td><td class="c">163</td><td class="c">368</td></tr>
+<tr><td>Sept (1–19)</td><td class="c">19</td><td class="c">216</td><td class="c">80</td><td class="c">305</td><td class="c">18</td><td class="c">289</td><td class="c">163</td><td class="c">368</td></tr>
 </table>
-<p class="note">Media general del período: mediodía ~214 · medianoche ~264. Hipoglucemias &lt;70 registradas: <b>7</b> (18/7, 19/7 ×2, 24/7, 13/8, 21/8, 24/8), mínima 40 (24/8) — corregidas con miel/pollo; curva documentada 8–10/8 (52 → 41 → rescate → rebote 341). Eventos: cirugía 24–26/4 y postoperatorio 27/4–10/5 (pico), gastroenteritis 17–23/8.</p>
+<p class="note">Media general del período: mediodía ~222 · medianoche ~272. Hipoglucemias &lt;70 registradas: <b>7</b> (18/7, 19/7 ×2, 24/7, 13/8, 21/8, 24/8), mínima 40 (24/8) — corregidas con miel/pollo; curva documentada 8–10/8 (52 → 41 → rescate → rebote 341). Eventos: cirugía 24–26/4 y postoperatorio 27/4–10/5 (pico), gastroenteritis 17–23/8, diarrea intermitente 24/8–, amoxicilina 18/9 y B12 19/9 (vet Cagliero).</p>
 
 {glu_m}
 
@@ -218,7 +220,8 @@ table.k {{ page-break-inside:avoid; break-inside:avoid; }}
 <li><b>El debut respondió rápido:</b> glucosa ~500 (feb) → ~214–236 en planillas (finales de marzo), –50% con insulina + Trilostano + T4.</li>
 <li><b>Mayo = postoperatorio + anemia, no falla del esquema.</b> Hto 12,9 (4/5) y pico de hiperglucemias 400–548. Sin corticoides (por Cushing): estrés quirúrgico + inflamación + anemia. La serie roja se recuperó sola: 12,9 → 23,5 → 40,5 → 44,1 (ago).</li>
 <li><b>Hígado independiente de la glucosa.</b> Mejoró tras cirugía (FAL 1626→136) pero <b>rebrotó en agosto (ALT 344, FAL 283)</b>, cuando la glucemia promediaba su mejor valor (165). La biopsia nombra la causa (lipidosis + colangiohepatitis).</li>
-<li><b>Cushing controlado:</b> UCCR de 4620/40,39 (feb) → 22,8 (ago, &lt;40) bajo Trilostano ½ sostenido.</li>
+<li><b>Diarrea intermitente desde 24/8</b> tras gastroenteritis de agosto; manejo 18–19/9 con amoxicilina inyectable única (disbiosis) y B12 inyectable semanal (pérdida de absorción intestinal). Respaldo bibliográfico: la B12 es la pauta estándar ante enteropatía crónica (PMC11898182); la amoxicilina <i>no</i> es primera línea antibacteriana para diarrea crónica canina (las guías priorizan metronidazol/tilosina, PMC7079140) — conviene confirmar indicación y cobertura con la veterinaria.</li>
+<li><b>El Cushing está controlado:</b> UCCR de 4620/40,39 (feb) → 22,8 (ago, &lt;40) bajo Trilostano ½ sostenido.</li>
 <li><b>Tiroides posiblemente infratratada:</b> T4 libre 0,17 → 0,70, aún bajo rango (0,8–2,5) con ¼; aumento a ½ en agosto. Requiere control T4/TSH para confirmar dosis.</li>
 <li><b>Riñón recuperado:</b> proteinuria jun (UPC 1,7) → ago (UPC 0,05). Creatinina siempre normal.</li>
 <li><b>Lípidos rebeldes:</b> triglicéridos 819 → 277; colesterol clavado ~281–310 todo el año (fenofibrato justificado).</li>
